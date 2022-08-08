@@ -1,5 +1,13 @@
-# This program computes and displays the sum of integers from 1 up to n,
-# where n is entered by the user.
+# Assignement No.: 1
+# Problem No.: 2
+# Semester: Autumn 2022
+# Group No.: 65
+# Member 1: Pranav Mehrotra (20CS10085)
+# Member 2: Saransh Sharma (20CS30065)
+
+
+# This program calculates the GCD of a and b 
+# where a and b is entered by the user.
 #
 
     .globl  main

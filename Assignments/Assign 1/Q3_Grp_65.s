@@ -1,3 +1,12 @@
+# Assignement No.: 1
+# Problem No.: 3
+# Semester: Autumn 2022
+# Group No.: 65
+# Member 1: Pranav Mehrotra (20CS10085)
+# Member 2: Saransh Sharma (20CS30065)
+
+
+
 # This program checks whether n is a prime or a composite number,
 # where n>=10 and it is entered by the user.
 

@@ -1,6 +1,13 @@
-# This program computes and displays the sum of integers from 1 up to n,
-# where n is entered by the user.
-#
+# Assignement No.: 1
+# Problem No.: 4
+# Semester: Autumn 2022
+# Group No.: 65
+# Member 1: Pranav Mehrotra (20CS10085)
+# Member 2: Saransh Sharma (20CS30065)
+
+
+# This program takes as input a number and outputs if the entered number is a perfect number or not
+
 
     .globl  main
 
