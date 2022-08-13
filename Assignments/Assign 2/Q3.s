@@ -23,7 +23,10 @@ space:
 
     .text
 
-main:          
+main:   
+
+    jal initStack
+
     la $a0,input                                                      #printing the message for entering first number 
     li $v0,4
     syscall
@@ -68,6 +71,13 @@ error_message:
     syscall
 
     j main 
+
+initStack:
+    sub $sp,$sp,4   #create space to store previous stack pointer
+    sw      $fp, 0($sp)     # store old frame pointer
+    move    $fp, $sp        # update frame pointer to the new base of stack
+    jr		$ra             #return
+
 
 mallocInStack:
     mul     $t0, $a0, 4     #a0 stores the number of integers we have and each integer occupies 4 bytes
