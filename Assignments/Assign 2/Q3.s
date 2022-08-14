@@ -118,6 +118,11 @@ printMatrix:
     li $t0,1                                                                                     #to keep a track of number of rows printed
     li $t1, 0                                                                                    #j=0 to keep a track of number of elemenst printed
 
+
+    li $v0, 4                                                                                    #print space after every element
+    la $a0, matrix_A
+    syscall
+
     loop:
     mul $t2,$t1,4                                                                                #calculate the number of bytes after base address by multiply index by sizeof(int)
     add $t2, $t2, $s4                                                                            #A[j] = base address of A + j * sizeof(int)   
