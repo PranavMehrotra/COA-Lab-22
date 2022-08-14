@@ -3,7 +3,7 @@
     .data
 
 input:     
-    .asciiz "Enter four positive integers m, n, a and r:\n"                                       #prompt message for first input
+    .asciiz "Enter four positive integers m, n, a and r:\n"                                     #prompt message for first input
 
 
 error:
@@ -15,7 +15,7 @@ newline:
 matrix_A:
     .asciiz "Matrix A:\n\n"                                                                     #Label for Matrix A
 
-matrix_B:                                                                                       #Label fro Matrix B
+matrix_B:                                                                                       #Label for Matrix B
     .asciiz "Matrix B:\n\n"
 
 space:                                                                                          #space character
@@ -69,12 +69,12 @@ main:                                                                           
         add $t2, $t2, $s4                                                                       #add base address of array to get the actual address of A[index] = A(base address) + index*sizeof(int)
         sw $t3, 0($t2)                                                                          #store word stored in t3 in t2 that store the GP element at appropriate address in stack
     
-        mul $t1, $t1, $s3                                                                           #multiply $t1 by r to get the next power of r to be multiplied to a to generate elemnets of GP
-        addi $t0, $t0,1                                                                             #index++
-        mul $t2, $s0,$s1                                                                            #store the size of array i.e. m*n in t2
-        blt $t0, $t2, matrix_A_complete                                                             #if index < m*n continue adding elements else print the completed matrix
+        mul $t1, $t1, $s3                                                                       #multiply $t1 by r to get the next power of r to be multiplied to a to generate elemnets of GP
+        addi $t0, $t0,1                                                                         #index++
+        mul $t2, $s0,$s1                                                                        #store the size of array i.e. m*n in t2
+        blt $t0, $t2, matrix_A_complete                                                         #if index < m*n continue adding elements else print the completed matrix
 
-    li $v0, 4                                                                                    #print space after every element
+    li $v0, 4                                                                                   #print message for Matrix A
     la $a0, matrix_A
     syscall
 
@@ -85,20 +85,20 @@ main:                                                                           
 
     move $a0, $s0                                                                               #pass the number of rows i.e. m as first parameter in a0
     move $a1, $s1                                                                               #pass the number of columns i.e. n as second parameter in a1
-    move $a2, $s4 
-    move $a3, $s5
-    jal transposeMatrix
+    move $a2, $s4                                                                               #pass the array A as third parameter using a2
+    move $a3, $s5                                                                               #pass the array B that will store the transpose using a3
+    jal transposeMatrix                                                                         #call transposeMatrix 
 
-    li $v0, 4                                                                                    #print space after every element
+    li $v0, 4                                                                                   #print message for Matrix B
     la $a0, matrix_B
     syscall
 
-    move $a0, $s1                                                                               #pass the number of rows i.e. m as first parameter in a0
-    move $a1, $s0                                                                               #pass the number of columns i.e. n as second parameter in a1
-    move $a2, $s5                                                                               #pass the array to be printed i.e. A as third parameter in a2
-    jal printMatrix
+    move $a0, $s1                                                                               #pass the number of rows i.e. n as first parameter in a0
+    move $a1, $s0                                                                               #pass the number of columns i.e. m as second parameter in a1
+    move $a2, $s5                                                                               #pass the array to be printed i.e. B as third parameter in a2
+    jal printMatrix                                                                             #call printMatrix function with appropriate parameters
 
-    j end                                                                           
+    j end                                                                                       #terminate the programme
 
 
 error_message:
@@ -132,72 +132,75 @@ pushToStack:
     jr $ra
 
 
-
 printMatrix:
-    li $t0,0
-    move $t4,$a0
+    li $t0,0                                                                                      #initialise i=0
+    move $t4,$a0                                                                                  #store m in $t4
+    
     i_loop:
-        li $t1,0 #j=0
+        li $t1,0                                                                                  #initialise j=0   
         
-        j_loop:
-            mul $t2,$t0,$a1                                                                                #calculate the number of bytes after base address by multiply index by sizeof(int)
-            add $t2, $t2, $t1                                                                            #A[j] = base address of A + j * sizeof(int)   
-            mul $t2, $t2,4
-            add $t2, $t2, $a2
-            
-            lw $t2, 0($t2)
 
-            li $v0, 1                                                                                    #print $t2 i.e. A[j] 
+
+        #A when converted to row major form A[i][j] will be stored at index i*n+j where n is the number of columns 
+        j_loop:
+            mul $t2,$t0,$a1                                                                       #multiply i * n
+            add $t2, $t2, $t1                                                                     #add j to i*n i.e. t2 = i*n+j   
+            mul $t2, $t2,4                                                                        #to calculate bytes multiple by 4
+            add $t2, $t2, $a2                                                                     #A[i][j] = A(base address) + (i*n+j)*4
+            
+            lw $t2, 0($t2)                                                                        #load the word from stack
+
+            li $v0, 1                                                                             #print $t2 i.e. A[i][j] 
             move $a0, $t2                                            
             syscall
 
-            li $v0, 4                                                                                    #print space after every element
+            li $v0, 4                                                                             #print space after every element
             la $a0, space
             syscall
             
-            addi $t1,$t1,1
-            blt $t1,$a1,j_loop
+            addi $t1,$t1,1                                                                        #increment j
+            blt $t1,$a1,j_loop                                                                    #check if j<n if j>=n break the loop  
 
-        li $v0, 4                                                                                    #print space after every element
-        la $a0, newline
+        li $v0, 4                                                                                 #print a newline after all the elements of a row are printed
+        la $a0, newline 
         syscall
-        addi $t0,$t0,1
-        blt $t0, $t4,i_loop
-    jr $ra 
 
-
+        addi $t0,$t0,1                                                                            #increment i
+        blt $t0, $t4,i_loop                                                                       #check if i<m
+    
+    jr $ra                                                                                        #return once all the elements are printed 
 
 
 transposeMatrix:
-    li $t0,0 #i=0
-    
- 
-    loop_i:
-        li $t1,0 #j=0
-        
-        loop_j:
-            mul $t2,$t0,$a1                                                                                #calculate the number of bytes after base address by multiply index by sizeof(int)
-            add $t2, $t2, $t1                                                                            #A[j] = base address of A + j * sizeof(int)   
-            mul $t2, $t2,4
-            add $t2, $t2, $a2
+    li $t0,0                                                                                      #initialise i=0
+     
+    loop_i:                                                                                 
+        li $t1,0                                                                                  #initialise j=0
+        #A when converted to row major form A[i][j] will be stored at index i*n+j where n is the number of columns 
+        #B[i][j] = A[i][j] as B is transpose of A and so after B is converted to row major form B[j*m+i] = A[i*n+j]
+        loop_j: 
+            mul $t2,$t0,$a1                                                                       #multiply i * n
+            add $t2, $t2, $t1                                                                     #add j to i*n i.e. t2 = i*n+j   
+            mul $t2, $t2,4                                                                        #to calculate number of bytes multiply by 4
+            add $t2, $t2, $a2                                                                     #add base address of A i.e. A[i][j] = A(base address) + (i*n+j)*4
             
-            lw $t2, 0($t2)
+            lw $t2, 0($t2)                                                                        #load A[i][j] from stack 
 
-            mul $t3,$t1,$a0                                                                                #calculate the number of bytes after base address by multiply index by sizeof(int)
-            add $t3, $t3, $t0                                                                            #A[j] = base address of A + j * sizeof(int)   
-            mul $t3, $t3,4
-            add $t3, $t3, $a3
+            mul $t3,$t1,$a0                                                                       #multiply j * m
+            add $t3, $t3, $t0                                                                     #add i to j*m i.e. t3 = j*m+i   
+            mul $t3, $t3,4                                                                        #to calculate number of bytes multiply by 4
+            add $t3, $t3, $a3                                                                     #add base address of B i.e. B[j][i] = B(base address) + (j*m+i)*4
             
-            sw $t2, 0($t3)
+            sw $t2, 0($t3)                                                                        #store word from t2 in stack at position t3 i.e. B[j][i]=A[i][j]
             
-            addi $t1,$t1,1
-            blt $t1,$a1,loop_j
+            addi $t1,$t1,1                                                                        #increment j
+            blt $t1,$a1,loop_j                                                                    #check if j<n else if j>=n break the loop
 
-        addi $t0,$t0,1
-        blt $t0, $a0,loop_i
-    jr $ra 
+        addi $t0,$t0,1                                                                            #increment i
+        blt $t0, $a0,loop_i                                                                       #check if i<m else if i>=m break the loop
+    jr $ra                                                                                        #return from the function once all elements from A are stored in B at appropriate indices
 
 end:
     
-    li $v0, 10                                                                                   #terminate the program
+    li $v0, 10                                                                                    #terminate the program
     syscall
