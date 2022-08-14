@@ -64,20 +64,39 @@ main:                                                                           
     li $t1, 1                                                                                   #to keep track of what is multiplies by a to generate GP that is (powers of r) t1 = r^0
 
     matrix_A_complete:
-    mul $t3, $s2,$t1                                                                            #generate element of GP by multiplying a and power of r and store in $t3 
-    mul $t2, $t0,4                                                                              #calculate address to insert the element by multiplying index by sizeof(int)
-    add $t2, $t2, $s4                                                                           #add base address of array to get the actual address of A[index] = A(base address) + index*sizeof(int)
-    sw $t3, 0($t2)                                                                              #store word stored in t3 in t2 that store the GP element at appropriate address in stack
-   
-    mul $t1, $t1, $s3                                                                           #multiply $t1 by r to get the next power of r to be multiplied to a to generate elemnets of GP
-    addi $t0, $t0,1                                                                             #index++
-    mul $t2, $s0,$s1                                                                            #store the size of array i.e. m*n in t2
-    blt $t0, $t2, matrix_A_complete                                                             #if index < m*n continue adding elements else print the completed matrix
+        mul $t3, $s2,$t1                                                                        #generate element of GP by multiplying a and power of r and store in $t3 
+        mul $t2, $t0,4                                                                          #calculate address to insert the element by multiplying index by sizeof(int)
+        add $t2, $t2, $s4                                                                       #add base address of array to get the actual address of A[index] = A(base address) + index*sizeof(int)
+        sw $t3, 0($t2)                                                                          #store word stored in t3 in t2 that store the GP element at appropriate address in stack
+    
+        mul $t1, $t1, $s3                                                                           #multiply $t1 by r to get the next power of r to be multiplied to a to generate elemnets of GP
+        addi $t0, $t0,1                                                                             #index++
+        mul $t2, $s0,$s1                                                                            #store the size of array i.e. m*n in t2
+        blt $t0, $t2, matrix_A_complete                                                             #if index < m*n continue adding elements else print the completed matrix
+
+    li $v0, 4                                                                                    #print space after every element
+    la $a0, matrix_A
+    syscall
 
     move $a0, $s0                                                                               #pass the number of rows i.e. m as first parameter in a0
     move $a1, $s1                                                                               #pass the number of columns i.e. n as second parameter in a1
     move $a2, $s4                                                                               #pass the array to be printed i.e. A as third parameter in a2
     jal printMatrix                                                                             #call printMatrix function with appropriate parameters
+
+    move $a0, $s0                                                                               #pass the number of rows i.e. m as first parameter in a0
+    move $a1, $s1                                                                               #pass the number of columns i.e. n as second parameter in a1
+    move $a2, $s4 
+    move $a3, $s5
+    jal transposeMatrix
+
+    li $v0, 4                                                                                    #print space after every element
+    la $a0, matrix_B
+    syscall
+
+    move $a0, $s1                                                                               #pass the number of rows i.e. m as first parameter in a0
+    move $a1, $s0                                                                               #pass the number of columns i.e. n as second parameter in a1
+    move $a2, $s5                                                                               #pass the array to be printed i.e. A as third parameter in a2
+    jal printMatrix
 
     j end                                                                           
 
@@ -115,47 +134,69 @@ pushToStack:
 
 
 printMatrix:
-    li $t0,1                                                                                     #to keep a track of number of rows printed
-    li $t1, 0                                                                                    #j=0 to keep a track of number of elemenst printed
+    li $t0,0
+    move $t4,$a0
+    i_loop:
+        li $t1,0 #j=0
+        
+        j_loop:
+            mul $t2,$t0,$a1                                                                                #calculate the number of bytes after base address by multiply index by sizeof(int)
+            add $t2, $t2, $t1                                                                            #A[j] = base address of A + j * sizeof(int)   
+            mul $t2, $t2,4
+            add $t2, $t2, $a2
+            
+            lw $t2, 0($t2)
 
+            li $v0, 1                                                                                    #print $t2 i.e. A[j] 
+            move $a0, $t2                                            
+            syscall
 
-    li $v0, 4                                                                                    #print space after every element
-    la $a0, matrix_A
-    syscall
+            li $v0, 4                                                                                    #print space after every element
+            la $a0, space
+            syscall
+            
+            addi $t1,$t1,1
+            blt $t1,$a1,j_loop
 
-    loop:
-    mul $t2,$t1,4                                                                                #calculate the number of bytes after base address by multiply index by sizeof(int)
-    add $t2, $t2, $s4                                                                            #A[j] = base address of A + j * sizeof(int)   
-    lw $t2, 0($t2)                                                                               #load word stored at t2 i.e. A[j] and store in t2
-
-    li $v0, 1                                                                                    #print $t2 i.e. A[j] 
-    move $a0, $t2                                            
-    syscall
-
-    li $v0, 4                                                                                    #print space after every element
-    la $a0, space
-    syscall
-
-    addi $t1, $t1,1                                                                              #update the index j
-    
-
-    mul $t4, $t0,$a1                                                                             #calculate i*n to check if all elements of a row are printed
-    beq $t1, $t4,line                                                                            #if j == i*n i.e. all elements of one row are printed print a line 
-    mul $t3, $s0, $s1                                                                            # t3  = m*n
-    blt $t1, $t3, loop                                                                           # if j<m*n keep printing elements
-
-    return:  
-        jr $ra                                                                                   #return 
-    
-
-    line: 
-        li $v0, 4                                                                                #print newline
+        li $v0, 4                                                                                    #print space after every element
         la $a0, newline
         syscall
+        addi $t0,$t0,1
+        blt $t0, $t4,i_loop
+    jr $ra 
 
-        addi $t0, $t0,1                                                                          #update the number of row printed index
-        beq $t0, $a1,return                                                                      #if all rows are printed return
-        b loop                                                                                   #else keep on printing elements 
+
+
+
+transposeMatrix:
+    li $t0,0 #i=0
+    
+ 
+    loop_i:
+        li $t1,0 #j=0
+        
+        loop_j:
+            mul $t2,$t0,$a1                                                                                #calculate the number of bytes after base address by multiply index by sizeof(int)
+            add $t2, $t2, $t1                                                                            #A[j] = base address of A + j * sizeof(int)   
+            mul $t2, $t2,4
+            add $t2, $t2, $a2
+            
+            lw $t2, 0($t2)
+
+            mul $t3,$t1,$a0                                                                                #calculate the number of bytes after base address by multiply index by sizeof(int)
+            add $t3, $t3, $t0                                                                            #A[j] = base address of A + j * sizeof(int)   
+            mul $t3, $t3,4
+            add $t3, $t3, $a3
+            
+            sw $t2, 0($t3)
+            
+            addi $t1,$t1,1
+            blt $t1,$a1,loop_j
+
+        addi $t0,$t0,1
+        blt $t0, $a0,loop_i
+    jr $ra 
+
 end:
     
     li $v0, 10                                                                                   #terminate the program
