@@ -3,88 +3,155 @@
     .data
 
 input:     
-    .asciiz "Enter four positive integers m, n, a and r:"                                       #prompt message for first input
+    .asciiz "Enter four positive integers m, n, a and r:\n"                                       #prompt message for first input
 
 
 error:
-    .asciiz "One of the entered number is not-positive. Kindly enter again! "               #error out of bound message
+    .asciiz "One of the entered number is not-positive. Kindly enter again! "                   #error out of bound message
 
 newline:
-    .asciiz "\n"                                                         #newline character
+    .asciiz "\n"                                                                                #newline character
 
 matrix_A:
-    .asciiz "Matrix A:\n\n"
+    .asciiz "Matrix A:\n\n"                                                                     #Label for Matrix A
 
-matrix_B:
+matrix_B:                                                                                       #Label fro Matrix B
     .asciiz "Matrix B:\n\n"
 
-space:
+space:                                                                                          #space character
     .asciiz " "
 
     .text
 
-main:   
+main:                                                                                           #main starts
 
-    jal initStack
+    jal initStack                                                                               #initalise stack
 
-    la $a0,input                                                      #printing the message for entering first number 
+    la $a0,input                                                                                #printing the message for input 
     li $v0,4
     syscall
 
-    li $v0,5                                                             #reading the m
+    li $v0,5                                                                                    #reading the m (s0 = m)
     syscall
     move $s0,$v0
 
-    li $v0,5                                                             #reading the n
+    li $v0,5                                                                                    #reading the n (s1 = n)
     syscall
     move $s1,$v0
 
-    li $v0,5                                                             #reading the a
+    li $v0,5                                                                                    #reading the a (s2 = a)
     syscall
     move $s2,$v0
 
-    li $v0,5                                                             #reading the r
+    li $v0,5                                                                                    #reading the r (s3 = r)
     syscall
     move $s3,$v0
 
-    ble $s0, 0, error_message                                       
-    ble $s1, 0, error_message                                       
-    ble $s2, 0, error_message                                        
-    ble $s3, 0, error_message
+    ble $s0, 0, error_message                                                                   #check if m>0 else print error message
+    ble $s1, 0, error_message                                                                   #check if n>0 else print error message
+    ble $s2, 0, error_message                                                                   #check if a>0 else print error message
+    ble $s3, 0, error_message                                                                   #check if r>0 else print error message
 
-    mul $a0, $s0, $s1                                                   #matrix A
-    jal mallocInStack
-    move $s4,$v0
+    mul $a0, $s0, $s1                                                                           #a0 = s0 * s1 i.e. matrix A is of size m*n (a0 = size of array that will store the matrix)  
+    jal mallocInStack                                                                           #call mallocInStack to allot m*n size array in stack
+    move $s4,$v0                                                                                #store the returned starting address of A in s4
 
-    mul $a0, $s0, $s1                                                   #matrix B
-    jal mallocInStack
-    move $s5,$v0
+    mul $a0, $s1, $s0                                                                           #a0 = s1 * s0 i.e. matrix B is of size n*m (a0 = size of array that will store the matrix)
+    jal mallocInStack                                                                           #call mallocInStack to allot n*m size array in stack
+    move $s5,$v0                                                                                #store the returned starting address of B in s5
+
+    move $t0, $0                                                                                #t0 stores the index where the number will be inserted
+    li $t1, 1                                                                                   #to keep track of what is multiplies by a to generate GP that is (powers of r) t1 = r^0
+
+    matrix_A_complete:
+    mul $t3, $s2,$t1                                                                            #generate element of GP by multiplying a and power of r and store in $t3 
+    mul $t2, $t0,4                                                                              #calculate address to insert the element by multiplying index by sizeof(int)
+    add $t2, $t2, $s4                                                                           #add base address of array to get the actual address of A[index] = A(base address) + index*sizeof(int)
+    sw $t3, 0($t2)                                                                              #store word stored in t3 in t2 that store the GP element at appropriate address in stack
+   
+    mul $t1, $t1, $s3                                                                           #multiply $t1 by r to get the next power of r to be multiplied to a to generate elemnets of GP
+    addi $t0, $t0,1                                                                             #index++
+    mul $t2, $s0,$s1                                                                            #store the size of array i.e. m*n in t2
+    blt $t0, $t2, matrix_A_complete                                                             #if index < m*n continue adding elements else print the completed matrix
+
+    move $a0, $s0                                                                               #pass the number of rows i.e. m as first parameter in a0
+    move $a1, $s1                                                                               #pass the number of columns i.e. n as second parameter in a1
+    move $a2, $s4                                                                               #pass the array to be printed i.e. A as third parameter in a2
+    jal printMatrix                                                                             #call printMatrix function with appropriate parameters
+
+    j end                                                                           
 
 
 error_message:
-    la $a0,error                                                         #print the error message 
+    la $a0,error                                                                                #print the error message 
     li $v0,4
     syscall
 
-    la $a0,newline                                                       #print a newline
+    la $a0,newline                                                                              #print a newline
     li $v0,4
     syscall
 
-    j main 
+    j main                                                                                      #re-prompt the user to enetr numbers again
 
-initStack:
-    sub $sp,$sp,4   #create space to store previous stack pointer
-    sw      $fp, 0($sp)     # store old frame pointer
-    move    $fp, $sp        # update frame pointer to the new base of stack
-    jr		$ra             #return
+initStack:                                                                                      #to initialise stack
+    sub $sp,$sp,4                                                                               #create space to store previous stack pointer
+    sw $fp, 0($sp)                                                                              #store old frame pointer
+    move $fp, $sp                                                                               #update frame pointer to the new wstack base pointer
+    jr $ra                                                                                      #return from teh function
 
 
 mallocInStack:
-    mul     $t0, $a0, 4     #a0 stores the number of integers we have and each integer occupies 4 bytes
-    sub		$sp, $sp, $t0   # sp = sp - (4*size), reserve space in stack
-    move    $v0, $sp        # store the base address in $v0
-    jr      $ra
+    mul $t0, $a0, 4                                                                              #a0 stores the size of array we have and each element occupies 4 bytes
+    sub	$sp, $sp, $t0                                                                            # sp = sp - (4*size), create space in stack to store these elements
+    move $v0, $sp                                                                                #store the base address of created array in $v0
+    jr $ra  
+
+pushToStack:
+    addi $sp, $sp, -4                                                                            #make space for storing the new element
+    sw $a0, 0($sp)                                                                               #save the new element stored at a0 to stack
+    move $v0,  $sp                                                                               #return the starting address of the stack
+    jr $ra
+
+
+
+printMatrix:
+    li $t0,1                                                                                     #to keep a track of number of rows printed
+    li $t1, 0                                                                                    #j=0 to keep a track of number of elemenst printed
+
+    loop:
+    mul $t2,$t1,4                                                                                #calculate the number of bytes after base address by multiply index by sizeof(int)
+    add $t2, $t2, $s4                                                                            #A[j] = base address of A + j * sizeof(int)   
+    lw $t2, 0($t2)                                                                               #load word stored at t2 i.e. A[j] and store in t2
+
+    li $v0, 1                                                                                    #print $t2 i.e. A[j] 
+    move $a0, $t2                                            
+    syscall
+
+    li $v0, 4                                                                                    #print space after every element
+    la $a0, space
+    syscall
+
+    addi $t1, $t1,1                                                                              #update the index j
+    
+
+    mul $t4, $t0,$a1                                                                             #calculate i*n to check if all elements of a row are printed
+    beq $t1, $t4,line                                                                            #if j == i*n i.e. all elements of one row are printed print a line 
+    mul $t3, $s0, $s1                                                                            # t3  = m*n
+    blt $t1, $t3, loop                                                                           # if j<m*n keep printing elements
+
+    return:  
+        jr $ra                                                                                   #return 
+    
+
+    line: 
+        li $v0, 4                                                                                #print newline
+        la $a0, newline
+        syscall
+
+        addi $t0, $t0,1                                                                          #update the number of row printed index
+        beq $t0, $a1,return                                                                      #if all rows are printed return
+        b loop                                                                                   #else keep on printing elements 
 end:
     
-    li $v0, 10                                                               #terminate the program
+    li $v0, 10                                                                                   #terminate the program
     syscall
