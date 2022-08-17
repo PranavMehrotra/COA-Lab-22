@@ -5,6 +5,10 @@
 # Member 1: Pranav Mehrotra (20CS10085)
 # Member 2: Saransh Sharma (20CS30065)
 
+#The programme takes as input four integers m, n, a, r where m and n is the dimension of matrix A
+#The programme dynamically allocates two 2-D arrays in stack, fill the first matrix A with terms of GP with 'a' being the initial term and 'r' being the multiplicative ratio
+#and it generates a matrix B Which is the transpose of A. Both matrices A and B are then printed.  
+
   .globl  main
 
     .data

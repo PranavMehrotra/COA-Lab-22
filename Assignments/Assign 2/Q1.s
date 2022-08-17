@@ -5,6 +5,10 @@
 # Member 1: Pranav Mehrotra (20CS10085)
 # Member 2: Saransh Sharma (20CS30065)
 
+
+#The programme takes in input two 16 bit signed numbers a and b and returns the product a*b 
+#using booth's multiplication algorithm 
+
     .globl  main
 
     .data
