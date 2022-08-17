@@ -9,8 +9,11 @@ input1:
 input2:
     .asciiz "Enter second number: "                                      #promt message for second input
 
-error:
-    .asciiz "Number entered is out of range. Enter again!"               #error out of bound message
+error1:                                                                  #error out of bound message
+    .asciiz "First number entered is out of range. Number should be in the range of [32767,-32768]. "              
+
+error2:                                                                  #error out of bound message
+    .asciiz "Second number entered is out of range. Number should be in the range of [32767,-32768]. "               
 
 output1:
     .asciiz "Product of the two numbers are: "                           #prompt message for output 
@@ -36,10 +39,10 @@ main:                                                                    #main f
     syscall
     move $s1,$v0
 
-    blt $s0, -32768, error_message                                       #if M<-32768 i.e. it cannot be represented using 16 bits, display error message ( minimum 16 bit signed number = -2^16 )
-    blt $s1, -32768, error_message                                       #if Q<-32768 i.e. it cannot be represented using 16 bits, display error message
-    bgt $s0, 32767, error_message                                        #if M>32767 i.e. it cannot be represented using 16 bits, display error message  ( maximum 16 bit signed number = 2^16 - 1 )
-    bgt $s1, 32767, error_message                                        #if Q>32767 i.e. it cannot be represented using 16 bits, display error message
+    blt $s0, -32768, error_message1                                       #if M<-32768 i.e. it cannot be represented using 16 bits, display error message ( minimum 16 bit signed number = -2^16 )
+    blt $s1, -32768, error_message2                                       #if Q<-32768 i.e. it cannot be represented using 16 bits, display error message
+    bgt $s0, 32767, error_message1                                        #if M>32767 i.e. it cannot be represented using 16 bits, display error message  ( maximum 16 bit signed number = 2^16 - 1 )
+    bgt $s1, 32767, error_message2                                        #if Q>32767 i.e. it cannot be represented using 16 bits, display error message
 
     move $a0, $s0                                                        #a0 = M save M as first parameter in register a0                                      
     move $a1, $s1                                                        #a1 = Q save Q as second paramter in register a1
@@ -57,8 +60,19 @@ main:                                                                    #main f
 
     b end                                                                #terminate the programme
 
-error_message:
-    la $a0,error                                                         #print the error message 
+error_message1:
+    la $a0,error1                                                         #print the error message 
+    li $v0,4
+    syscall
+
+    la $a0,newline                                                       #print a newline
+    li $v0,4
+    syscall
+
+    j main                                                               #re run the programme and ask the user to input numbers again
+
+error_message2:
+    la $a0,error2                                                         #print the error message 
     li $v0,4
     syscall
 
