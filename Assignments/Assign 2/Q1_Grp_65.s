@@ -7,7 +7,7 @@
 
 
 #The programme takes in input two 16 bit signed numbers a and b and returns the product a*b 
-#using booth's multiplication algorithm 
+#using Booth's multiplication algorithm 
 
     .globl  main
 
