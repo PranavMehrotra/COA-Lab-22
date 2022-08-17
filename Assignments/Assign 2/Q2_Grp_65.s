@@ -111,7 +111,7 @@ loop:
     syscall                                                                                     # Input of individual array elements
     move $t1,$t0
     mul $t1,$t1,4                                                                               # Multiplying by 4 to get address of array element at i index
-sw $v0,array($t1)                                                                               # Storing ith element in array
+    sw $v0,array($t1)                                                                           # Storing ith element in array
     addi $t0,$t0,1                                                                              # Incrementing i by 1
     b loop                                                                                      # Continuing the loop
 
