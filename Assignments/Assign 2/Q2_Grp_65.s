@@ -59,9 +59,9 @@ main:   # Main starts
     li $v0,4
     syscall         # Printing new line
 
-    la $s2,array    # Loading address of array
+    la $a0,array    # Loading address of array
     li $t0,0        # Initializing i to 0, for sort function
-    jal sort        # Calling sort function
+    jal sort_array  # Calling sort function
     la $a0,prompt3  # Output prompt for first part of output
     li $v0,4
     syscall
@@ -69,29 +69,29 @@ main:   # Main starts
     li $v0,1
     syscall
     li $t2,1       # Initializing t2 to 1, for printing suffix of k
-    beq $s1,$t2,fir
-    addi $t2,$t2,1
-    beq $s1,$t2,sec
-    addi $t2,$t2,1
-    beq $s1,$t2,thi
-    bgt $s1,$t2,genth
-    ret_out:
-        la $a0,prompt4  # Output prompt for second part of output
-        li $v0,4
-        syscall
-        move $t1,$s0    # Loading length of array
-        sub $t1,$t1,$s1 # Subtract k from length of array, (n-k)
-        mul $t1,$t1,4   # Multiplying by 4 to get address of array element at (n-k)th index
-        lw $a0,array($t1) # Loading kth largest element
-        li $v0,1
-        syscall # Output kth largest element
-
+    # beq $s1,$t2,fir
+    # addi $t2,$t2,1
+    # beq $s1,$t2,sec
+    # addi $t2,$t2,1
+    # beq $s1,$t2,thi
+    # bgt $s1,$t2,genth
+    # jal find_k_largest
     
+
+find_k_largest:
+    la $a0,prompt4  # Output prompt for second part of output
+    li $v0,4
+    syscall
+    move $t1,$s0    # Loading length of array
+    sub $t1,$t1,$s1 # Subtract k from length of array, (n-k)
+    mul $t1,$t1,4   # Multiplying by 4 to get address of array element at (n-k)th index
+    lw $a0,array($t1) # Loading kth largest element
+    li $v0,1
+    syscall # Output kth largest element
     la $a0,nl
     li $v0,4
     syscall # Printing new line
-
-    j end   # Exit program
+    jr $ra
 
 inp_arr: # Function to take the input of the array
     la $a0,prompt0 # Output prompt for input of 10 array elements
@@ -161,22 +161,40 @@ fir: # Output suffix for k if k == 1
     la $a0,first
     li $v0,4
     syscall
-    j ret_out
+    jal find_k_largest
+    j end
 sec: # Output suffix for k if k == 2
     la $a0,second
     li $v0,4
     syscall
-    j ret_out
+    jal find_k_largest
+    j end
 thi: # Output suffix for k if k == 3
     la $a0,third
     li $v0,4
     syscall
-    j ret_out
+    jal find_k_largest
+    j end
 genth: # Output suffix for k if k > 3
     la $a0,nth
     li $v0,4
     syscall
-    j ret_out
+    jal find_k_largest
+    j end
+
+print_arr:
+    beq $t0,$s0,return
+    move $t1,$t0
+    mul $t1,$t1,4
+    lw $a0,array($t1)
+    li $v0,1
+    syscall
+    la $a0,espace
+    li $v0,4
+    syscall
+    addi $t0,$t0,1
+    b print_arr
+
 
 swap: # Function to swap two elements in array, given their addresses
     lw $t7,0($a0) # Loading first element in $t7
@@ -186,32 +204,34 @@ swap: # Function to swap two elements in array, given their addresses
     jr $ra # return to caller function
 
 
-sort: # Function to sort array in ascending order, using bubble sort algorithm
-    bge $t0,$s0,return # If i is greater than or equal to length of array, then return
-    addi $t0,$t0,1 # Incrementing i by 1
-    li $t1,0 # Initializing j to 0, for inner loop
-    move $t2,$s0 # Initializing t2 to length of array
-    sub $t2,$t2,$t0 # Subtracting i from length of array, (n-i)
-    for_inner: # Inner loop for bubble sort
-        bge $t1,$t2,sort # If j is greater than or equal to (n-i), then break the inner loop
-        mul $t3,$t1,4 # Multiplying by 4 to get address of array element at j index
-        # Loading address of the jth element in $t4 
-        add $s5,$s2,$t3
-        move $t4,$s5
-        # Loading address of the (j+1)th element in $t5
-        addi $t3,$t3,4
-        add $s5,$s2,$t3
-        move $t5,$s5
-        move $a0,$t4 # Copying the address of the jth element in $a0
-        move $a1,$t5 # Copying the address of the (j+1)th element in $a1
-        addi $t1,$t1,1 # Incrementing j by 1
-        lw $t4,0($t4) # Loading the jth element in $t4
-        lw $t5,0($t5) # Loading the (j+1)th element in $t5
-        ble $t4,$t5,for_inner # Comparing the jth and (j+1)th element, if jth element is greater than (j+1)th element, then swap them, else continue the inner loop
-        move $s4,$ra # Storing the return address of sort function in $s4, for later use
-        jal swap # Calling swap function to swap the jth and (j+1)th element
-        move $ra,$s4 # Restoring the return address of sort function from $s4 to $ra
-        j for_inner # Continuing the inner loop
+sort_array: # Function to sort array in ascending order, using bubble sort algorithm
+    move $s2,$a0
+    for_i:
+        bge $t0,$s0,print_arr # If i is greater than or equal to length of array, then return
+        addi $t0,$t0,1 # Incrementing i by 1
+        li $t1,0 # Initializing j to 0, for inner loop
+        move $t2,$s0 # Initializing t2 to length of array
+        sub $t2,$t2,$t0 # Subtracting i from length of array, (n-i)
+        for_inner: # Inner loop for bubble sort
+            bge $t1,$t2,for_i # If j is greater than or equal to (n-i), then break the inner loop
+            mul $t3,$t1,4 # Multiplying by 4 to get address of array element at j index
+            # Loading address of the jth element in $t4 
+            add $s5,$s2,$t3
+            move $t4,$s5
+            # Loading address of the (j+1)th element in $t5
+            addi $t3,$t3,4
+            add $s5,$s2,$t3
+            move $t5,$s5
+            move $a0,$t4 # Copying the address of the jth element in $a0
+            move $a1,$t5 # Copying the address of the (j+1)th element in $a1
+            addi $t1,$t1,1 # Incrementing j by 1
+            lw $t4,0($t4) # Loading the jth element in $t4
+            lw $t5,0($t5) # Loading the (j+1)th element in $t5
+            ble $t4,$t5,for_inner # Comparing the jth and (j+1)th element, if jth element is greater than (j+1)th element, then swap them, else continue the inner loop
+            move $s4,$ra # Storing the return address of sort function in $s4, for later use
+            jal swap # Calling swap function to swap the jth and (j+1)th element
+            move $ra,$s4 # Restoring the return address of sort function from $s4 to $ra
+            j for_inner # Continuing the inner loop
 
 
 return: # Return from a callee function to the caller function, assuming $ra stores the return address
