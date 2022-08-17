@@ -1,3 +1,15 @@
+# Assignement No.: 2
+# Problem No.: 2
+# Semester: Autumn 2022
+# Group No.: 65
+# Member 1: Pranav Mehrotra (20CS10085)
+# Member 2: Saransh Sharma (20CS30065)
+
+# This program declares a static array and takes input from the user to fill the array.
+# Then it sorts the array in ascending order.
+# Finally it prints the kth largest element in the array, where k is given by the user as input.
+
+
     .data
 array:
     .space 40 #Allocating space for static array

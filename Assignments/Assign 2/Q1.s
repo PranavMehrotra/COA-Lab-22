@@ -1,3 +1,9 @@
+# Assignement No.: 2
+# Problem No.: 1
+# Semester: Autumn 2022
+# Group No.: 65
+# Member 1: Pranav Mehrotra (20CS10085)
+# Member 2: Saransh Sharma (20CS30065)
 
     .globl  main
 
