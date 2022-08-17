@@ -177,7 +177,7 @@ transposeMatrix:
     loop_i:                                                                                 
         li $t1,0                                                                                  #initialise j=0
         #A when converted to row major form A[i][j] will be stored at index i*n+j where n is the number of columns 
-        #B[i][j] = A[i][j] as B is transpose of A and so after B is converted to row major form B[j*m+i] = A[i*n+j]
+        #B[j][i] = A[i][j] as B is transpose of A and so after B is converted to row major form B[j*m+i] = A[i*n+j]
         loop_j: 
             mul $t2,$t0,$a1                                                                       #multiply i * n
             add $t2, $t2, $t1                                                                     #add j to i*n i.e. t2 = i*n+j   
