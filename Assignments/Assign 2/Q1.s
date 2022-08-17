@@ -61,7 +61,7 @@ main:                                                                    #main f
     b end                                                                #terminate the programme
 
 error_message1:
-    la $a0,error1                                                         #print the error message 
+    la $a0,error1                                                        #print the error message 
     li $v0,4
     syscall
 
@@ -72,7 +72,7 @@ error_message1:
     j main                                                               #re run the programme and ask the user to input numbers again
 
 error_message2:
-    la $a0,error2                                                         #print the error message 
+    la $a0,error2                                                        #print the error message 
     li $v0,4
     syscall
 
