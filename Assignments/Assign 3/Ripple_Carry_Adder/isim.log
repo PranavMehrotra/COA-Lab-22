@@ -1,5 +1,5 @@
 ISim log file
-Running: D:\KGP Semesters\SEM 5\COA LAB\Assignments\Assign 3\Ripple_Carry_Adder\Ripple_Carry_Adder_64bit_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/KGP Semesters/SEM 5/COA LAB/Assignments/Assign 3/Ripple_Carry_Adder/Ripple_Carry_Adder_64bit_tb_isim_beh.wdb 
+Running: D:\KGP Semesters\SEM 5\COA LAB\Assignments\Assign 3\Ripple_Carry_Adder\Ripple_Carry_Subtractor_8bit_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/KGP Semesters/SEM 5/COA LAB/Assignments/Assign 3/Ripple_Carry_Adder/Ripple_Carry_Subtractor_8bit_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -28,8 +28,7 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-in1 =       68372643823854, in2 =       32458462378421, cin = 0, sum =      100831106202275, cout = 0
-in1 =       68372643823854, in2 =       32458462378421, cin = 1, sum =      100831106202276, cout = 0
-in1 = 18446744073709551602, in2 =                   13, cin = 0, sum = 18446744073709551615, cout = 0
-in1 = 18446744073709551602, in2 =                   13, cin = 1, sum =                    0, cout = 1
-in1 = 18446744073709551602, in2 =                   16, cin = 1, sum =                    3, cout = 1
+in1 =   7, in2 = 252, cin = 1, sum =   4, cout = 1
+in1 =  33, in2 = 240, cin = 1, sum =  18, cout = 1
+in1 =  86, in2 = 229, cin = 1, sum =  60, cout = 1
+in1 = 112, in2 = 235, cin = 1, sum =  92, cout = 1

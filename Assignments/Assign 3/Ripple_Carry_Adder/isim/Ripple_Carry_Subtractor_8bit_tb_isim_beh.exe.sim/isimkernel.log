@@ -1,0 +1,10 @@
+Command line:
+   Ripple_Carry_Subtractor_8bit_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49249
+
+Fri Aug 26 15:56:14 2022
+
+
+ Elaboration Time: 0.078125 sec

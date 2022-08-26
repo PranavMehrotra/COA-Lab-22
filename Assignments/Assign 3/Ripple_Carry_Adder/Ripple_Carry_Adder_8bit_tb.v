@@ -50,7 +50,8 @@ module Ripple_Carry_Adder_8bit_tb;
 		$monitor ("in1 = %d, in2 = %d, cin = %d, sum = %d, cout = %d", in1, in2, cin, sum, cout);
 		// Wait 100 ns for global reset to finish
 		#100;
-      in1 = 8'd33; in2 = 8'd15; cin = 0;
+      // Add stimulus here
+		in1 = 8'd33; in2 = 8'd15; cin = 0;
 		#100;
       in1 = 8'd26; in2 = 8'd89; cin = 1;
 		#100;
@@ -59,7 +60,7 @@ module Ripple_Carry_Adder_8bit_tb;
       in1 = 8'd235; in2 = 8'd20; cin = 1;
 		#100;
       in1 = 8'd235; in2 = 8'd21; cin = 1;
-		// Add stimulus here
+		
 
 	end
       
