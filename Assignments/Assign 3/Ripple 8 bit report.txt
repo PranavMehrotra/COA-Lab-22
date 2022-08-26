@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.08 secs
  
---> Reading design: Ripple_Carry_Adder_64bit.prj
+--> Reading design: Ripple_Carry_Adder_8bit.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -40,16 +40,16 @@ TABLE OF CONTENTS
 *                      Synthesis Options Summary                        *
 =========================================================================
 ---- Source Parameters
-Input File Name                    : "Ripple_Carry_Adder_64bit.prj"
+Input File Name                    : "Ripple_Carry_Adder_8bit.prj"
 Ignore Synthesis Constraint File   : NO
 
 ---- Target Parameters
-Output File Name                   : "Ripple_Carry_Adder_64bit"
+Output File Name                   : "Ripple_Carry_Adder_8bit"
 Output Format                      : NGC
 Target Device                      : xc7a100t-1-csg324
 
 ---- Source Options
-Top Module Name                    : Ripple_Carry_Adder_64bit
+Top Module Name                    : Ripple_Carry_Adder_8bit
 Automatic FSM Extraction           : YES
 FSM Encoding Algorithm             : Auto
 Safe Implementation                : No
@@ -109,22 +109,10 @@ Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\Assignments\Assign 3\Ripp
 Parsing module <full_adder>.
 Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\Assignments\Assign 3\Ripple_Carry_Adder\Ripple_Carry_Adder_8bit.v" into library work
 Parsing module <Ripple_Carry_Adder_8bit>.
-Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\Assignments\Assign 3\Ripple_Carry_Adder\Ripple_Carry_Adder_16bit.v" into library work
-Parsing module <Ripple_Carry_Adder_16bit>.
-Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\Assignments\Assign 3\Ripple_Carry_Adder\Ripple_Carry_Adder_32bit.v" into library work
-Parsing module <Ripple_Carry_Adder_32bit>.
-Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\Assignments\Assign 3\Ripple_Carry_Adder\Ripple_Carry_Adder_64bit.v" into library work
-Parsing module <Ripple_Carry_Adder_64bit>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-
-Elaborating module <Ripple_Carry_Adder_64bit>.
-
-Elaborating module <Ripple_Carry_Adder_32bit>.
-
-Elaborating module <Ripple_Carry_Adder_16bit>.
 
 Elaborating module <Ripple_Carry_Adder_8bit>.
 
@@ -133,24 +121,6 @@ Elaborating module <full_adder>.
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
-
-Synthesizing Unit <Ripple_Carry_Adder_64bit>.
-    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\Assignments\Assign 3\Ripple_Carry_Adder\Ripple_Carry_Adder_64bit.v".
-    Summary:
-	no macro.
-Unit <Ripple_Carry_Adder_64bit> synthesized.
-
-Synthesizing Unit <Ripple_Carry_Adder_32bit>.
-    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\Assignments\Assign 3\Ripple_Carry_Adder\Ripple_Carry_Adder_32bit.v".
-    Summary:
-	no macro.
-Unit <Ripple_Carry_Adder_32bit> synthesized.
-
-Synthesizing Unit <Ripple_Carry_Adder_16bit>.
-    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\Assignments\Assign 3\Ripple_Carry_Adder\Ripple_Carry_Adder_16bit.v".
-    Summary:
-	no macro.
-Unit <Ripple_Carry_Adder_16bit> synthesized.
 
 Synthesizing Unit <Ripple_Carry_Adder_8bit>.
     Related source file is "D:\KGP Semesters\SEM 5\COA LAB\Assignments\Assign 3\Ripple_Carry_Adder\Ripple_Carry_Adder_8bit.v".
@@ -167,9 +137,9 @@ Unit <full_adder> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Xors                                                 : 128
- 1-bit xor2                                            : 64
- 1-bit xor3                                            : 64
+# Xors                                                 : 16
+ 1-bit xor2                                            : 8
+ 1-bit xor3                                            : 8
 
 =========================================================================
 
@@ -182,9 +152,9 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Xors                                                 : 128
- 1-bit xor2                                            : 64
- 1-bit xor3                                            : 64
+# Xors                                                 : 16
+ 1-bit xor2                                            : 8
+ 1-bit xor3                                            : 8
 
 =========================================================================
 
@@ -192,13 +162,11 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 
-Optimizing unit <Ripple_Carry_Adder_64bit> ...
-
 Optimizing unit <Ripple_Carry_Adder_8bit> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Ripple_Carry_Adder_64bit, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block Ripple_Carry_Adder_8bit, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -223,16 +191,16 @@ Partition Implementation Status
 *                            Design Summary                             *
 =========================================================================
 
-Top Level Output File Name         : Ripple_Carry_Adder_64bit.ngc
+Top Level Output File Name         : Ripple_Carry_Adder_8bit.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 96
-#      LUT3                        : 32
-#      LUT5                        : 64
-# IO Buffers                       : 194
-#      IBUF                        : 129
-#      OBUF                        : 65
+# BELS                             : 12
+#      LUT3                        : 4
+#      LUT5                        : 8
+# IO Buffers                       : 26
+#      IBUF                        : 17
+#      OBUF                        : 9
 
 Device utilization summary:
 ---------------------------
@@ -241,19 +209,19 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   96  out of  63400     0%  
-    Number used as Logic:                96  out of  63400     0%  
+ Number of Slice LUTs:                   12  out of  63400     0%  
+    Number used as Logic:                12  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     96
-   Number with an unused Flip Flop:      96  out of     96   100%  
-   Number with an unused LUT:             0  out of     96     0%  
-   Number of fully used LUT-FF pairs:     0  out of     96     0%  
+ Number of LUT Flip Flop pairs used:     12
+   Number with an unused Flip Flop:      12  out of     12   100%  
+   Number with an unused LUT:             0  out of     12     0%  
+   Number of fully used LUT-FF pairs:     0  out of     12     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                         194
- Number of bonded IOBs:                 194  out of    210    92%  
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    210    12%  
 
 Specific Feature Utilization:
 
@@ -288,7 +256,7 @@ Speed Grade: -1
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 22.343ns
+   Maximum combinational path delay: 3.471ns
 
 Timing Details:
 ---------------
@@ -296,9 +264,9 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 4353 / 65
+  Total number of paths / destination ports: 97 / 9
 -------------------------------------------------------------------------
-Delay:               22.343ns (Levels of Logic = 34)
+Delay:               3.471ns (Levels of Logic = 6)
   Source:            in2<1> (PAD)
   Destination:       cout (PAD)
 
@@ -307,42 +275,14 @@ Delay:               22.343ns (Levels of Logic = 34)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             2   0.001   0.925  in2_1_IBUF (in2_1_IBUF)
-     LUT5:I0->O            3   0.124   0.550  r1/r1/r1/cout61 (r1/r1/r1/cout_bdd10)
-     LUT5:I3->O            3   0.124   0.550  r1/r1/r1/cout41 (r1/r1/r1/cout_bdd6)
-     LUT5:I3->O            3   0.124   0.550  r1/r1/r1/cout21 (r1/r1/r1/cout_bdd2)
-     LUT5:I3->O            3   0.124   0.550  r1/r1/r1/cout1 (r1/r1/carry)
-     LUT5:I3->O            3   0.124   0.550  r1/r1/r2/cout61 (r1/r1/r2/cout_bdd10)
-     LUT5:I3->O            3   0.124   0.550  r1/r1/r2/cout41 (r1/r1/r2/cout_bdd6)
-     LUT5:I3->O            3   0.124   0.550  r1/r1/r2/cout21 (r1/r1/r2/cout_bdd2)
-     LUT5:I3->O            3   0.124   0.550  r1/r1/r2/cout1 (r1/carry)
-     LUT5:I3->O            3   0.124   0.550  r1/r2/r1/cout61 (r1/r2/r1/cout_bdd10)
-     LUT5:I3->O            3   0.124   0.550  r1/r2/r1/cout41 (r1/r2/r1/cout_bdd6)
-     LUT5:I3->O            3   0.124   0.550  r1/r2/r1/cout21 (r1/r2/r1/cout_bdd2)
-     LUT5:I3->O            3   0.124   0.550  r1/r2/r1/cout1 (r1/r2/carry)
-     LUT5:I3->O            3   0.124   0.550  r1/r2/r2/cout61 (r1/r2/r2/cout_bdd10)
-     LUT5:I3->O            3   0.124   0.550  r1/r2/r2/cout41 (r1/r2/r2/cout_bdd6)
-     LUT5:I3->O            3   0.124   0.550  r1/r2/r2/cout21 (r1/r2/r2/cout_bdd2)
-     LUT5:I3->O            3   0.124   0.550  r1/r2/r2/cout1 (carry)
-     LUT5:I3->O            3   0.124   0.550  r2/r1/r1/cout61 (r2/r1/r1/cout_bdd10)
-     LUT5:I3->O            3   0.124   0.550  r2/r1/r1/cout41 (r2/r1/r1/cout_bdd6)
-     LUT5:I3->O            3   0.124   0.550  r2/r1/r1/cout21 (r2/r1/r1/cout_bdd2)
-     LUT5:I3->O            3   0.124   0.550  r2/r1/r1/cout1 (r2/r1/carry)
-     LUT5:I3->O            3   0.124   0.550  r2/r1/r2/cout61 (r2/r1/r2/cout_bdd10)
-     LUT5:I3->O            3   0.124   0.550  r2/r1/r2/cout41 (r2/r1/r2/cout_bdd6)
-     LUT5:I3->O            3   0.124   0.550  r2/r1/r2/cout21 (r2/r1/r2/cout_bdd2)
-     LUT5:I3->O            3   0.124   0.550  r2/r1/r2/cout1 (r2/carry)
-     LUT5:I3->O            3   0.124   0.550  r2/r2/r1/cout61 (r2/r2/r1/cout_bdd10)
-     LUT5:I3->O            3   0.124   0.550  r2/r2/r1/cout41 (r2/r2/r1/cout_bdd6)
-     LUT5:I3->O            3   0.124   0.550  r2/r2/r1/cout21 (r2/r2/r1/cout_bdd2)
-     LUT5:I3->O            3   0.124   0.550  r2/r2/r1/cout1 (r2/r2/carry)
-     LUT5:I3->O            3   0.124   0.550  r2/r2/r2/cout61 (r2/r2/r2/cout_bdd10)
-     LUT5:I3->O            3   0.124   0.550  r2/r2/r2/cout41 (r2/r2/r2/cout_bdd6)
-     LUT5:I3->O            3   0.124   0.550  r2/r2/r2/cout21 (r2/r2/r2/cout_bdd2)
-     LUT5:I3->O            1   0.124   0.399  r2/r2/r2/cout1 (cout_OBUF)
+     LUT5:I0->O            3   0.124   0.550  cout61 (cout_bdd10)
+     LUT5:I3->O            3   0.124   0.550  cout41 (cout_bdd6)
+     LUT5:I3->O            3   0.124   0.550  cout21 (cout_bdd2)
+     LUT5:I3->O            1   0.124   0.399  cout1 (cout_OBUF)
      OBUF:I->O                 0.000          cout_OBUF (cout)
     ----------------------------------------
-    Total                     22.343ns (3.969ns logic, 18.374ns route)
-                                       (17.8% logic, 82.2% route)
+    Total                      3.471ns (0.497ns logic, 2.974ns route)
+                                       (14.3% logic, 85.7% route)
 
 =========================================================================
 
@@ -353,11 +293,11 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.66 secs
+Total CPU time to Xst completion: 7.93 secs
  
 --> 
 
-Total memory usage is 4689720 kilobytes
+Total memory usage is 4675960 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

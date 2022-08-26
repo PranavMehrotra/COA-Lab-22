@@ -1,0 +1,2 @@
+verilog work "full_adder.v"
+verilog work "Ripple_Carry_Adder_8bit.v"

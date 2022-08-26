@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/Assignments/Assign 3/Ripple_Carry_Adder/half_adder.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/Assignments/Assign 3/Ripple_Carry_Adder/half_adder.syr" 
