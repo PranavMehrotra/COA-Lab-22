@@ -2,14 +2,14 @@ Command line:
    half_adder_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  54391
+     -socket  49970
 
-Fri Aug 26 00:03:42 2022
+Fri Aug 26 13:08:31 2022
 
 
- Elaboration Time: 0.03125 sec
+ Elaboration Time: 0.046875 sec
 
- Current Memory Usage: 5150.64 Meg
+ Current Memory Usage: 5150.06 Meg
 
  Total Signals          : 19
  Total Nets             : 17
@@ -21,9 +21,9 @@ Fri Aug 26 00:03:42 2022
  Total Scalar Nets and Variables : 99
 Total Line Count : 24
 
- Total Simulation Time: 0.0625 sec
+ Total Simulation Time: 0.390625 sec
 
- Current Memory Usage: 5150.64 Meg
+ Current Memory Usage: 4835.48 Meg
 
-Fri Aug 26 00:04:11 2022
+Fri Aug 26 13:14:54 2022
 
