@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Fri Aug 26 13:35:00 2022">
+  <application stringID="Xst" timeStamp="Sun Aug 28 23:26:31 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -23,14 +23,18 @@
           <item stringID="value" value="D:\Softwares\14.7\ISE_DS\ISE\"/>
         </row>
         <row stringID="row" value="3">
+          <item stringID="variable" value="XILINXD_LICENSE_FILE"/>
+          <item stringID="value" value="C:\Users\prana\Downloads\Xilinx.lic"/>
+        </row>
+        <row stringID="row" value="4">
           <item stringID="variable" value="XILINX_DSP"/>
           <item stringID="value" value="D:\Softwares\14.7\ISE_DS\ISE"/>
         </row>
-        <row stringID="row" value="4">
+        <row stringID="row" value="5">
           <item stringID="variable" value="XILINX_EDK"/>
           <item stringID="value" value="D:\Softwares\14.7\ISE_DS\EDK"/>
         </row>
-        <row stringID="row" value="5">
+        <row stringID="row" value="6">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
           <item stringID="value" value="D:\Softwares\14.7\ISE_DS\PlanAhead"/>
         </row>

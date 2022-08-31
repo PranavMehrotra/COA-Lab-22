@@ -27,10 +27,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4439380 kilobytes
+Total memory usage is 4440404 kilobytes
 
 Writing NGD file "Ripple_Carry_Adder_64bit.ngd" ...
-Total REAL time to NGDBUILD completion:  7 sec
-Total CPU time to NGDBUILD completion:   6 sec
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   5 sec
 
 Writing NGDBUILD log file "Ripple_Carry_Adder_64bit.bld"...

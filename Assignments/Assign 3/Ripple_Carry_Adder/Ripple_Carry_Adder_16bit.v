@@ -17,11 +17,6 @@
 // Revision 0.01 - File Created
 // Additional Comments: 
 //
-// Assignement No.: 3
-// Semester: Autumn 2022
-// Group No.: 65
-// Member 1: Pranav Mehrotra (20CS10085)
-// Member 2: Saransh Sharma (20CS30065)
 //////////////////////////////////////////////////////////////////////////////////
 module Ripple_Carry_Adder_16bit(input[15:0] in1,input[15:0] in2, input cin, output [15:0] sum, output cout);
 wire carry;

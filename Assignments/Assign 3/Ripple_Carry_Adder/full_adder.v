@@ -17,11 +17,6 @@
 // Revision 0.01 - File Created
 // Additional Comments: 
 //
-// Assignement No.: 3
-// Semester: Autumn 2022
-// Group No.: 65
-// Member 1: Pranav Mehrotra (20CS10085)
-// Member 2: Saransh Sharma (20CS30065)
 //////////////////////////////////////////////////////////////////////////////////
 module full_adder(input in1,input in2,input cin,output out,output cout);
 wire g2_out,g3_out,g4_out;

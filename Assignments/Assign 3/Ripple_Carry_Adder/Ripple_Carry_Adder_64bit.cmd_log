@@ -4,3 +4,8 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-1 "Ripple_Ca
 map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Ripple_Carry_Adder_64bit_map.ncd Ripple_Carry_Adder_64bit.ngd Ripple_Carry_Adder_64bit.pcf 
 xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/Assignments/Assign 3/Ripple_Carry_Adder/Ripple_Carry_Adder_64bit.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/Assignments/Assign 3/Ripple_Carry_Adder/Ripple_Carry_Adder_64bit.syr" 
 xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/Assignments/Assign 3/Ripple_Carry_Adder/Ripple_Carry_Adder_64bit.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/Assignments/Assign 3/Ripple_Carry_Adder/Ripple_Carry_Adder_64bit.syr" 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/Assignments/Assign 3/Ripple_Carry_Adder/Ripple_Carry_Adder_64bit.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/Assignments/Assign 3/Ripple_Carry_Adder/Ripple_Carry_Adder_64bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-1 "Ripple_Carry_Adder_64bit.ngc" Ripple_Carry_Adder_64bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Ripple_Carry_Adder_64bit_map.ncd Ripple_Carry_Adder_64bit.ngd Ripple_Carry_Adder_64bit.pcf 
+par -w -intstyle ise -ol high -mt off Ripple_Carry_Adder_64bit_map.ncd Ripple_Carry_Adder_64bit.ncd Ripple_Carry_Adder_64bit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Ripple_Carry_Adder_64bit.twx Ripple_Carry_Adder_64bit.ncd -o Ripple_Carry_Adder_64bit.twr Ripple_Carry_Adder_64bit.pcf 
