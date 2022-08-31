@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Reading design: CLA_16_bit_ripple.prj
 
@@ -83,7 +83,7 @@ Equivalent register Removal        : YES
 Optimization Goal                  : Speed
 Optimization Effort                : 1
 Power Reduction                    : NO
-Keep Hierarchy                     : Yes
+Keep Hierarchy                     : No
 Netlist Hierarchy                  : As_Optimized
 RTL Output                         : Yes
 Global Optimization                : AllClockNets
@@ -161,8 +161,6 @@ Macro Statistics
 =========================================================================
 
 Optimizing unit <CLA_16_bit_ripple> ...
-
-Optimizing unit <CLA_4_bit> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -256,7 +254,7 @@ Speed Grade: -1
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 6.167ns
+   Maximum combinational path delay: 5.657ns
 
 Timing Details:
 ---------------
@@ -266,35 +264,27 @@ All values displayed in nanoseconds (ns)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 321 / 17
 -------------------------------------------------------------------------
-Delay:               6.167ns (Levels of Logic = 14)
-  Source:            in2<1> (PAD)
-  Destination:       cout (PAD)
+Delay:               5.657ns (Levels of Logic = 10)
+  Source:            in1<1> (PAD)
+  Destination:       out<14> (PAD)
 
-  Data Path: in2<1> to cout
+  Data Path: in1<1> to out<14>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   0.001   0.925  in2_1_IBUF (in2_1_IBUF)
-     begin scope: 'a0:in2<1>'
-     LUT5:I0->O            3   0.124   0.550  cout21 (cout_bdd2)
-     LUT5:I3->O            3   0.124   0.550  cout1 (cout)
-     end scope: 'a0:cout'
-     begin scope: 'a1:cin'
-     LUT5:I3->O            3   0.124   0.550  cout21 (cout_bdd2)
-     LUT5:I3->O            3   0.124   0.550  cout1 (cout)
-     end scope: 'a1:cout'
-     begin scope: 'a2:cin'
-     LUT5:I3->O            3   0.124   0.550  cout21 (cout_bdd2)
-     LUT5:I3->O            3   0.124   0.550  cout1 (cout)
-     end scope: 'a2:cout'
-     begin scope: 'a3:cin'
-     LUT5:I3->O            3   0.124   0.550  cout21 (cout_bdd2)
-     LUT5:I3->O            1   0.124   0.399  cout1 (cout)
-     end scope: 'a3:cout'
-     OBUF:I->O                 0.000          cout_OBUF (cout)
+     IBUF:I->O             2   0.001   0.925  in1_1_IBUF (in1_1_IBUF)
+     LUT5:I0->O            3   0.124   0.435  a0/c<2><1>1 (a0/c<2>)
+     LUT5:I4->O            3   0.124   0.435  a0/cout<3>1 (c<0>)
+     LUT5:I4->O            3   0.124   0.435  a1/c<2><1>1 (a1/c<2>)
+     LUT5:I4->O            3   0.124   0.435  a1/cout<3>1 (c<1>)
+     LUT5:I4->O            3   0.124   0.435  a2/c<2><1>1 (a2/c<2>)
+     LUT5:I4->O            3   0.124   0.435  a2/cout<3>1 (c<2>)
+     LUT5:I4->O            3   0.124   0.730  a3/c<2><1>1 (a3/c<2>)
+     LUT3:I0->O            1   0.124   0.399  a3/Mxor_out_2_xo<0>1 (out_14_OBUF)
+     OBUF:I->O                 0.000          out_14_OBUF (out<14>)
     ----------------------------------------
-    Total                      6.167ns (0.993ns logic, 5.174ns route)
-                                       (16.1% logic, 83.9% route)
+    Total                      5.657ns (0.993ns logic, 4.664ns route)
+                                       (17.6% logic, 82.4% route)
 
 =========================================================================
 
@@ -304,12 +294,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.90 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.02 secs
  
 --> 
 
-Total memory usage is 4689340 kilobytes
+Total memory usage is 4689404 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

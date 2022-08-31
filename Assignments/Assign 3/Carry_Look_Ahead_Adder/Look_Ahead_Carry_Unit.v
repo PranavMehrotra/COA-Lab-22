@@ -18,11 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Look_Ahead_Carry_Unit(input[3:0] g,input[3:0] p,input cin,output[3:0] carry,output P, output G);
+module Look_Ahead_Carry_Unit(input[3:0] g,input[3:0] p,input cin,output[2:0] carry,output carry_out, output P, output G);
 	assign carry[0] = g[0] | (p[0] & cin);
 	assign carry[1] = g[1] | (p[1] & g[0]) | (p[1] & p[0] & cin);
 	assign carry[2] = g[2] | (p[2] & g[1]) | (p[2] & p[1] & g[0]) | (p[2] & p[1] & p[0] & cin);
-	assign carry[3] = g[3] | (p[3] & g[2]) | (p[3] & p[2] & g[1]) | (p[3] & p[2] & p[1] & g[0]) | (p[3] & p[2] & p[1] & p[0] & cin);
+	assign carry_out = g[3] | (p[3] & g[2]) | (p[3] & p[2] & g[1]) | (p[3] & p[2] & p[1] & g[0]) | (p[3] & p[2] & p[1] & p[0] & cin);
 	assign P = (p[0] & p[1] & p[2] & p[3]);
 	assign G = (g[3] | (p[3] & g[2]) | (p[3] & p[2] & g[1]) | (p[3] & p[2] & p[1] & g[0]));
 

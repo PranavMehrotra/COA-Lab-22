@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: CLA_16_bit_LCU.prj
 
@@ -83,7 +83,7 @@ Equivalent register Removal        : YES
 Optimization Goal                  : Speed
 Optimization Effort                : 1
 Power Reduction                    : NO
-Keep Hierarchy                     : No
+Keep Hierarchy                     : Yes
 Netlist Hierarchy                  : As_Optimized
 RTL Output                         : Yes
 Global Optimization                : AllClockNets
@@ -118,9 +118,9 @@ Parsing module <CLA_16_bit_LCU>.
 
 Elaborating module <CLA_16_bit_LCU>.
 
-Elaborating module <CLA_4_bit_augmented>.
-
 Elaborating module <Look_Ahead_Carry_Unit>.
+
+Elaborating module <CLA_4_bit_augmented>.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -132,16 +132,16 @@ Synthesizing Unit <CLA_16_bit_LCU>.
 	no macro.
 Unit <CLA_16_bit_LCU> synthesized.
 
-Synthesizing Unit <CLA_4_bit_augmented>.
-    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 3\Carry_Look_Ahead_Adder\CLA_4_bit_augmented.v".
-    Summary:
-Unit <CLA_4_bit_augmented> synthesized.
-
 Synthesizing Unit <Look_Ahead_Carry_Unit>.
     Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 3\Carry_Look_Ahead_Adder\Look_Ahead_Carry_Unit.v".
     Summary:
 	no macro.
 Unit <Look_Ahead_Carry_Unit> synthesized.
+
+Synthesizing Unit <CLA_4_bit_augmented>.
+    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 3\Carry_Look_Ahead_Adder\CLA_4_bit_augmented.v".
+    Summary:
+Unit <CLA_4_bit_augmented> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -171,6 +171,10 @@ Macro Statistics
 =========================================================================
 
 Optimizing unit <CLA_16_bit_LCU> ...
+
+Optimizing unit <Look_Ahead_Carry_Unit> ...
+
+Optimizing unit <CLA_4_bit_augmented> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -203,12 +207,12 @@ Top Level Output File Name         : CLA_16_bit_LCU.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 46
-#      LUT2                        : 6
-#      LUT3                        : 6
-#      LUT4                        : 7
-#      LUT5                        : 19
-#      LUT6                        : 8
+# BELS                             : 43
+#      LUT2                        : 1
+#      LUT3                        : 9
+#      LUT4                        : 9
+#      LUT5                        : 22
+#      LUT6                        : 2
 # IO Buffers                       : 52
 #      IBUF                        : 33
 #      OBUF                        : 19
@@ -220,14 +224,14 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   46  out of  63400     0%  
-    Number used as Logic:                46  out of  63400     0%  
+ Number of Slice LUTs:                   43  out of  63400     0%  
+    Number used as Logic:                43  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     46
-   Number with an unused Flip Flop:      46  out of     46   100%  
-   Number with an unused LUT:             0  out of     46     0%  
-   Number of fully used LUT-FF pairs:     0  out of     46     0%  
+ Number of LUT Flip Flop pairs used:     43
+   Number with an unused Flip Flop:      43  out of     43   100%  
+   Number with an unused LUT:             0  out of     43     0%  
+   Number of fully used LUT-FF pairs:     0  out of     43     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
@@ -267,7 +271,7 @@ Speed Grade: -1
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 6.075ns
+   Maximum combinational path delay: 5.308ns
 
 Timing Details:
 ---------------
@@ -275,28 +279,33 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 689 / 19
+  Total number of paths / destination ports: 657 / 19
 -------------------------------------------------------------------------
-Delay:               6.075ns (Levels of Logic = 9)
+Delay:               5.308ns (Levels of Logic = 11)
   Source:            in2<1> (PAD)
-  Destination:       out<15> (PAD)
+  Destination:       out<14> (PAD)
 
-  Data Path: in2<1> to out<15>
+  Data Path: in2<1> to out<14>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             4   0.001   0.796  in2_1_IBUF (in2_1_IBUF)
-     LUT4:I0->O            2   0.124   0.925  a0/P<2>_SW0 (N6)
-     LUT5:I0->O            3   0.124   0.730  a0/P<2> (p<0>)
-     LUT3:I0->O            4   0.124   0.939  l1/carry<0>1 (c<0>)
-     LUT6:I1->O            6   0.124   0.569  l1/carry<1><1>1 (c<1>)
-     LUT5:I3->O            2   0.124   0.427  a3/c<2><1>1 (a3/c<2><1>)
-     LUT3:I2->O            1   0.124   0.421  a3/c<2><1>2 (a3/c<2>)
-     LUT5:I4->O            1   0.124   0.399  a3/Mxor_out_3_xo<0>1 (out_15_OBUF)
-     OBUF:I->O                 0.000          out_15_OBUF (out<15>)
+     begin scope: 'a0:in2<1>'
+     LUT4:I0->O            1   0.124   0.919  P<2>_SW0 (N2)
+     LUT5:I0->O            4   0.124   0.736  P<2> (P)
+     end scope: 'a0:P'
+     begin scope: 'l1:p<0>'
+     LUT3:I0->O            4   0.124   0.556  carry<0>1 (carry<0>)
+     LUT5:I3->O            3   0.124   0.435  carry<2><2>1 (carry<2>)
+     end scope: 'l1:carry<2>'
+     begin scope: 'a3:cin'
+     LUT5:I4->O            2   0.124   0.722  c<2><1>1 (c<2>)
+     LUT3:I0->O            1   0.124   0.399  Mxor_out_2_xo<0>1 (out<2>)
+     end scope: 'a3:out<2>'
+     OBUF:I->O                 0.000          out_14_OBUF (out<14>)
     ----------------------------------------
-    Total                      6.075ns (0.869ns logic, 5.206ns route)
-                                       (14.3% logic, 85.7% route)
+    Total                      5.308ns (0.745ns logic, 4.563ns route)
+                                       (14.0% logic, 86.0% route)
 
 =========================================================================
 
@@ -306,12 +315,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.78 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.76 secs
  
 --> 
 
-Total memory usage is 4676216 kilobytes
+Total memory usage is 4689724 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Tue Aug 30 20:00:48 2022">
+  <application stringID="Xst" timeStamp="Wed Aug 31 11:29:59 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -63,7 +63,7 @@
       <item DEFAULT="1" label="-opt_level" stringID="XST_OPTLEVEL" value="1"/>
       <item DEFAULT="No" label="-power" stringID="XST_POWER" value="NO"/>
       <item DEFAULT="No" label="-iuc" stringID="XST_IUC" value="NO"/>
-      <item DEFAULT="No" label="-keep_hierarchy" stringID="XST_KEEPHIERARCHY" value="No"/>
+      <item DEFAULT="No" label="-keep_hierarchy" stringID="XST_KEEPHIERARCHY" value="Yes"/>
       <item DEFAULT="As_Optimized" label="-netlist_hierarchy" stringID="XST_NETLISTHIERARCHY" value="As_Optimized"/>
       <item DEFAULT="No" label="-rtlview" stringID="XST_RTLVIEW" value="Yes"/>
       <item DEFAULT="AllClockNets" label="-glob_opt" stringID="XST_GLOBOPT" value="AllClockNets"/>

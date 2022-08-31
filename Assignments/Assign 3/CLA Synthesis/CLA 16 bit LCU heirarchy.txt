@@ -12,7 +12,7 @@ Total CPU time to Xst completion: 0.09 secs
 Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.09 secs
  
---> Reading design: CLA_16_bit_ripple.prj
+--> Reading design: CLA_16_bit_LCU.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -40,16 +40,16 @@ TABLE OF CONTENTS
 *                      Synthesis Options Summary                        *
 =========================================================================
 ---- Source Parameters
-Input File Name                    : "CLA_16_bit_ripple.prj"
+Input File Name                    : "CLA_16_bit_LCU.prj"
 Ignore Synthesis Constraint File   : NO
 
 ---- Target Parameters
-Output File Name                   : "CLA_16_bit_ripple"
+Output File Name                   : "CLA_16_bit_LCU"
 Output Format                      : NGC
 Target Device                      : xc7a100t-1-csg324
 
 ---- Source Options
-Top Module Name                    : CLA_16_bit_ripple
+Top Module Name                    : CLA_16_bit_LCU
 Automatic FSM Extraction           : YES
 FSM Encoding Algorithm             : Auto
 Safe Implementation                : No
@@ -105,33 +105,43 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 3\Carry_Look_Ahead_Adder\CLA_4_bit.v" into library work
-Parsing module <CLA_4_bit>.
-Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 3\Carry_Look_Ahead_Adder\CLA_16_bit_ripple.v" into library work
-Parsing module <CLA_16_bit_ripple>.
+Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 3\Carry_Look_Ahead_Adder\Look_Ahead_Carry_Unit.v" into library work
+Parsing module <Look_Ahead_Carry_Unit>.
+Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 3\Carry_Look_Ahead_Adder\CLA_4_bit_augmented.v" into library work
+Parsing module <CLA_4_bit_augmented>.
+Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 3\Carry_Look_Ahead_Adder\CLA_16_bit_LCU.v" into library work
+Parsing module <CLA_16_bit_LCU>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
 
-Elaborating module <CLA_16_bit_ripple>.
+Elaborating module <CLA_16_bit_LCU>.
 
-Elaborating module <CLA_4_bit>.
+Elaborating module <Look_Ahead_Carry_Unit>.
+
+Elaborating module <CLA_4_bit_augmented>.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
-Synthesizing Unit <CLA_16_bit_ripple>.
-    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 3\Carry_Look_Ahead_Adder\CLA_16_bit_ripple.v".
+Synthesizing Unit <CLA_16_bit_LCU>.
+    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 3\Carry_Look_Ahead_Adder\CLA_16_bit_LCU.v".
     Summary:
 	no macro.
-Unit <CLA_16_bit_ripple> synthesized.
+Unit <CLA_16_bit_LCU> synthesized.
 
-Synthesizing Unit <CLA_4_bit>.
-    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 3\Carry_Look_Ahead_Adder\CLA_4_bit.v".
+Synthesizing Unit <Look_Ahead_Carry_Unit>.
+    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 3\Carry_Look_Ahead_Adder\Look_Ahead_Carry_Unit.v".
     Summary:
-Unit <CLA_4_bit> synthesized.
+	no macro.
+Unit <Look_Ahead_Carry_Unit> synthesized.
+
+Synthesizing Unit <CLA_4_bit_augmented>.
+    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 3\Carry_Look_Ahead_Adder\CLA_4_bit_augmented.v".
+    Summary:
+Unit <CLA_4_bit_augmented> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -160,13 +170,15 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 
-Optimizing unit <CLA_16_bit_ripple> ...
+Optimizing unit <CLA_16_bit_LCU> ...
 
-Optimizing unit <CLA_4_bit> ...
+Optimizing unit <Look_Ahead_Carry_Unit> ...
+
+Optimizing unit <CLA_4_bit_augmented> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block CLA_16_bit_ripple, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block CLA_16_bit_LCU, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -191,16 +203,19 @@ Partition Implementation Status
 *                            Design Summary                             *
 =========================================================================
 
-Top Level Output File Name         : CLA_16_bit_ripple.ngc
+Top Level Output File Name         : CLA_16_bit_LCU.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 24
-#      LUT3                        : 8
-#      LUT5                        : 16
-# IO Buffers                       : 50
+# BELS                             : 43
+#      LUT2                        : 1
+#      LUT3                        : 9
+#      LUT4                        : 9
+#      LUT5                        : 22
+#      LUT6                        : 2
+# IO Buffers                       : 52
 #      IBUF                        : 33
-#      OBUF                        : 17
+#      OBUF                        : 19
 
 Device utilization summary:
 ---------------------------
@@ -209,19 +224,19 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   24  out of  63400     0%  
-    Number used as Logic:                24  out of  63400     0%  
+ Number of Slice LUTs:                   43  out of  63400     0%  
+    Number used as Logic:                43  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     24
-   Number with an unused Flip Flop:      24  out of     24   100%  
-   Number with an unused LUT:             0  out of     24     0%  
-   Number of fully used LUT-FF pairs:     0  out of     24     0%  
+ Number of LUT Flip Flop pairs used:     43
+   Number with an unused Flip Flop:      43  out of     43   100%  
+   Number with an unused LUT:             0  out of     43     0%  
+   Number of fully used LUT-FF pairs:     0  out of     43     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                          50
- Number of bonded IOBs:                  50  out of    210    23%  
+ Number of IOs:                          52
+ Number of bonded IOBs:                  52  out of    210    24%  
 
 Specific Feature Utilization:
 
@@ -256,7 +271,7 @@ Speed Grade: -1
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 6.167ns
+   Maximum combinational path delay: 5.308ns
 
 Timing Details:
 ---------------
@@ -264,37 +279,33 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 321 / 17
+  Total number of paths / destination ports: 657 / 19
 -------------------------------------------------------------------------
-Delay:               6.167ns (Levels of Logic = 14)
+Delay:               5.308ns (Levels of Logic = 11)
   Source:            in2<1> (PAD)
-  Destination:       cout (PAD)
+  Destination:       out<14> (PAD)
 
-  Data Path: in2<1> to cout
+  Data Path: in2<1> to out<14>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   0.001   0.925  in2_1_IBUF (in2_1_IBUF)
+     IBUF:I->O             4   0.001   0.796  in2_1_IBUF (in2_1_IBUF)
      begin scope: 'a0:in2<1>'
-     LUT5:I0->O            3   0.124   0.550  cout21 (cout_bdd2)
-     LUT5:I3->O            3   0.124   0.550  cout1 (cout)
-     end scope: 'a0:cout'
-     begin scope: 'a1:cin'
-     LUT5:I3->O            3   0.124   0.550  cout21 (cout_bdd2)
-     LUT5:I3->O            3   0.124   0.550  cout1 (cout)
-     end scope: 'a1:cout'
-     begin scope: 'a2:cin'
-     LUT5:I3->O            3   0.124   0.550  cout21 (cout_bdd2)
-     LUT5:I3->O            3   0.124   0.550  cout1 (cout)
-     end scope: 'a2:cout'
+     LUT4:I0->O            1   0.124   0.919  P<2>_SW0 (N2)
+     LUT5:I0->O            4   0.124   0.736  P<2> (P)
+     end scope: 'a0:P'
+     begin scope: 'l1:p<0>'
+     LUT3:I0->O            4   0.124   0.556  carry<0>1 (carry<0>)
+     LUT5:I3->O            3   0.124   0.435  carry<2><2>1 (carry<2>)
+     end scope: 'l1:carry<2>'
      begin scope: 'a3:cin'
-     LUT5:I3->O            3   0.124   0.550  cout21 (cout_bdd2)
-     LUT5:I3->O            1   0.124   0.399  cout1 (cout)
-     end scope: 'a3:cout'
-     OBUF:I->O                 0.000          cout_OBUF (cout)
+     LUT5:I4->O            2   0.124   0.722  c<2><1>1 (c<2>)
+     LUT3:I0->O            1   0.124   0.399  Mxor_out_2_xo<0>1 (out<2>)
+     end scope: 'a3:out<2>'
+     OBUF:I->O                 0.000          out_14_OBUF (out<14>)
     ----------------------------------------
-    Total                      6.167ns (0.993ns logic, 5.174ns route)
-                                       (16.1% logic, 83.9% route)
+    Total                      5.308ns (0.745ns logic, 4.563ns route)
+                                       (14.0% logic, 86.0% route)
 
 =========================================================================
 
@@ -305,11 +316,11 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.90 secs
+Total CPU time to Xst completion: 7.91 secs
  
 --> 
 
-Total memory usage is 4689340 kilobytes
+Total memory usage is 4689724 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
