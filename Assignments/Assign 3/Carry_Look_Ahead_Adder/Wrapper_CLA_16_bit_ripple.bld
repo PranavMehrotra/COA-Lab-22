@@ -1,0 +1,37 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: D:\Softwares\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc timing.ucf -p xc7a100t-csg324-1
+Wrapper_CLA_16_bit_ripple.ngc Wrapper_CLA_16_bit_ripple.ngd
+
+Reading NGO file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign
+3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_ripple.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "timing.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 4440476 kilobytes
+
+Writing NGD file "Wrapper_CLA_16_bit_ripple.ngd" ...
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   5 sec
+
+Writing NGDBUILD log file "Wrapper_CLA_16_bit_ripple.bld"...
