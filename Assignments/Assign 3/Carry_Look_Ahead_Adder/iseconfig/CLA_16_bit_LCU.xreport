@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-08-31T12:16:43</DateModified>
+  <DateModified>2022-08-31T12:50:42</DateModified>
   <ModuleName>CLA_16_bit_LCU</ModuleName>
-  <SummaryTimeStamp>2022-08-31T11:16:16</SummaryTimeStamp>
+  <SummaryTimeStamp>2022-08-31T12:44:57</SummaryTimeStamp>
   <SavedFilePath>D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/iseconfig/CLA_16_bit_LCU.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder\</ImplementationReportsDirectory>
-  <DateInitialized>2022-08-31T11:16:01</DateInitialized>
+  <DateInitialized>2022-08-31T12:44:56</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
