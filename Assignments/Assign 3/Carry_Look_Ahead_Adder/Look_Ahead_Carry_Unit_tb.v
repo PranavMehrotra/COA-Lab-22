@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   21:10:29 08/30/2022
+// Create Date:   14:24:45 08/31/2022
 // Design Name:   Look_Ahead_Carry_Unit
 // Module Name:   D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Look_Ahead_Carry_Unit_tb.v
 // Project Name:  Carry_Look_Ahead_Adder
@@ -30,7 +30,8 @@ module Look_Ahead_Carry_Unit_tb;
 	reg cin;
 
 	// Outputs
-	wire [3:0] carry;
+	wire [2:0] carry;
+	wire carry_out;
 	wire P;
 	wire G;
 
@@ -40,6 +41,7 @@ module Look_Ahead_Carry_Unit_tb;
 		.p(p), 
 		.cin(cin), 
 		.carry(carry), 
+		.carry_out(carry_out), 
 		.P(P), 
 		.G(G)
 	);

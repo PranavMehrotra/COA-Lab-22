@@ -11,8 +11,8 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-g = 1001, p = 0010, cin = 0, carry = 1011, P = 0, G = 1
-g = 0101, p = 0100, cin = 0, carry = 0101, P = 0, G = 0
-g = 1011, p = 1100, cin = 0, carry = 1111, P = 0, G = 1
-g = 0000, p = 1111, cin = 1, carry = 1111, P = 1, G = 0
-g = 1111, p = 0001, cin = 1, carry = 1111, P = 0, G = 1
+g = 1001, p = 0010, cin = 0, carry = 011, P = 0, G = 1
+g = 0101, p = 0100, cin = 0, carry = 101, P = 0, G = 0
+g = 1011, p = 1100, cin = 0, carry = 111, P = 0, G = 1
+g = 0000, p = 1111, cin = 1, carry = 111, P = 1, G = 0
+g = 1111, p = 0001, cin = 1, carry = 111, P = 0, G = 1

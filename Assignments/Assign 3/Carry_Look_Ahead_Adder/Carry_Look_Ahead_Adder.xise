@@ -61,9 +61,9 @@
     </file>
     <file xil_pn:name="Look_Ahead_Carry_Unit_tb.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="57"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="57"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="57"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="86"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="86"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="86"/>
     </file>
   </files>
 
