@@ -17,30 +17,10 @@ prompt0:
     .asciiz "Please give 10 integers for the array: \n"                                         #prompt message to input 10 elements
 prompt1:
     .asciiz "Enter an integer: "                                                                #prompt message for input of individual array elements
-# prompt2:
-#     .asciiz "Enter the value of k: "                                                            # prompt message for input of k 
-# prompt3:
-#     .asciiz "\nThe "                                                                            #prompt message for output first part
-# prompt4:
-#     .asciiz " largest element is: "                                                             #prompt message for output second part
-# first:
-#     .asciiz "st"                                                                                # message if k==1
-# second:
-#     .asciiz "nd"                                                                                # message if k==2
-# third:
-#     .asciiz "rd"                                                                                # message if k==3
-# nth:
-#     .asciiz "th"                                                                                # message if k>3
 nl:
     .asciiz "\n"                                                                                #output new line
 print_message:
-    .asciiz "The sorted array is: "
-# error_k_g:
-#     .asciiz "ERROR: k entered greater than the length of the array"                             #error message for k greater than array length
-# error_k_s:
-#     .asciiz "ERROR: k entered is zero or negative"                                              #error message for k is zero or negative
-# try_again:
-#     .asciiz "Try again"                                                                         # if error in k, then try again
+    .asciiz "Sorted array : "
 espace:
     .asciiz ", "
 
@@ -169,7 +149,6 @@ sort_array:
             add $a0,$t5,$s4
             add $a1,$t5,$s3
             jal swap
-            # Store l, r and right in stack, no other way.
             sw $t2,4($sp)
             sw $t3,8($sp)
             sw $t4,12($sp)
@@ -200,6 +179,7 @@ sort_array:
             lw $t4,12($sp)
             lw $t6,16($sp)
             lw $t7,20($sp)
+            j ret
         swap_l_r:
             sll $s2,$t2,2
             sll $s3,$t3,2
