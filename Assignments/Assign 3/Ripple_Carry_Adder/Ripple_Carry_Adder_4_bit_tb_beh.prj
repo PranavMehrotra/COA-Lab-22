@@ -1,0 +1,4 @@
+verilog work "full_adder.v"
+verilog work "Ripple_Carry_Adder_4_bit.v"
+verilog work "Ripple_Carry_Adder_4_bit_tb.v"
+verilog work "D:/Softwares/14.7/ISE_DS/ISE//verilog/src/glbl.v"

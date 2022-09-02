@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Aug 31 15:51:01 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+TIMEGRP clk = BEL "cin_reg" BEL "in1_reg_0" BEL "in1_reg_1" BEL "in1_reg_2"
+        BEL "in1_reg_3" BEL "in1_reg_4" BEL "in1_reg_5" BEL "in1_reg_6" BEL
+        "in1_reg_7" BEL "in1_reg_8" BEL "in1_reg_9" BEL "in1_reg_10" BEL
+        "in1_reg_11" BEL "in1_reg_12" BEL "in1_reg_13" BEL "in1_reg_14" BEL
+        "in1_reg_15" BEL "in2_reg_0" BEL "in2_reg_1" BEL "in2_reg_2" BEL
+        "in2_reg_3" BEL "in2_reg_4" BEL "in2_reg_5" BEL "in2_reg_6" BEL
+        "in2_reg_7" BEL "in2_reg_8" BEL "in2_reg_9" BEL "in2_reg_10" BEL
+        "in2_reg_11" BEL "in2_reg_12" BEL "in2_reg_13" BEL "in2_reg_14" BEL
+        "in2_reg_15" BEL "cout" BEL "out_0" BEL "out_1" BEL "out_2" BEL
+        "out_3" BEL "out_4" BEL "out_5" BEL "out_6" BEL "out_7" BEL "out_8"
+        BEL "out_9" BEL "out_10" BEL "out_11" BEL "out_12" BEL "out_13" BEL
+        "out_14" BEL "out_15" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 4.5 ns HIGH 50%;
+SCHEMATIC END;
+

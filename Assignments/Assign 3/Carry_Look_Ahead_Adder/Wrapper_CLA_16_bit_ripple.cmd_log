@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_ripple.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_ripple.syr" 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_ripple.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_ripple.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timing.ucf -p xc7a100t-csg324-1 "Wrapper_CLA_16_bit_ripple.ngc" Wrapper_CLA_16_bit_ripple.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Wrapper_CLA_16_bit_ripple_map.ncd Wrapper_CLA_16_bit_ripple.ngd Wrapper_CLA_16_bit_ripple.pcf 
+par -w -intstyle ise -ol high -mt off Wrapper_CLA_16_bit_ripple_map.ncd Wrapper_CLA_16_bit_ripple.ncd Wrapper_CLA_16_bit_ripple.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Wrapper_CLA_16_bit_ripple.twx Wrapper_CLA_16_bit_ripple.ncd -o Wrapper_CLA_16_bit_ripple.twr Wrapper_CLA_16_bit_ripple.pcf -ucf timing.ucf 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_ripple.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_ripple.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timing.ucf -p xc7a100t-csg324-1 "Wrapper_CLA_16_bit_ripple.ngc" Wrapper_CLA_16_bit_ripple.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Wrapper_CLA_16_bit_ripple_map.ncd Wrapper_CLA_16_bit_ripple.ngd Wrapper_CLA_16_bit_ripple.pcf 
+par -w -intstyle ise -ol high -mt off Wrapper_CLA_16_bit_ripple_map.ncd Wrapper_CLA_16_bit_ripple.ncd Wrapper_CLA_16_bit_ripple.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Wrapper_CLA_16_bit_ripple.twx Wrapper_CLA_16_bit_ripple.ncd -o Wrapper_CLA_16_bit_ripple.twr Wrapper_CLA_16_bit_ripple.pcf -ucf timing.ucf 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_ripple.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_ripple.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timing.ucf -p xc7a100t-csg324-1 "Wrapper_CLA_16_bit_ripple.ngc" Wrapper_CLA_16_bit_ripple.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Wrapper_CLA_16_bit_ripple_map.ncd Wrapper_CLA_16_bit_ripple.ngd Wrapper_CLA_16_bit_ripple.pcf 
+par -w -intstyle ise -ol high -mt off Wrapper_CLA_16_bit_ripple_map.ncd Wrapper_CLA_16_bit_ripple.ncd Wrapper_CLA_16_bit_ripple.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Wrapper_CLA_16_bit_ripple.twx Wrapper_CLA_16_bit_ripple.ncd -o Wrapper_CLA_16_bit_ripple.twr Wrapper_CLA_16_bit_ripple.pcf -ucf timing.ucf 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_ripple.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_ripple.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timing.ucf -p xc7a100t-csg324-1 "Wrapper_CLA_16_bit_ripple.ngc" Wrapper_CLA_16_bit_ripple.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Wrapper_CLA_16_bit_ripple_map.ncd Wrapper_CLA_16_bit_ripple.ngd Wrapper_CLA_16_bit_ripple.pcf 
+par -w -intstyle ise -ol high -mt off Wrapper_CLA_16_bit_ripple_map.ncd Wrapper_CLA_16_bit_ripple.ncd Wrapper_CLA_16_bit_ripple.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Wrapper_CLA_16_bit_ripple.twx Wrapper_CLA_16_bit_ripple.ncd -o Wrapper_CLA_16_bit_ripple.twr Wrapper_CLA_16_bit_ripple.pcf -ucf timing.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timing.ucf -p xc7a100t-csg324-1 "Wrapper_CLA_16_bit_ripple.ngc" Wrapper_CLA_16_bit_ripple.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Wrapper_CLA_16_bit_ripple_map.ncd Wrapper_CLA_16_bit_ripple.ngd Wrapper_CLA_16_bit_ripple.pcf 
+par -w -intstyle ise -ol high -mt off Wrapper_CLA_16_bit_ripple_map.ncd Wrapper_CLA_16_bit_ripple.ncd Wrapper_CLA_16_bit_ripple.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Wrapper_CLA_16_bit_ripple.twx Wrapper_CLA_16_bit_ripple.ncd -o Wrapper_CLA_16_bit_ripple.twr Wrapper_CLA_16_bit_ripple.pcf -ucf timing.ucf 

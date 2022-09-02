@@ -1,0 +1,29 @@
+Command line:
+   CLA_16_bit_LCU_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51638
+
+Wed Aug 31 14:19:01 2022
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5150.02 Meg
+
+ Total Signals          : 70
+ Total Nets             : 124
+ Total Signal Drivers   : 50
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 52
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 237
+Total Line Count : 69
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 5464.59 Meg
+
+Wed Aug 31 14:19:39 2022
+

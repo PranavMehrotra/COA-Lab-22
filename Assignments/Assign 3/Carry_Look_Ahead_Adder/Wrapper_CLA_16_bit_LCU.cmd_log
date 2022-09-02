@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_LCU.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_LCU.syr" 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_LCU.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_LCU.syr" 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_LCU.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_LCU.syr" 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_LCU.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_LCU.syr" 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_LCU.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_LCU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-1 "Wrapper_CLA_16_bit_LCU.ngc" Wrapper_CLA_16_bit_LCU.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Wrapper_CLA_16_bit_LCU_map.ncd Wrapper_CLA_16_bit_LCU.ngd Wrapper_CLA_16_bit_LCU.pcf 
+par -w -intstyle ise -ol high -mt off Wrapper_CLA_16_bit_LCU_map.ncd Wrapper_CLA_16_bit_LCU.ncd Wrapper_CLA_16_bit_LCU.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Wrapper_CLA_16_bit_LCU.twx Wrapper_CLA_16_bit_LCU.ncd -o Wrapper_CLA_16_bit_LCU.twr Wrapper_CLA_16_bit_LCU.pcf 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_LCU.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 3/Carry_Look_Ahead_Adder/Wrapper_CLA_16_bit_LCU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-1 "Wrapper_CLA_16_bit_LCU.ngc" Wrapper_CLA_16_bit_LCU.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Wrapper_CLA_16_bit_LCU_map.ncd Wrapper_CLA_16_bit_LCU.ngd Wrapper_CLA_16_bit_LCU.pcf 
+par -w -intstyle ise -ol high -mt off Wrapper_CLA_16_bit_LCU_map.ncd Wrapper_CLA_16_bit_LCU.ncd Wrapper_CLA_16_bit_LCU.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Wrapper_CLA_16_bit_LCU.twx Wrapper_CLA_16_bit_LCU.ncd -o Wrapper_CLA_16_bit_LCU.twr Wrapper_CLA_16_bit_LCU.pcf 
