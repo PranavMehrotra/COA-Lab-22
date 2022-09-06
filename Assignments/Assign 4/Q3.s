@@ -37,7 +37,7 @@ full_stop:
     # $s0 : length
     # $s1 : key (to search)
 main:                                                                                           # Main starts
-    li $s0,10                                                                                   #Declaring length of array
+    li $s0,10                                                                                   # Declaring length of array
     jal inp_arr                                                                                 # Calling array input function
     jal inp_k                                                                                   # Calling k input function
     move $s1,$v0                                                                                # Store the key in $s1
@@ -47,7 +47,7 @@ main:                                                                           
     syscall                                                                                     # Printing new line
 
     la $a0,array                                                                                # Loading address of array
-    # li $t0,0                                                                                    # Initializing i to 0, for sort function
+    # li $t0,0                                                                                  # Initializing i to 0, for sort function
     li $a1,0
     li $a2,9
     jal sort_array                                                                              # Calling sort function
@@ -154,7 +154,7 @@ swap:                                                                           
     sw $t8,0($a1)                                                                               # Storing first element in second element's address
     jr $ra                                                                                      # return to caller function
 
-
+# Registers and Stack Positions of different variables
 # t2, 4($sp) : l
 # t3, 8($sp) : r
 # t4, 12($sp): p
@@ -162,147 +162,171 @@ swap:                                                                           
 # a1,t6, 16($sp) : left
 # a2,t7, 20($sp) : right
 
-sort_array:
-    addi $sp,$sp,-24
-    sw $ra,0($sp)
-    move $t2,$a1
-    move $t3,$a2
-    move $t4,$a1
-    move $t5,$a0
-    move $t6,$a1
-    move $t7,$a2
-    while:
-        bge $t2,$t3,return_sort
-        while_l_p:
-            bge $t2,$t7,while_r_p
+sort_array:                                                                                     # Function to sort the array in ascending order, using recursive sort
+    addi $sp,$sp,-24                                                                            # Making space for 6 variables
+    sw $ra,0($sp)                                                                               # Storing return address in stack
+    move $t2,$a1                                                                                # Initialising l to 'left' in t2
+    move $t3,$a2                                                                                # Initialising r to 'right' in t3
+    move $t4,$a1                                                                                # Initialising p to 'left' in t4
+    move $t5,$a0                                                                                # Initialising address of A to $t5
+    move $t6,$a1                                                                                # Storing 'left' in t6
+    move $t7,$a2                                                                                # Storing 'right' in t7
+    while:                                                                                      # Loop to sort the array
+        bge $t2,$t3,ret                                                                         # if l >= r, then break the loop and return
+        while_l_p:                                                                              # Inner while loop to increment l, upto  A[l] <= A[p] and l < right
+            bge $t2,$t7,while_r_p                                                               # break the loop if l >= right
+            # Loading A[l] and A[p] in $s2 and $s4 to compare the second condition of the loop
             sll $s2,$t2,2
             sll $s4,$t4,2
             add $s2,$s2,$t5
             add $s4,$s4,$t5
             lw $s2,0($s2)
             lw $s4,0($s4)
-            bgt $s2,$s4,while_r_p
-            addi $t2,$t2,1
-            j while_l_p
-        while_r_p:
-            ble $t3,$t6,if_l_r
+            bgt $s2,$s4,while_r_p                                                               # If A[l] > A[p], then break the loop
+            addi $t2,$t2,1                                                                      # Else add 1 to l
+            j while_l_p                                                                         # Continue the loop
+        while_r_p:                                                                              # Inner while loop to decrement r, upto A[r] >= A[p] and r > left
+            ble $t3,$t6,if_l_r                                                                  # break the loop if r <= left
+            # Loading A[r] and A[p] in $s3 and $s4 to compare the second condition of the loop
             sll $s3,$t3,2
             sll $s4,$t4,2
             add $s3,$s3,$t5
             add $s4,$s4,$t5
             lw $s3,0($s3)
             lw $s4,0($s4)
-            blt $s3,$s4,if_l_r
-            addi $t3,$t3,-1
-            j while_r_p
-        if_l_r:
-            blt $t2,$t3,swap_l_r
+            blt $s3,$s4,if_l_r                                                                  # If A[r] < A[p], then break the loop
+            addi $t3,$t3,-1                                                                     # Else decrement r by 1
+            j while_r_p                                                                         # Continue the loop
+        if_l_r:                                                                                 # If l>=r, then
+            blt $t2,$t3,swap_l_r                                                                # If l<r, then branch to Swap(A[l],A[r])
+            # Else , Swap A[p] and A[r]
             sll $s4,$t4,2
             sll $s3,$t3,2
-            add $a0,$t5,$s4
+            # Load addresses of A[p] and A[r] in $a0 and $a1
+            add $a0,$t5,$s4 
             add $a1,$t5,$s3
-            jal swap
+            jal swap                                                                            # Call Swap
+            # Store all 5 variables in stack
             sw $t2,4($sp)
             sw $t3,8($sp)
             sw $t4,12($sp)
             sw $t6,16($sp)
             sw $t7,20($sp)
+            # Load the parameters in a0, a1 and a2
             move $a0,$t5
             move $a1,$t6
             move $a2,$t3
             addi $a2,$a2,-1
-            jal sort_array
+            jal sort_array                                                                      # Recursive call to sort_array
+            # Load all 5 variables from stack, after the recursive call to function returns
             lw $t2,4($sp)
             lw $t3,8($sp)
             lw $t4,12($sp)
             lw $t6,16($sp)
             lw $t7,20($sp)
+            # Load the parameters in a0, a1 and a2
             move $a0,$t5
             move $a1,$t3
             addi $a1,$a1,1
             move $a2,$t7
+            # Store all 5 variables in stack
             sw $t2,4($sp)
             sw $t3,8($sp)
             sw $t4,12($sp)
             sw $t6,16($sp)
             sw $t7,20($sp)
-            jal sort_array
+            jal sort_array                                                                      # Recursive call to sort_array
+            # Load all 5 variables from stack, after the recursive call to function returns
             lw $t2,4($sp)
             lw $t3,8($sp)
             lw $t4,12($sp)
             lw $t6,16($sp)
             lw $t7,20($sp)
-            j return_sort
+            j ret                                                                               # Return from the function and pass the control to the caller function
+        # If l<r, then Swap(A[l],A[r])
         swap_l_r:
             sll $s2,$t2,2
             sll $s3,$t3,2
-            add $a0,$t5,$s2
-            add $a1,$t5,$s3
-            jal swap
-    j while
+            add $a0,$t5,$s2                                                                     # Load address of A[l] in $a0
+            add $a1,$t5,$s3                                                                     # Load address of A[r] in $a1
+            jal swap                                                                            # Call Swap
+    j while                                                                                     # Continue the loop
 
+# Function to return from sort function by loading the return address from current stack pointer
+# and releasing the space by incrementing the stack pointer
+# and passing the control to the caller function
 return_sort:
     lw $ra,0($sp)
     addi $sp,$sp,24
     j return
 
+# Registers of different variables used in the function
 # $t1 : start
 # $t2 : end
 # $t3 : mid1
 # $t4 : mid2
 # $t5 : (end - start)/3
 # $t6 : 3
-recursive_search:
-    addi $sp,$sp,-4
-    sw $ra,0($sp)
-    move $t1,$a1
-    move $t2,$a2
-    bgt $t1,$t2,not_found
+recursive_search:                                                                               # Function to search for the element in the array using recursive search
+    addi $sp,$sp,-4                                                                             # Decrement stack pointer by 4,to create space for return address
+    sw $ra,0($sp)                                                                               # Store return address in stack
+    move $t1,$a1                                                                                # Store 'start' in t1
+    move $t2,$a2                                                                                # Store 'end' in t2
+    bgt $t1,$t2,not_found                                                                       # If start > end, then branch to not_found and return -1
+    # Calculate mid1 and mid2
     move $t3,$t1
     move $t4,$t2
-    sub $t5,$t2,$t1
-    li $t6,3
-    div $t5,$t6
-    mflo $t5
-    add $t3,$t3,$t5
-    sub $t4,$t4,$t5
+    sub $t5,$t2,$t1                                                                             # Calculate (end - start)
+    li $t6,3                                                                                    # Load 3 in t6
+    div $t5,$t6                                                                                 # Calculate (end - start)/3
+    mflo $t5                                                                                    # Store the quotient in t5 by moving the value from 'lo' register to t5
+    add $t3,$t3,$t5                                                                             # Calculate mid1
+    sub $t4,$t4,$t5                                                                             # Calculate mid2
+    # Load A[mid1] and A[mid2] in $s3 and $s4
     sll $s3,$t3,2
     sll $s4,$t4,2
     add $s3,$s3,$a0
     add $s4,$s4,$a0
     lw $s3,0($s3)
     lw $s4,0($s4)
-    beq $a3,$s3,mid1
-    beq $a3,$s4,mid2
-    blt $a3,$s3,less_than
-    bgt $a3,$s4,greater_than
+    beq $a3,$s3,mid1                                                                            # If A[mid1] == key, then branch to 'mid1'
+    beq $a3,$s4,mid2                                                                            # If A[mid2] == key, then branch to 'mid2'
+    blt $a3,$s3,less_than                                                                       # If key < A[mid1], then branch to 'less_than'
+    bgt $a3,$s4,greater_than                                                                    # If key > A[mid2], then branch to 'greater_than'
     # Else
+    # Load the parameters in a1 and a2, mid1+1 and mid2-1 in a1 and a2 respectively
+    # a0 still contains the address of the array
     move $a1,$t3
     move $a2,$t4
     addi $a1,$a1,1
     addi $a2,$a2,-1
-    jal recursive_search
-    j return_recursive_search
+    jal recursive_search                                                                        # Recursive call to recursive_search
+    j return_recursive_search                                                                   # Jump to return_recursive_search, to load the return address from stack and return the control to the caller function
     mid1:
-        move $v0,$t3
-        j return_recursive_search
+        move $v0,$t3                                                                            # Load mid1 in v0, to return mid1 as the answer
+        j return_recursive_search                                                               # Jump to return_recursive_search, to load the return address from stack and return the control to the caller function
     mid2:
-        move $v0,$t4
-        j return_recursive_search
+        move $v0,$t4                                                                            # Load mid2 in v0, to return mid2 as the answer
+        j return_recursive_search                                                               # Jump to return_recursive_search, to load the return address from stack and return the control to the caller function
     less_than:
+        # Load mid1-1 in a2
         move $a2,$t3
         addi $a2,$a2,-1
-        jal recursive_search
-        j return_recursive_search
+        jal recursive_search                                                                    # Recursive call to recursive_search
+        j return_recursive_search                                                               # Jump to return_recursive_search, to load the return address from stack and return the control to the caller function
     greater_than:
+        # Load mid2+1 in a1
         move $a1,$t4
         addi $a1,$a1,1
-        jal recursive_search
-        j return_recursive_search    
+        jal recursive_search                                                                    # Recursive call to recursive_search
+        j return_recursive_search                                                               # Jump to return_recursive_search, to load the return address from stack and return the control to the caller function
     not_found:
-        li $v0,-1
-        j return_recursive_search
+        li $v0,-1                                                                               # Load -1 in v0, to return -1 as the answer, No key found
+        j return_recursive_search                                                               # Jump to return_recursive_search, to load the return address from stack and return the control to the caller function
 
+# Function to return from recursive search function by loading the return address from current stack pointer
+# and releasing the space by incrementing the stack pointer
+# and passing the control to the caller function
 return_recursive_search:
     lw $ra,0($sp)
     addi $sp,$sp,4

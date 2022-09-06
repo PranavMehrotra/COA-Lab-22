@@ -29,9 +29,9 @@ espace:
     # Use of different registers as variables
 
 main:                                                                                           # Main starts
-    li $s0,10                                                                                   #Declaring length of array
+    li $s0,10                                                                                   # Declaring length of array
     jal inp_arr                                                                                 # Calling array input function
-    # jal inp_k                                                                                   # Calling k input function
+    # jal inp_k                                                                                 # Calling k input function
 
     la $a0,nl                                                                                   # Loading address of new line
     li $v0,4
@@ -101,7 +101,7 @@ swap:                                                                           
     sw $t8,0($a1)                                                                               # Storing first element in second element's address
     jr $ra                                                                                      # return to caller function
 
-
+# Registers and Stack Positions of different variables
 # t2, 4($sp) : l
 # t3, 8($sp) : r
 # t4, 12($sp): p
@@ -109,90 +109,103 @@ swap:                                                                           
 # a1,t6, 16($sp) : left
 # a2,t7, 20($sp) : right
 
-sort_array:
-    addi $sp,$sp,-24
-    sw $ra,0($sp)
-    move $t2,$a1
-    move $t3,$a2
-    move $t4,$a1
-    move $t5,$a0
-    move $t6,$a1
-    move $t7,$a2
-    while:
-        bge $t2,$t3,ret
-        while_l_p:
-            bge $t2,$t7,while_r_p
+sort_array:                                                                                     # Function to sort the array in ascending order, using recursive sort
+    addi $sp,$sp,-24                                                                            # Making space for 6 variables
+    sw $ra,0($sp)                                                                               # Storing return address in stack
+    move $t2,$a1                                                                                # Initialising l to 'left' in t2
+    move $t3,$a2                                                                                # Initialising r to 'right' in t3
+    move $t4,$a1                                                                                # Initialising p to 'left' in t4
+    move $t5,$a0                                                                                # Initialising address of A to $t5
+    move $t6,$a1                                                                                # Storing 'left' in t6
+    move $t7,$a2                                                                                # Storing 'right' in t7
+    while:                                                                                      # Loop to sort the array
+        bge $t2,$t3,ret                                                                         # if l >= r, then break the loop and return
+        while_l_p:                                                                              # Inner while loop to increment l, upto  A[l] <= A[p] and l < right
+            bge $t2,$t7,while_r_p                                                               # break the loop if l >= right
+            # Loading A[l] and A[p] in $s2 and $s4 to compare the second condition of the loop
             sll $s2,$t2,2
             sll $s4,$t4,2
             add $s2,$s2,$t5
             add $s4,$s4,$t5
             lw $s2,0($s2)
             lw $s4,0($s4)
-            bgt $s2,$s4,while_r_p
-            addi $t2,$t2,1
-            j while_l_p
-        while_r_p:
-            ble $t3,$t6,if_l_r
+            bgt $s2,$s4,while_r_p                                                               # If A[l] > A[p], then break the loop
+            addi $t2,$t2,1                                                                      # Else add 1 to l
+            j while_l_p                                                                         # Continue the loop
+        while_r_p:                                                                              # Inner while loop to decrement r, upto A[r] >= A[p] and r > left
+            ble $t3,$t6,if_l_r                                                                  # break the loop if r <= left
+            # Loading A[r] and A[p] in $s3 and $s4 to compare the second condition of the loop
             sll $s3,$t3,2
             sll $s4,$t4,2
             add $s3,$s3,$t5
             add $s4,$s4,$t5
             lw $s3,0($s3)
             lw $s4,0($s4)
-            blt $s3,$s4,if_l_r
-            addi $t3,$t3,-1
-            j while_r_p
-        if_l_r:
-            blt $t2,$t3,swap_l_r
+            blt $s3,$s4,if_l_r                                                                  # If A[r] < A[p], then break the loop
+            addi $t3,$t3,-1                                                                     # Else decrement r by 1
+            j while_r_p                                                                         # Continue the loop
+        if_l_r:                                                                                 # If l>=r, then
+            blt $t2,$t3,swap_l_r                                                                # If l<r, then branch to Swap(A[l],A[r])
+            # Else , Swap A[p] and A[r]
             sll $s4,$t4,2
             sll $s3,$t3,2
-            add $a0,$t5,$s4
+            # Load addresses of A[p] and A[r] in $a0 and $a1
+            add $a0,$t5,$s4 
             add $a1,$t5,$s3
-            jal swap
+            jal swap                                                                            # Call Swap
+            # Store all 5 variables in stack
             sw $t2,4($sp)
             sw $t3,8($sp)
             sw $t4,12($sp)
             sw $t6,16($sp)
             sw $t7,20($sp)
+            # Load the parameters in a0, a1 and a2
             move $a0,$t5
             move $a1,$t6
             move $a2,$t3
             addi $a2,$a2,-1
-            jal sort_array
+            jal sort_array                                                                      # Recursive call to sort_array
+            # Load all 5 variables from stack, after the recursive call to function returns
             lw $t2,4($sp)
             lw $t3,8($sp)
             lw $t4,12($sp)
             lw $t6,16($sp)
             lw $t7,20($sp)
+            # Load the parameters in a0, a1 and a2
             move $a0,$t5
             move $a1,$t3
             addi $a1,$a1,1
             move $a2,$t7
+            # Store all 5 variables in stack
             sw $t2,4($sp)
             sw $t3,8($sp)
             sw $t4,12($sp)
             sw $t6,16($sp)
             sw $t7,20($sp)
-            jal sort_array
+            jal sort_array                                                                      # Recursive call to sort_array
+            # Load all 5 variables from stack, after the recursive call to function returns
             lw $t2,4($sp)
             lw $t3,8($sp)
             lw $t4,12($sp)
             lw $t6,16($sp)
             lw $t7,20($sp)
-            j ret
+            j ret                                                                               # Return from the function and pass the control to the caller function
+        # If l<r, then Swap(A[l],A[r])
         swap_l_r:
             sll $s2,$t2,2
             sll $s3,$t3,2
-            add $a0,$t5,$s2
-            add $a1,$t5,$s3
-            jal swap
-    j while
+            add $a0,$t5,$s2                                                                     # Load address of A[l] in $a0
+            add $a1,$t5,$s3                                                                     # Load address of A[r] in $a1
+            jal swap                                                                            # Call Swap
+    j while                                                                                     # Continue the loop
 
+# Function to return from any function by loading the return address from current stack pointer
+# and releasing the space by incrementing the stack pointer
+# and passing the control to the caller function
 ret:
     lw $ra,0($sp)
     addi $sp,$sp,24
     j return
-
 
 return:                                                                                         # Return from a callee function to the caller function, assuming $ra stores the return address
     jr $ra
