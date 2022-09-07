@@ -5,6 +5,9 @@
 # Member 1: Pranav Mehrotra (20CS10085)
 # Member 2: Saransh Sharma (20CS30065)
  
+#This program takes in input n,a,r and m. A nXn matrix is constructed in row major form using the the geometric series with first term a and common ratio r(taken mod wrt to m) 
+# and first prints the matrix. It then computes determinant recursively by calculating minors and cofactors
+
 
   .globl  main
 
