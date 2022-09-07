@@ -1,4 +1,4 @@
-# Assignement No.: 2
+# Assignement No.: 4
 # Problem No.: 2
 # Semester: Autumn 2022
 # Group No.: 65
@@ -6,8 +6,8 @@
 # Member 2: Saransh Sharma (20CS30065)
 
 # This program declares a static array and takes input from the user to fill the array.
-# Then it sorts the array in ascending order.
-# Finally it prints the kth largest element in the array, where k is given by the user as input.
+# Then it sorts the array in ascending order, using recursive sort function.
+# Finally it prints the sorted array.
 
 
     .data
