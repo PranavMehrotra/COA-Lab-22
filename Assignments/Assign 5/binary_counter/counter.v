@@ -18,15 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module counter (input clk,      // Declare input port for the clock to allow counter to count up  
-                input rst,              // Declare input port for the reset to allow the counter to be reset to 0 when required  
-                output reg[3:0] out);    // Declare 4-bit output port to get the counter values  
+module counter (input clk,      			// Declare input port   
+                input rst,              // Declare reset input port  
+                output reg[3:0] out);    // Declare output counter  
   
-  //wire clk_out;
-  // This always block will be triggered at the rising edge of clk (0->1)  
-  // Once inside this block, it checks if the reset is 0, then change out to zero   
-  // If reset is 1, then the design should be allowed to count up, so increment the counter    
-
+  
   clock_divider a0(clk,rst,clk_out);  
   always @ (posedge clk_out or posedge rst) begin 
 	 if (rst)  
