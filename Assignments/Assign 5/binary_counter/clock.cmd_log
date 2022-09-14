@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/saransh/binary_counter/clock.xst" -ofn "D:/saransh/binary_counter/clock.syr" 
