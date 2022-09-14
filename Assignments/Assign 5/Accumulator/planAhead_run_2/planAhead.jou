@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Aug 24 15:02:52 2022
+# Process ID: 1900
+# Log file: F:/ISE Project/Accumulator/planAhead_run_2/planAhead.log
+# Journal file: F:/ISE Project/Accumulator/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {F:/ISE Project/Accumulator/pa.fromNetlist.tcl}

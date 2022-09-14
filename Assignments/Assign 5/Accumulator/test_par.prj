@@ -1,0 +1,2 @@
+verilog work "netgen/par/accumulator_timesim.v"
+verilog work "test.v"

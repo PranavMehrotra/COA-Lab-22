@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Desktop/COA LAB/VERILOG ASSIGN-3/ISE Project/Accumulator/test_isim_beh.exe" -prj "D:/Desktop/COA LAB/VERILOG ASSIGN-3/ISE Project/Accumulator/test_beh.prj" "work.test" "work.glbl" 

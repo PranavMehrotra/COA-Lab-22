@@ -1,0 +1,5 @@
+verilog work "half_addr.v"
+verilog work "full_addr.v"
+verilog work "dff.v"
+verilog work "adder_struct.v"
+verilog work "accumulator.v"

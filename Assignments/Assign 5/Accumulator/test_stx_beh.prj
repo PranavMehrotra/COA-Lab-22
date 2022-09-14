@@ -1,0 +1,7 @@
+verilog isim_temp "half_addr.v"
+verilog isim_temp "full_addr.v"
+verilog isim_temp "dff.v"
+verilog isim_temp "adder_struct.v"
+verilog isim_temp "accumulator.v"
+verilog isim_temp "test.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

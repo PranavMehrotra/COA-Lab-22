@@ -1,0 +1,28 @@
+Command line:
+   accumulator_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50129
+
+Wed Aug 24 14:31:07 2022
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5154.39 Meg
+
+ Total Signals          : 65
+ Total Nets             : 56
+ Total Signal Drivers   : 30
+ Total Blocks           : 9
+ Total Primitive Blocks : 7
+ Total Processes        : 32
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 141
+
+ Total Simulation Time: 0.140625 sec
+
+ Current Memory Usage: 5154.39 Meg
+
+Wed Aug 24 14:31:12 2022
+
