@@ -18,8 +18,7 @@ Compiling module counter_structural
 Compiling module counter_structural_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 6 Verilog Units
 Built simulation executable D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural_tb_isim_beh.exe
-Fuse Memory Usage: 28916 KB
-Fuse CPU Usage: 452 ms
+Fuse Memory Usage: 28244 KB
+Fuse CPU Usage: 421 ms

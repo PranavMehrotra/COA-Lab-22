@@ -24,7 +24,6 @@ assign p = in1;
 assign c[1] = (p[0] & cin);
 assign c[2] = (p[1] & p[0] & cin);
 assign c[3] = (p[2] & p[1] & p[0] & cin);
-// assign cout = (p[3] & p[2] & p[1] & p[0] & cin);
 assign c[0] = cin;
 assign out = (p ^ c);
 

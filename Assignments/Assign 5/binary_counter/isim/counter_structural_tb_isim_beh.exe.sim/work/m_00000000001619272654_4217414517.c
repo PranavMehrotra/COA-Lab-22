@@ -23,19 +23,17 @@
 #endif
 static const char *ng0 = "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/clock_divider.v";
 static unsigned int ng1[] = {1U, 0U};
-static unsigned int ng2[] = {5U, 0U};
-static int ng3[] = {1, 0};
-static unsigned int ng4[] = {0U, 0U};
-static int ng5[] = {2, 0};
+static unsigned int ng2[] = {10U, 0U};
+static unsigned int ng3[] = {0U, 0U};
+static int ng4[] = {0, 0};
 
 
 
 static void Always_69_0(char *t0)
 {
     char t8[8];
-    char t10[8];
-    char t20[8];
-    char t21[8];
+    char t18[8];
+    char t19[8];
     char *t1;
     char *t2;
     char *t3;
@@ -44,25 +42,36 @@ static void Always_69_0(char *t0)
     char *t6;
     char *t7;
     char *t9;
-    char *t11;
-    char *t12;
+    char *t10;
+    unsigned int t11;
+    unsigned int t12;
     unsigned int t13;
     unsigned int t14;
     unsigned int t15;
-    unsigned int t16;
-    unsigned int t17;
-    char *t18;
-    char *t19;
+    char *t16;
+    char *t17;
+    unsigned int t20;
+    unsigned int t21;
     unsigned int t22;
     unsigned int t23;
     unsigned int t24;
-    char *t25;
+    unsigned int t25;
     unsigned int t26;
     unsigned int t27;
     unsigned int t28;
     unsigned int t29;
-    char *t30;
-    char *t31;
+    unsigned int t30;
+    unsigned int t31;
+    unsigned int t32;
+    unsigned int t33;
+    unsigned int t34;
+    char *t35;
+    unsigned int t36;
+    unsigned int t37;
+    unsigned int t38;
+    unsigned int t39;
+    char *t40;
+    char *t41;
 
 LAB0:    t1 = (t0 + 2664U);
     t2 = *((char **)t1);
@@ -95,130 +104,132 @@ LAB5:    xsi_set_current_line(70, ng0);
     t3 = (t2 + 56U);
     t4 = *((char **)t3);
     t5 = ((char*)((ng2)));
-    t6 = ((char*)((ng3)));
     memset(t8, 0, 8);
-    xsi_vlog_unsigned_minus(t8, 32, t5, 8, t6, 32);
-    memset(t10, 0, 8);
-    t7 = (t4 + 4);
+    t6 = (t4 + 4);
+    if (*((unsigned int *)t6) != 0)
+        goto LAB7;
+
+LAB6:    t7 = (t5 + 4);
     if (*((unsigned int *)t7) != 0)
         goto LAB7;
 
-LAB6:    t9 = (t8 + 4);
-    if (*((unsigned int *)t9) != 0)
-        goto LAB7;
-
-LAB10:    if (*((unsigned int *)t4) < *((unsigned int *)t8))
+LAB10:    if (*((unsigned int *)t4) < *((unsigned int *)t5))
         goto LAB9;
 
-LAB8:    *((unsigned int *)t10) = 1;
+LAB8:    *((unsigned int *)t8) = 1;
 
-LAB9:    t12 = (t10 + 4);
-    t13 = *((unsigned int *)t12);
-    t14 = (~(t13));
-    t15 = *((unsigned int *)t10);
-    t16 = (t15 & t14);
-    t17 = (t16 != 0);
-    if (t17 > 0)
+LAB9:    t10 = (t8 + 4);
+    t11 = *((unsigned int *)t10);
+    t12 = (~(t11));
+    t13 = *((unsigned int *)t8);
+    t14 = (t13 & t12);
+    t15 = (t14 != 0);
+    if (t15 > 0)
         goto LAB11;
 
 LAB12:
 LAB13:    xsi_set_current_line(73, ng0);
-    t2 = (t0 + 1744);
+    t2 = (t0 + 1584);
     t3 = (t2 + 56U);
     t4 = *((char **)t3);
-    t5 = ((char*)((ng2)));
-    t6 = ((char*)((ng5)));
-    memset(t20, 0, 8);
-    xsi_vlog_unsigned_divide(t20, 32, t5, 8, t6, 32);
-    memset(t21, 0, 8);
-    t7 = (t4 + 4);
-    if (*((unsigned int *)t7) != 0)
-        goto LAB15;
+    t5 = ((char*)((ng4)));
+    memset(t19, 0, 8);
+    t6 = (t4 + 4);
+    t7 = (t5 + 4);
+    t11 = *((unsigned int *)t4);
+    t12 = *((unsigned int *)t5);
+    t13 = (t11 ^ t12);
+    t14 = *((unsigned int *)t6);
+    t15 = *((unsigned int *)t7);
+    t20 = (t14 ^ t15);
+    t21 = (t13 | t20);
+    t22 = *((unsigned int *)t6);
+    t23 = *((unsigned int *)t7);
+    t24 = (t22 | t23);
+    t25 = (~(t24));
+    t26 = (t21 & t25);
+    if (t26 != 0)
+        goto LAB17;
 
-LAB14:    t9 = (t20 + 4);
-    if (*((unsigned int *)t9) != 0)
-        goto LAB15;
-
-LAB18:    if (*((unsigned int *)t4) < *((unsigned int *)t20))
+LAB14:    if (t24 != 0)
         goto LAB16;
 
-LAB17:    memset(t10, 0, 8);
-    t12 = (t21 + 4);
-    t13 = *((unsigned int *)t12);
-    t14 = (~(t13));
-    t15 = *((unsigned int *)t21);
-    t16 = (t15 & t14);
-    t17 = (t16 & 1U);
-    if (t17 != 0)
-        goto LAB19;
+LAB15:    *((unsigned int *)t19) = 1;
 
-LAB20:    if (*((unsigned int *)t12) != 0)
-        goto LAB21;
+LAB17:    memset(t18, 0, 8);
+    t10 = (t19 + 4);
+    t27 = *((unsigned int *)t10);
+    t28 = (~(t27));
+    t29 = *((unsigned int *)t19);
+    t30 = (t29 & t28);
+    t31 = (t30 & 1U);
+    if (t31 != 0)
+        goto LAB18;
 
-LAB22:    t19 = (t10 + 4);
-    t22 = *((unsigned int *)t10);
-    t23 = *((unsigned int *)t19);
-    t24 = (t22 || t23);
-    if (t24 > 0)
-        goto LAB23;
+LAB19:    if (*((unsigned int *)t10) != 0)
+        goto LAB20;
 
-LAB24:    t26 = *((unsigned int *)t10);
-    t27 = (~(t26));
-    t28 = *((unsigned int *)t19);
-    t29 = (t27 || t28);
-    if (t29 > 0)
-        goto LAB25;
+LAB21:    t17 = (t18 + 4);
+    t32 = *((unsigned int *)t18);
+    t33 = *((unsigned int *)t17);
+    t34 = (t32 || t33);
+    if (t34 > 0)
+        goto LAB22;
 
-LAB26:    if (*((unsigned int *)t19) > 0)
-        goto LAB27;
+LAB23:    t36 = *((unsigned int *)t18);
+    t37 = (~(t36));
+    t38 = *((unsigned int *)t17);
+    t39 = (t37 || t38);
+    if (t39 > 0)
+        goto LAB24;
 
-LAB28:    if (*((unsigned int *)t10) > 0)
-        goto LAB29;
+LAB25:    if (*((unsigned int *)t17) > 0)
+        goto LAB26;
 
-LAB30:    memcpy(t8, t30, 8);
+LAB27:    if (*((unsigned int *)t18) > 0)
+        goto LAB28;
 
-LAB31:    t31 = (t0 + 1584);
-    xsi_vlogvar_wait_assign_value(t31, t8, 0, 0, 1, 0LL);
+LAB29:    memcpy(t8, t40, 8);
+
+LAB30:    t41 = (t0 + 1584);
+    xsi_vlogvar_wait_assign_value(t41, t8, 0, 0, 1, 0LL);
     goto LAB2;
 
-LAB7:    t11 = (t10 + 4);
-    *((unsigned int *)t10) = 1;
-    *((unsigned int *)t11) = 1;
+LAB7:    t9 = (t8 + 4);
+    *((unsigned int *)t8) = 1;
+    *((unsigned int *)t9) = 1;
     goto LAB9;
 
 LAB11:    xsi_set_current_line(72, ng0);
-    t18 = ((char*)((ng4)));
-    t19 = (t0 + 1744);
-    xsi_vlogvar_wait_assign_value(t19, t18, 0, 0, 8, 0LL);
+    t16 = ((char*)((ng3)));
+    t17 = (t0 + 1744);
+    xsi_vlogvar_wait_assign_value(t17, t16, 0, 0, 8, 0LL);
     goto LAB13;
 
-LAB15:    t11 = (t21 + 4);
-    *((unsigned int *)t21) = 1;
-    *((unsigned int *)t11) = 1;
+LAB16:    t9 = (t19 + 4);
+    *((unsigned int *)t19) = 1;
+    *((unsigned int *)t9) = 1;
     goto LAB17;
 
-LAB16:    *((unsigned int *)t21) = 1;
-    goto LAB17;
+LAB18:    *((unsigned int *)t18) = 1;
+    goto LAB21;
 
-LAB19:    *((unsigned int *)t10) = 1;
-    goto LAB22;
-
-LAB21:    t18 = (t10 + 4);
-    *((unsigned int *)t10) = 1;
+LAB20:    t16 = (t18 + 4);
     *((unsigned int *)t18) = 1;
-    goto LAB22;
+    *((unsigned int *)t16) = 1;
+    goto LAB21;
 
-LAB23:    t25 = ((char*)((ng1)));
-    goto LAB24;
+LAB22:    t35 = ((char*)((ng1)));
+    goto LAB23;
 
-LAB25:    t30 = ((char*)((ng4)));
-    goto LAB26;
+LAB24:    t40 = ((char*)((ng3)));
+    goto LAB25;
 
-LAB27:    xsi_vlog_unsigned_bit_combine(t8, 1, t25, 1, t30, 1);
-    goto LAB31;
+LAB26:    xsi_vlog_unsigned_bit_combine(t8, 1, t35, 1, t40, 1);
+    goto LAB30;
 
-LAB29:    memcpy(t8, t25, 8);
-    goto LAB31;
+LAB28:    memcpy(t8, t35, 8);
+    goto LAB30;
 
 }
 

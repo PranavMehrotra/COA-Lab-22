@@ -835,7 +835,7 @@ LAB10:    t109 = *((unsigned int *)t98);
 
 }
 
-static void Cont_28_4(char *t0)
+static void Cont_27_4(char *t0)
 {
     char *t1;
     char *t2;
@@ -861,7 +861,7 @@ LAB0:    t1 = (t0 + 4000U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(28, ng0);
+LAB2:    xsi_set_current_line(27, ng0);
     t2 = (t0 + 1208U);
     t3 = *((char **)t2);
     t2 = (t0 + 4984);
@@ -889,7 +889,7 @@ LAB2:    xsi_set_current_line(28, ng0);
 LAB1:    return;
 }
 
-static void Cont_29_5(char *t0)
+static void Cont_28_5(char *t0)
 {
     char t5[8];
     char *t1;
@@ -930,7 +930,7 @@ LAB0:    t1 = (t0 + 4248U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(29, ng0);
+LAB2:    xsi_set_current_line(28, ng0);
     t2 = (t0 + 1688U);
     t3 = *((char **)t2);
     t2 = (t0 + 1528U);
@@ -985,7 +985,7 @@ LAB4:    t16 = *((unsigned int *)t5);
 
 extern void work_m_00000000003071027500_3997768443_init()
 {
-	static char *pe[] = {(void *)Cont_23_0,(void *)Cont_24_1,(void *)Cont_25_2,(void *)Cont_26_3,(void *)Cont_28_4,(void *)Cont_29_5};
+	static char *pe[] = {(void *)Cont_23_0,(void *)Cont_24_1,(void *)Cont_25_2,(void *)Cont_26_3,(void *)Cont_27_4,(void *)Cont_28_5};
 	xsi_register_didat("work_m_00000000003071027500_3997768443", "isim/counter_structural_tb_isim_beh.exe.sim/work/m_00000000003071027500_3997768443.didat");
 	xsi_register_executes(pe);
 }
