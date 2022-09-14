@@ -2,14 +2,14 @@ Command line:
    counter_structural_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49992
+     -socket  57819
 
-Wed Sep 14 13:46:08 2022
+Wed Sep 14 14:33:02 2022
 
 
  Elaboration Time: 0.015625 sec
 
- Current Memory Usage: 5150.01 Meg
+ Current Memory Usage: 5150.06 Meg
 
  Total Signals          : 31
  Total Nets             : 40
@@ -17,13 +17,13 @@ Wed Sep 14 13:46:08 2022
  Total Blocks           : 6
  Total Primitive Blocks : 4
  Total Processes        : 21
- Total Traceable Variables  : 24
- Total Scalar Nets and Variables : 143
-Total Line Count : 40
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 159
+Total Line Count : 38
 
- Total Simulation Time: 0.0625 sec
+ Total Simulation Time: 0.078125 sec
 
- Current Memory Usage: 5150.01 Meg
+ Current Memory Usage: 4992.77 Meg
 
-Wed Sep 14 13:46:18 2022
+Wed Sep 14 14:34:17 2022
 

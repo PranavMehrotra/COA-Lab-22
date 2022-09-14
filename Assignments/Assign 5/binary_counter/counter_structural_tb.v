@@ -49,8 +49,6 @@ module counter_structural_tb;
 		$monitor("clk = %d, rst = %d, out = %d , clk_out = %d", clk,rst,out,clk_out);
 		#10   rst <= 1;
 		#20   rst <= 0;
-		#500   rst <= 1;  
-		#50   rst <= 0;
         
 		// Add stimulus here
 
