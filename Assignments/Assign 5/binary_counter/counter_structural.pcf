@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Sep 14 16:17:53 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "out<0>" LOCATE = SITE "H17" LEVEL 1;
+COMP "out<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "out<2>" LOCATE = SITE "J13" LEVEL 1;
+COMP "out<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "rst" LOCATE = SITE "J15" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "a0/counter_0" BEL "a0/counter_1" BEL "a0/counter_2"
+        BEL "a0/counter_3" BEL "a0/counter_4" BEL "a0/counter_5" BEL
+        "a0/counter_6" BEL "a0/counter_7" BEL "a0/counter_8" BEL
+        "a0/counter_9" BEL "a0/counter_10" BEL "a0/counter_11" BEL
+        "a0/counter_12" BEL "a0/counter_13" BEL "a0/counter_14" BEL
+        "a0/counter_15" BEL "a0/counter_16" BEL "a0/counter_17" BEL
+        "a0/counter_18" BEL "a0/counter_19" BEL "a0/counter_20" BEL
+        "a0/counter_21" BEL "a0/counter_22" BEL "a0/counter_23" BEL
+        "a0/counter_24" BEL "a0/counter_25" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

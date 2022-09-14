@@ -1,114 +1,111 @@
 ISim log file
-Running: D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\counter_structural_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural_tb_isim_beh.wdb 
+Running: D:\binary_counter\counter_structural_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/binary_counter/counter_structural_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
+This is a Full version of ISim.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-clk = 0, rst = 0, out =  x , clk_out = 0
-clk = 1, rst = 1, out =  0 , clk_out = 0
-clk = 0, rst = 1, out =  0 , clk_out = 0
-clk = 1, rst = 0, out =  0 , clk_out = 0
-clk = 0, rst = 0, out =  0 , clk_out = 0
-clk = 1, rst = 0, out =  0 , clk_out = 0
-clk = 0, rst = 0, out =  0 , clk_out = 0
-clk = 1, rst = 0, out =  0 , clk_out = 0
-clk = 0, rst = 0, out =  0 , clk_out = 0
-clk = 1, rst = 0, out =  0 , clk_out = 1
-clk = 0, rst = 0, out =  0 , clk_out = 1
-clk = 1, rst = 0, out =  1 , clk_out = 0
-clk = 0, rst = 0, out =  1 , clk_out = 0
-clk = 1, rst = 0, out =  1 , clk_out = 0
-clk = 0, rst = 0, out =  1 , clk_out = 0
-clk = 1, rst = 0, out =  1 , clk_out = 0
-clk = 0, rst = 0, out =  1 , clk_out = 0
-clk = 1, rst = 0, out =  1 , clk_out = 0
-clk = 0, rst = 0, out =  1 , clk_out = 0
-clk = 1, rst = 0, out =  1 , clk_out = 0
-clk = 0, rst = 0, out =  1 , clk_out = 0
-clk = 1, rst = 0, out =  1 , clk_out = 1
-clk = 0, rst = 0, out =  1 , clk_out = 1
-clk = 1, rst = 0, out =  2 , clk_out = 0
-clk = 0, rst = 0, out =  2 , clk_out = 0
-clk = 1, rst = 0, out =  2 , clk_out = 0
-clk = 0, rst = 0, out =  2 , clk_out = 0
-clk = 1, rst = 0, out =  2 , clk_out = 0
-clk = 0, rst = 0, out =  2 , clk_out = 0
-clk = 1, rst = 0, out =  2 , clk_out = 0
-clk = 0, rst = 0, out =  2 , clk_out = 0
-clk = 1, rst = 0, out =  2 , clk_out = 0
-clk = 0, rst = 0, out =  2 , clk_out = 0
-clk = 1, rst = 0, out =  2 , clk_out = 1
-clk = 0, rst = 0, out =  2 , clk_out = 1
-clk = 1, rst = 0, out =  3 , clk_out = 0
-clk = 0, rst = 0, out =  3 , clk_out = 0
-clk = 1, rst = 0, out =  3 , clk_out = 0
-clk = 0, rst = 0, out =  3 , clk_out = 0
-clk = 1, rst = 0, out =  3 , clk_out = 0
-clk = 0, rst = 0, out =  3 , clk_out = 0
-clk = 1, rst = 0, out =  3 , clk_out = 0
-clk = 0, rst = 0, out =  3 , clk_out = 0
-clk = 1, rst = 0, out =  3 , clk_out = 0
-clk = 0, rst = 0, out =  3 , clk_out = 0
-clk = 1, rst = 0, out =  3 , clk_out = 1
-clk = 0, rst = 0, out =  3 , clk_out = 1
-clk = 1, rst = 0, out =  4 , clk_out = 0
-clk = 0, rst = 0, out =  4 , clk_out = 0
-clk = 1, rst = 0, out =  4 , clk_out = 0
-clk = 0, rst = 0, out =  4 , clk_out = 0
-clk = 1, rst = 0, out =  4 , clk_out = 0
-clk = 0, rst = 0, out =  4 , clk_out = 0
-clk = 1, rst = 0, out =  4 , clk_out = 0
-clk = 0, rst = 0, out =  4 , clk_out = 0
-clk = 1, rst = 0, out =  4 , clk_out = 0
-clk = 0, rst = 0, out =  4 , clk_out = 0
-clk = 1, rst = 0, out =  4 , clk_out = 1
-clk = 0, rst = 0, out =  4 , clk_out = 1
-clk = 1, rst = 0, out =  5 , clk_out = 0
-clk = 0, rst = 0, out =  5 , clk_out = 0
-clk = 1, rst = 0, out =  5 , clk_out = 0
-clk = 0, rst = 0, out =  5 , clk_out = 0
-clk = 1, rst = 0, out =  5 , clk_out = 0
-clk = 0, rst = 0, out =  5 , clk_out = 0
-clk = 1, rst = 0, out =  5 , clk_out = 0
-clk = 0, rst = 0, out =  5 , clk_out = 0
-clk = 1, rst = 0, out =  5 , clk_out = 0
-clk = 0, rst = 0, out =  5 , clk_out = 0
-clk = 1, rst = 0, out =  5 , clk_out = 1
-clk = 0, rst = 0, out =  5 , clk_out = 1
-clk = 1, rst = 0, out =  6 , clk_out = 0
-clk = 0, rst = 0, out =  6 , clk_out = 0
-clk = 1, rst = 0, out =  6 , clk_out = 0
-clk = 0, rst = 0, out =  6 , clk_out = 0
-clk = 1, rst = 0, out =  6 , clk_out = 0
-clk = 0, rst = 0, out =  6 , clk_out = 0
-clk = 1, rst = 0, out =  6 , clk_out = 0
-clk = 0, rst = 0, out =  6 , clk_out = 0
-clk = 1, rst = 0, out =  6 , clk_out = 0
-clk = 0, rst = 0, out =  6 , clk_out = 0
-clk = 1, rst = 0, out =  6 , clk_out = 1
-clk = 0, rst = 0, out =  6 , clk_out = 1
-clk = 1, rst = 0, out =  7 , clk_out = 0
-clk = 0, rst = 0, out =  7 , clk_out = 0
-clk = 1, rst = 0, out =  7 , clk_out = 0
-clk = 0, rst = 0, out =  7 , clk_out = 0
-clk = 1, rst = 0, out =  7 , clk_out = 0
-clk = 0, rst = 0, out =  7 , clk_out = 0
-clk = 1, rst = 0, out =  7 , clk_out = 0
-clk = 0, rst = 0, out =  7 , clk_out = 0
-clk = 1, rst = 0, out =  7 , clk_out = 0
-clk = 0, rst = 0, out =  7 , clk_out = 0
-clk = 1, rst = 0, out =  7 , clk_out = 1
-clk = 0, rst = 0, out =  7 , clk_out = 1
-clk = 1, rst = 0, out =  8 , clk_out = 0
-clk = 0, rst = 0, out =  8 , clk_out = 0
-clk = 1, rst = 0, out =  8 , clk_out = 0
-clk = 0, rst = 0, out =  8 , clk_out = 0
-clk = 1, rst = 0, out =  8 , clk_out = 0
-clk = 0, rst = 0, out =  8 , clk_out = 0
+clk = 0, rst = 0, out =  x
+clk = 1, rst = 1, out =  0
+clk = 0, rst = 1, out =  0
+clk = 1, rst = 0, out =  0
+clk = 0, rst = 0, out =  0
+clk = 1, rst = 0, out =  0
+clk = 0, rst = 0, out =  0
+clk = 1, rst = 0, out =  0
+clk = 0, rst = 0, out =  0
+clk = 1, rst = 0, out =  0
+clk = 0, rst = 0, out =  0
+clk = 1, rst = 0, out =  1
+clk = 0, rst = 0, out =  1
+clk = 1, rst = 0, out =  1
+clk = 0, rst = 0, out =  1
+clk = 1, rst = 0, out =  1
+clk = 0, rst = 0, out =  1
+clk = 1, rst = 0, out =  1
+clk = 0, rst = 0, out =  1
+clk = 1, rst = 0, out =  1
+clk = 0, rst = 0, out =  1
+clk = 1, rst = 0, out =  1
+clk = 0, rst = 0, out =  1
+clk = 1, rst = 0, out =  1
+clk = 0, rst = 0, out =  1
+clk = 1, rst = 0, out =  1
+clk = 0, rst = 0, out =  1
+clk = 1, rst = 0, out =  2
+clk = 0, rst = 0, out =  2
+clk = 1, rst = 0, out =  2
+clk = 0, rst = 0, out =  2
+clk = 1, rst = 0, out =  2
+clk = 0, rst = 0, out =  2
+clk = 1, rst = 0, out =  2
+clk = 0, rst = 0, out =  2
+clk = 1, rst = 0, out =  2
+clk = 0, rst = 0, out =  2
+clk = 1, rst = 0, out =  2
+clk = 0, rst = 0, out =  2
+clk = 1, rst = 0, out =  2
+clk = 0, rst = 0, out =  2
+clk = 1, rst = 0, out =  2
+clk = 0, rst = 0, out =  2
+clk = 1, rst = 0, out =  3
+clk = 0, rst = 0, out =  3
+clk = 1, rst = 0, out =  3
+clk = 0, rst = 0, out =  3
+clk = 1, rst = 0, out =  3
+clk = 0, rst = 0, out =  3
+clk = 1, rst = 0, out =  3
+clk = 0, rst = 0, out =  3
+clk = 1, rst = 0, out =  3
+clk = 0, rst = 0, out =  3
+clk = 1, rst = 0, out =  3
+clk = 0, rst = 0, out =  3
+clk = 1, rst = 0, out =  3
+clk = 0, rst = 0, out =  3
+clk = 1, rst = 0, out =  3
+clk = 0, rst = 0, out =  3
+clk = 1, rst = 0, out =  4
+clk = 0, rst = 0, out =  4
+clk = 1, rst = 0, out =  4
+clk = 0, rst = 0, out =  4
+clk = 1, rst = 0, out =  4
+clk = 0, rst = 0, out =  4
+clk = 1, rst = 0, out =  4
+clk = 0, rst = 0, out =  4
+clk = 1, rst = 0, out =  4
+clk = 0, rst = 0, out =  4
+clk = 1, rst = 0, out =  4
+clk = 0, rst = 0, out =  4
+clk = 1, rst = 0, out =  4
+clk = 0, rst = 0, out =  4
+clk = 1, rst = 0, out =  4
+clk = 0, rst = 0, out =  4
+clk = 1, rst = 0, out =  5
+clk = 0, rst = 0, out =  5
+clk = 1, rst = 0, out =  5
+clk = 0, rst = 0, out =  5
+clk = 1, rst = 0, out =  5
+clk = 0, rst = 0, out =  5
+clk = 1, rst = 0, out =  5
+clk = 0, rst = 0, out =  5
+clk = 1, rst = 0, out =  5
+clk = 0, rst = 0, out =  5
+clk = 1, rst = 0, out =  5
+clk = 0, rst = 0, out =  5
+clk = 1, rst = 0, out =  5
+clk = 0, rst = 0, out =  5
+clk = 1, rst = 0, out =  5
+clk = 0, rst = 0, out =  5
+clk = 1, rst = 0, out =  6
+clk = 0, rst = 0, out =  6
+clk = 1, rst = 0, out =  6
+clk = 0, rst = 0, out =  6
+clk = 1, rst = 0, out =  6
+clk = 0, rst = 0, out =  6
+clk = 1, rst = 0, out =  6
+clk = 0, rst = 0, out =  6
+clk = 1, rst = 0, out =  6
+clk = 0, rst = 0, out =  6

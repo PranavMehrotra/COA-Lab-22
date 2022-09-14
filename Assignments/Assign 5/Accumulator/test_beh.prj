@@ -1,7 +1,0 @@
-verilog work "half_addr.v"
-verilog work "full_addr.v"
-verilog work "dff.v"
-verilog work "adder_struct.v"
-verilog work "accumulator.v"
-verilog work "test.v"
-verilog work "D:/win7/14.7/ISE_DS/ISE//verilog/src/glbl.v"

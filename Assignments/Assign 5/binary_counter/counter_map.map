@@ -10,41 +10,148 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -1
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Wed Sep 14 00:48:05 2022
+Mapped Date    : Wed Sep 14 16:14:18 2022
 
-vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-INFO:Security:54 - 'xc7a100t' is a WebPack part.
-INFO:Security:61 - The XILINXD_LICENSE_FILE environment variable is not set.
-INFO:Security:63 - The LM_LICENSE_FILE environment variable is not set.
-INFO:Security:68 - For more information or for assistance in obtaining 
- a license, please run the Xilinx License Configuration Manager
-       (xlcm or "Manage Xilinx Licenses".)
-INFO:Security:68a - user is Saransh Sharma, on host DESKTOP-A3GFS38.
-ERROR:Security:9c - No 'ISE' nor 'WebPack' feature version 2013.10 was available
-for part 'xc7a100t'.
-----------------------------------------------------------------------
-No such feature exists.
-Feature:       WebPack
-License path: 
-C:/.Xilinx\Xilinx.lic;D:\win7\14.7\ISE_DS\ISE\/coregen/core_licenses\Xilinx.lic;
-D:\win7\14.7\ISE_DS\ISE\/coregen/core_licenses\XilinxFree.lic;D:\win7\14.7\ISE_D
-S\EDK/data/core_licenses\Xilinx.lic;
-FLEXnet Licensing error:-5,357
-For further information, refer to the FLEXnet Licensing documentation,
-available at "www.flexerasoftware.com".No such feature exists.
-Feature:       ISE
-License path: 
-C:/.Xilinx\Xilinx.lic;D:\win7\14.7\ISE_DS\ISE\/coregen/core_licenses\Xilinx.lic;
-D:\win7\14.7\ISE_DS\ISE\/coregen/core_licenses\XilinxFree.lic;D:\win7\14.7\ISE_D
-S\EDK/data/core_licenses\Xilinx.lic;
-FLEXnet Licensing error:-5,357
-For further information, refer to the FLEXnet Licensing documentation,
-available at "www.flexerasoftware.com".
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ERROR:Map:258 - A problem was encountered attempting to get the license for this
-   architecture. 
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 17 secs 
+Total CPU  time at the beginning of Placer: 17 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:e3cc4e65) REAL time: 18 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:e3cc4e65) REAL time: 18 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:e3cc4e65) REAL time: 18 secs 
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+(Checksum:3612cd6d) REAL time: 20 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:3612cd6d) REAL time: 20 secs 
+
+Phase 6.3  Local Placement Optimization
+Phase 6.3  Local Placement Optimization (Checksum:3612cd6d) REAL time: 20 secs 
+
+Phase 7.5  Local Placement Optimization
+Phase 7.5  Local Placement Optimization (Checksum:3612cd6d) REAL time: 20 secs 
+
+Phase 8.8  Global Placement
+...
+................
+................
+Phase 8.8  Global Placement (Checksum:a1f97e23) REAL time: 20 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:a1f97e23) REAL time: 20 secs 
+
+Phase 10.18  Placement Optimization
+Phase 10.18  Placement Optimization (Checksum:a521e803) REAL time: 20 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:a521e803) REAL time: 20 secs 
+
+Phase 12.34  Placement Validation
+Phase 12.34  Placement Validation (Checksum:a521e803) REAL time: 20 secs 
+
+Total REAL time to Placer completion: 20 secs 
+Total CPU  time to Placer completion: 20 secs 
+Running post-placement packing...
+Writing output files...
 
 Design Summary
 --------------
-Number of errors   :   1
-Number of warnings :   0
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                    30 out of 126,800    1%
+    Number used as Flip Flops:                  30
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                         29 out of  63,400    1%
+    Number used as logic:                       28 out of  63,400    1%
+      Number using O6 output only:               2
+      Number using O5 output only:              24
+      Number using O5 and O6:                    2
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of  19,000    0%
+    Number used exclusively as route-thrus:      1
+      Number with same-slice register load:      0
+      Number with same-slice carry load:         1
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                     8 out of  15,850    1%
+  Number of LUT Flip Flop pairs used:           29
+    Number with an unused Flip Flop:             0 out of      29    0%
+    Number with an unused LUT:                   0 out of      29    0%
+    Number of fully used LUT-FF pairs:          29 out of      29  100%
+    Number of unique control sets:               2
+    Number of slice register sites lost
+      to control set restrictions:              10 out of 126,800    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                         6 out of     210    2%
+    Number of LOCed IOBs:                        6 out of       6  100%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  0 out of     135    0%
+  Number of RAMB18E1/FIFO18E1s:                  0 out of     270    0%
+  Number of BUFG/BUFGCTRLs:                      1 out of      32    3%
+    Number used as BUFGs:                        1
+    Number used as BUFGCTRLs:                    0
+  Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     300    0%
+  Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     300    0%
+  Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0
+  Number of OLOGICE2/OLOGICE3/OSERDESE2s:        0 out of     300    0%
+  Number of PHASER_IN/PHASER_IN_PHYs:            0 out of      24    0%
+  Number of PHASER_OUT/PHASER_OUT_PHYs:          0 out of      24    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of      96    0%
+  Number of BUFRs:                               0 out of      24    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DNA_PORTs:                           0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     240    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of IBUFDS_GTE2s:                        0 out of       4    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of       6    0%
+  Number of IN_FIFOs:                            0 out of      24    0%
+  Number of MMCME2_ADVs:                         0 out of       6    0%
+  Number of OUT_FIFOs:                           0 out of      24    0%
+  Number of PCIE_2_1s:                           0 out of       1    0%
+  Number of PHASER_REFs:                         0 out of       6    0%
+  Number of PHY_CONTROLs:                        0 out of       6    0%
+  Number of PLLE2_ADVs:                          0 out of       6    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of XADCs:                               0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                1.97
+
+Peak Memory Usage:  5005 MB
+Total REAL time to MAP completion:  21 secs 
+Total CPU time to MAP completion:   21 secs 
+
+Mapping completed.
+See MAP report file "counter_map.mrp" for details.

@@ -4,9 +4,9 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   13:05:08 09/14/2022
+// Create Date:   15:14:20 09/14/2022
 // Design Name:   counter_structural
-// Module Name:   D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural_tb.v
+// Module Name:   D:/binary_counter/counter_structural_tb.v
 // Project Name:  binary_counter
 // Target Device:  
 // Tool versions:  
@@ -30,13 +30,12 @@ module counter_structural_tb;
 
 	// Outputs
 	wire [3:0] out;
-	wire clk_out;
+
 	// Instantiate the Unit Under Test (UUT)
 	counter_structural uut (
 		.clk(clk), 
 		.rst(rst), 
-		.out(out),
-		.clk_out(clk_out)
+		.out(out)
 	);
 
 	always #10 clk = ~clk;
@@ -46,7 +45,7 @@ module counter_structural_tb;
 		rst <= 0;
 		
 		// Wait 100 ns for global reset to finish
-		$monitor("clk = %d, rst = %d, out = %d , clk_out = %d", clk,rst,out,clk_out);
+		$monitor("clk = %d, rst = %d, out = %d", clk,rst,out);
 		#10   rst <= 1;
 		#20   rst <= 0;
         

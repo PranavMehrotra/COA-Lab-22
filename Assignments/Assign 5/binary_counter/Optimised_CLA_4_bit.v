@@ -18,13 +18,13 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Optimised_CLA_4_bit(input[3:0] in1,input cin,output[3:0] out);
+module Optimised_CLA_4_bit(input[3:0] in1,output[3:0] out);
 wire[3:0] c,p,g;
 assign p = in1;
-assign c[1] = (p[0] & cin);
-assign c[2] = (p[1] & p[0] & cin);
-assign c[3] = (p[2] & p[1] & p[0] & cin);
-assign c[0] = cin;
+assign c[1] = (p[0]);
+assign c[2] = (p[1] & p[0]);
+assign c[3] = (p[2] & p[1] & p[0]);
+assign c[0] = 1;
 assign out = (p ^ c);
 
 endmodule

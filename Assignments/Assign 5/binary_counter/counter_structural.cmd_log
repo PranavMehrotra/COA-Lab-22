@@ -28,3 +28,77 @@ xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/As
 xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural.syr" 
 xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural.syr" 
 xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural.syr" 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-1 "counter_structural.ngc" counter_structural.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_structural_map.ncd counter_structural.ngd counter_structural.pcf 
+par -w -intstyle ise -ol high -mt off counter_structural_map.ncd counter_structural.ncd counter_structural.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter_structural.twx counter_structural.ncd -o counter_structural.twr counter_structural.pcf 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural.syr" 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 "counter_structural.ngc" counter_structural.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_structural_map.ncd counter_structural.ngd counter_structural.pcf 
+par -w -intstyle ise -ol high -mt off counter_structural_map.ncd counter_structural.ncd counter_structural.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter_structural.twx counter_structural.ncd -o counter_structural.twr counter_structural.pcf -ucf pin.ucf 
+xst -intstyle ise -ifn "D:/binary_counter/counter_structural.xst" -ofn "D:/binary_counter/counter_structural.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 counter_structural.ngc counter_structural.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_structural_map.ncd counter_structural.ngd counter_structural.pcf 
+par -w -intstyle ise -ol high -mt off counter_structural_map.ncd counter_structural.ncd counter_structural.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter_structural.twx counter_structural.ncd -o counter_structural.twr counter_structural.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f counter_structural.ut counter_structural.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 counter_structural.ngc counter_structural.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_structural_map.ncd counter_structural.ngd counter_structural.pcf 
+par -w -intstyle ise -ol high -mt off counter_structural_map.ncd counter_structural.ncd counter_structural.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter_structural.twx counter_structural.ncd -o counter_structural.twr counter_structural.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f counter_structural.ut counter_structural.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 counter_structural.ngc counter_structural.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_structural_map.ncd counter_structural.ngd counter_structural.pcf 
+par -w -intstyle ise -ol high -mt off counter_structural_map.ncd counter_structural.ncd counter_structural.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter_structural.twx counter_structural.ncd -o counter_structural.twr counter_structural.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f counter_structural.ut counter_structural.ncd 
+xst -intstyle ise -ifn "D:/binary_counter/counter_structural.xst" -ofn "D:/binary_counter/counter_structural.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 counter_structural.ngc counter_structural.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_structural_map.ncd counter_structural.ngd counter_structural.pcf 
+par -w -intstyle ise -ol high -mt off counter_structural_map.ncd counter_structural.ncd counter_structural.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter_structural.twx counter_structural.ncd -o counter_structural.twr counter_structural.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f counter_structural.ut counter_structural.ncd 
+xst -intstyle ise -ifn "D:/binary_counter/counter_structural.xst" -ofn "D:/binary_counter/counter_structural.syr" 
+xst -intstyle ise -ifn "D:/binary_counter/counter_structural.xst" -ofn "D:/binary_counter/counter_structural.syr" 
+xst -intstyle ise -ifn "D:/binary_counter/counter_structural.xst" -ofn "D:/binary_counter/counter_structural.syr" 
+xst -intstyle ise -ifn "D:/binary_counter/counter_structural.xst" -ofn "D:/binary_counter/counter_structural.syr" 
+xst -intstyle ise -ifn "D:/binary_counter/counter_structural.xst" -ofn "D:/binary_counter/counter_structural.syr" 
+xst -intstyle ise -ifn "D:/binary_counter/counter_structural.xst" -ofn "D:/binary_counter/counter_structural.syr" 
+xst -intstyle ise -ifn "D:/binary_counter/counter_structural.xst" -ofn "D:/binary_counter/counter_structural.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 counter_structural.ngc counter_structural.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_structural_map.ncd counter_structural.ngd counter_structural.pcf 
+par -w -intstyle ise -ol high -mt off counter_structural_map.ncd counter_structural.ncd counter_structural.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter_structural.twx counter_structural.ncd -o counter_structural.twr counter_structural.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f counter_structural.ut counter_structural.ncd 
+xst -intstyle ise -ifn "D:/binary_counter/counter_structural.xst" -ofn "D:/binary_counter/counter_structural.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 counter_structural.ngc counter_structural.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_structural_map.ncd counter_structural.ngd counter_structural.pcf 
+par -w -intstyle ise -ol high -mt off counter_structural_map.ncd counter_structural.ncd counter_structural.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter_structural.twx counter_structural.ncd -o counter_structural.twr counter_structural.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f counter_structural.ut counter_structural.ncd 
+xst -intstyle ise -ifn "D:/binary_counter/counter_structural.xst" -ofn "D:/binary_counter/counter_structural.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 counter_structural.ngc counter_structural.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_structural_map.ncd counter_structural.ngd counter_structural.pcf 
+par -w -intstyle ise -ol high -mt off counter_structural_map.ncd counter_structural.ncd counter_structural.pcf 
+bitgen -intstyle ise -f counter_structural.ut counter_structural.ncd 
+xst -intstyle ise -ifn "D:/binary_counter/counter_structural.xst" -ofn "D:/binary_counter/counter_structural.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 counter_structural.ngc counter_structural.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_structural_map.ncd counter_structural.ngd counter_structural.pcf 
+par -w -intstyle ise -ol high -mt off counter_structural_map.ncd counter_structural.ncd counter_structural.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter_structural.twx counter_structural.ncd -o counter_structural.twr counter_structural.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f counter_structural.ut counter_structural.ncd 
+xst -intstyle ise -ifn "D:/binary_counter/counter_structural.xst" -ofn "D:/binary_counter/counter_structural.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 counter_structural.ngc counter_structural.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_structural_map.ncd counter_structural.ngd counter_structural.pcf 
+par -w -intstyle ise -ol high -mt off counter_structural_map.ncd counter_structural.ncd counter_structural.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter_structural.twx counter_structural.ncd -o counter_structural.twr counter_structural.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f counter_structural.ut counter_structural.ncd 
+xst -intstyle ise -ifn "D:/binary_counter/counter_structural.xst" -ofn "D:/binary_counter/counter_structural.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc7a100t-csg324-1 counter_structural.ngc counter_structural.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_structural_map.ncd counter_structural.ngd counter_structural.pcf 
+par -w -intstyle ise -ol high -mt off counter_structural_map.ncd counter_structural.ncd counter_structural.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter_structural.twx counter_structural.ncd -o counter_structural.twr counter_structural.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f counter_structural.ut counter_structural.ncd 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\binary_counter\counter_structural.ncd
+OUTFILE=D:\binary_counter\counter_structural.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=D:\binary_counter
+LICENSE=WebPack
+USER_INFO=__0_0_0

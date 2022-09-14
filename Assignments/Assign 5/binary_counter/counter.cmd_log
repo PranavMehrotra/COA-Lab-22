@@ -39,3 +39,26 @@ xst -intstyle ise -ifn "D:/saransh/binary_counter/counter.xst" -ofn "D:/saransh/
 xst -intstyle ise -ifn "D:/saransh/binary_counter/counter.xst" -ofn "D:/saransh/binary_counter/counter.syr" 
 xst -intstyle ise -ifn "D:/saransh/binary_counter/counter.xst" -ofn "D:/saransh/binary_counter/counter.syr" 
 xst -intstyle ise -ifn "C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 5/binary_counter/counter.xst" -ofn "C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 5/binary_counter/counter.syr" 
+xst -intstyle ise -ifn "D:/binary_counter/counter.xst" -ofn "D:/binary_counter/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-1 counter.ngc counter.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -mt off counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf 
+bitgen -intstyle ise -f counter.ut counter.ncd 
+xst -intstyle ise -ifn "D:/binary_counter/counter.xst" -ofn "D:/binary_counter/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timing.ucf -p xc7a100t-csg324-1 counter.ngc counter.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -mt off counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf timing.ucf 
+bitgen -intstyle ise -f counter.ut counter.ncd 
+xst -intstyle ise -ifn "D:/binary_counter/counter.xst" -ofn "D:/binary_counter/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timing.ucf -p xc7a100t-csg324-1 counter.ngc counter.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -mt off counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf timing.ucf 
+bitgen -intstyle ise -f counter.ut counter.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timing.ucf -p xc7a100t-csg324-1 counter.ngc counter.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -mt off counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf timing.ucf 
+bitgen -intstyle ise -f counter.ut counter.ncd 

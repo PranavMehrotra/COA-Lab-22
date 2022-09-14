@@ -18,11 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module counter_structural(input clk, input rst, output[3:0] out,output clk_out);
+module counter_structural(input clk, input rst, output[3:0] out);
 wire[3:0] dff_in;
 wire[3:0] dff_out;
-clock_divider a0(clk,clk_out);
-dff d1(.clk(clk),.rst(rst),.in(dff_in),.out(dff_out));
-Optimised_CLA_4_bit c1(.in1(dff_out),.cin(clk_out),.out(dff_in));
+clock_divider a0(clk,rst,clk_out);
+dff d1(.clk(clk_out),.rst(rst),.in(dff_in),.out(dff_out));
+Optimised_CLA_4_bit c1(.in1(dff_out),.out(dff_in));
 assign out = dff_out;
 endmodule

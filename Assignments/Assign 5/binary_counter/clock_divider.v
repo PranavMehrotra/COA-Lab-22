@@ -18,14 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module clock_divider(input wire clock_in,output reg clock_out = 0);
-	integer counter = 0;
-	always @(posedge clock_in) begin
-		if(counter >=5000000 || clock_out==1) begin
-			counter <= 0;
-			clock_out <= ~clock_out;
+module clock_divider(input wire clock_in, input rst, output clock_out);
+	reg[25:0] counter;
+	always @(posedge clock_in or posedge rst) begin
+		if(rst) begin
+			counter <= 26'd0;
 			end
-		else
-			counter <= counter + 1; 
+		else begin
+			counter <= counter + 26'b1;
+			end
 	end
+	assign clock_out = counter[25];
 endmodule

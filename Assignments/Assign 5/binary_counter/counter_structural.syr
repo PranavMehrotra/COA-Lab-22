@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: counter_structural.prj
 
@@ -105,13 +105,13 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\Optimised_CLA_4_bit.v" into library work
+Analyzing Verilog file "D:\binary_counter\Optimised_CLA_4_bit.v" into library work
 Parsing module <Optimised_CLA_4_bit>.
-Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\dff.v" into library work
+Analyzing Verilog file "D:\binary_counter\dff.v" into library work
 Parsing module <dff>.
-Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\clock_divider.v" into library work
+Analyzing Verilog file "D:\binary_counter\clock_divider.v" into library work
 Parsing module <clock_divider>.
-Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\counter_structural.v" into library work
+Analyzing Verilog file "D:\binary_counter\counter_structural.v" into library work
 Parsing module <counter_structural>.
 
 =========================================================================
@@ -131,32 +131,29 @@ Elaborating module <Optimised_CLA_4_bit>.
 =========================================================================
 
 Synthesizing Unit <counter_structural>.
-    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\counter_structural.v".
+    Related source file is "D:\binary_counter\counter_structural.v".
     Summary:
 	no macro.
 Unit <counter_structural> synthesized.
 
 Synthesizing Unit <clock_divider>.
-    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\clock_divider.v".
-    Found 1-bit register for signal <clock_out>.
-    Found 32-bit register for signal <counter>.
-    Found 32-bit adder for signal <counter[31]_GND_2_o_add_2_OUT> created at line 29.
-    Found 32-bit comparator greater for signal <n0000> created at line 24
+    Related source file is "D:\binary_counter\clock_divider.v".
+    Found 26-bit register for signal <counter>.
+    Found 26-bit adder for signal <counter[25]_GND_2_o_add_0_OUT> created at line 28.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  33 D-type flip-flop(s).
-	inferred   1 Comparator(s).
+	inferred  26 D-type flip-flop(s).
 Unit <clock_divider> synthesized.
 
 Synthesizing Unit <dff>.
-    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\dff.v".
+    Related source file is "D:\binary_counter\dff.v".
     Found 4-bit register for signal <out>.
     Summary:
 	inferred   4 D-type flip-flop(s).
 Unit <dff> synthesized.
 
 Synthesizing Unit <Optimised_CLA_4_bit>.
-    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\Optimised_CLA_4_bit.v".
+    Related source file is "D:\binary_counter\Optimised_CLA_4_bit.v".
     Summary:
 Unit <Optimised_CLA_4_bit> synthesized.
 
@@ -165,13 +162,10 @@ HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 1
- 32-bit adder                                          : 1
-# Registers                                            : 3
- 1-bit register                                        : 1
- 32-bit register                                       : 1
+ 26-bit adder                                          : 1
+# Registers                                            : 2
+ 26-bit register                                       : 1
  4-bit register                                        : 1
-# Comparators                                          : 1
- 32-bit comparator greater                             : 1
 # Xors                                                 : 1
  4-bit xor2                                            : 1
 
@@ -191,11 +185,9 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # Counters                                             : 1
- 32-bit up counter                                     : 1
-# Registers                                            : 5
- Flip-Flops                                            : 5
-# Comparators                                          : 1
- 32-bit comparator greater                             : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 4
+ Flip-Flops                                            : 4
 # Xors                                                 : 1
  4-bit xor2                                            : 1
 
@@ -206,35 +198,6 @@ Macro Statistics
 =========================================================================
 
 Optimizing unit <counter_structural> ...
-WARNING:Xst:1293 - FF/Latch <a0/counter_31> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_30> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_29> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_28> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_27> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_26> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_25> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_24> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_23> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_22> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_21> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_20> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_19> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_18> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_17> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_16> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_15> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_14> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_13> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_12> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_11> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_10> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_9> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_8> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_7> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_6> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_5> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_4> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0/counter_3> has a constant value of 0 in block <counter_structural>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -246,8 +209,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 8
- Flip-Flops                                            : 8
+# Registers                                            : 30
+ Flip-Flops                                            : 30
 
 =========================================================================
 
@@ -270,26 +233,23 @@ Top Level Output File Name         : counter_structural.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 22
+# BELS                             : 83
 #      GND                         : 1
-#      INV                         : 1
-#      LUT1                        : 3
-#      LUT2                        : 2
+#      INV                         : 2
+#      LUT1                        : 25
+#      LUT2                        : 1
 #      LUT3                        : 1
 #      LUT4                        : 1
-#      LUT5                        : 1
-#      MUXCY                       : 8
+#      MUXCY                       : 25
 #      VCC                         : 1
-#      XORCY                       : 3
-# FlipFlops/Latches                : 8
-#      FD                          : 1
-#      FDC                         : 4
-#      FDR                         : 3
+#      XORCY                       : 26
+# FlipFlops/Latches                : 30
+#      FDC                         : 30
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 6
+# IO Buffers                       : 5
 #      IBUF                        : 1
-#      OBUF                        : 5
+#      OBUF                        : 4
 
 Device utilization summary:
 ---------------------------
@@ -298,20 +258,20 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:               8  out of  126800     0%  
- Number of Slice LUTs:                    9  out of  63400     0%  
-    Number used as Logic:                 9  out of  63400     0%  
+ Number of Slice Registers:              30  out of  126800     0%  
+ Number of Slice LUTs:                   30  out of  63400     0%  
+    Number used as Logic:                30  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      9
-   Number with an unused Flip Flop:       1  out of      9    11%  
-   Number with an unused LUT:             0  out of      9     0%  
-   Number of fully used LUT-FF pairs:     8  out of      9    88%  
-   Number of unique control sets:         3
+ Number of LUT Flip Flop pairs used:     30
+   Number with an unused Flip Flop:       0  out of     30     0%  
+   Number with an unused LUT:             0  out of     30     0%  
+   Number of fully used LUT-FF pairs:    30  out of     30   100%  
+   Number of unique control sets:         2
 
 IO Utilization: 
- Number of IOs:                           7
- Number of bonded IOBs:                   7  out of    210     3%  
+ Number of IOs:                           6
+ Number of bonded IOBs:                   6  out of    210     2%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
@@ -337,8 +297,10 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 8     |
+a0/counter_25                      | NONE(d1/out_3)         | 4     |
+clk                                | BUFGP                  | 26    |
 -----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -348,9 +310,9 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 2.896ns (Maximum Frequency: 345.274MHz)
-   Minimum input arrival time before clock: 0.914ns
-   Maximum output required time after clock: 0.910ns
+   Minimum period: 2.737ns (Maximum Frequency: 365.364MHz)
+   Minimum input arrival time before clock: 1.046ns
+   Maximum output required time after clock: 0.904ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -358,95 +320,164 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 2.896ns (frequency: 345.274MHz)
-  Total number of paths / destination ports: 25 / 11
+Timing constraint: Default period analysis for Clock 'a0/counter_25'
+  Clock period: 1.479ns (frequency: 676.133MHz)
+  Total number of paths / destination ports: 10 / 4
 -------------------------------------------------------------------------
-Delay:               2.896ns (Levels of Logic = 7)
-  Source:            a0/counter_2 (FF)
-  Destination:       a0/counter_0 (FF)
-  Source Clock:      clk rising
-  Destination Clock: clk rising
+Delay:               1.479ns (Levels of Logic = 1)
+  Source:            d1/out_0 (FF)
+  Destination:       d1/out_0 (FF)
+  Source Clock:      a0/counter_25 rising
+  Destination Clock: a0/counter_25 rising
 
-  Data Path: a0/counter_2 to a0/counter_0
+  Data Path: d1/out_0 to d1/out_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              2   0.478   0.427  a0/counter_2 (a0/counter_2)
-     LUT1:I0->O            1   0.124   0.000  a0/Mcompar_n0000_cy<0>_rt (a0/Mcompar_n0000_cy<0>_rt)
-     MUXCY:S->O            1   0.472   0.000  a0/Mcompar_n0000_cy<0> (a0/Mcompar_n0000_cy<0>)
-     MUXCY:CI->O           1   0.029   0.000  a0/Mcompar_n0000_cy<1> (a0/Mcompar_n0000_cy<1>)
-     MUXCY:CI->O           1   0.029   0.000  a0/Mcompar_n0000_cy<2> (a0/Mcompar_n0000_cy<2>)
-     MUXCY:CI->O           1   0.029   0.000  a0/Mcompar_n0000_cy<3> (a0/Mcompar_n0000_cy<3>)
-     MUXCY:CI->O           1   0.029   0.000  a0/Mcompar_n0000_cy<4> (a0/Mcompar_n0000_cy<4>)
-     MUXCY:CI->O           4   0.365   0.419  a0/Mcompar_n0000_cy<5> (a0/Mcompar_n0000_cy<5>)
-     FDR:R                     0.494          a0/counter_0
+     FDC:C->Q              5   0.478   0.426  d1/out_0 (d1/out_0)
+     INV:I->O              1   0.146   0.399  c1/Mxor_out_0_xo<0>1_INV_0 (dff_in<0>)
+     FDC:D                     0.030          d1/out_0
     ----------------------------------------
-    Total                      2.896ns (2.050ns logic, 0.846ns route)
-                                       (70.8% logic, 29.2% route)
+    Total                      1.479ns (0.654ns logic, 0.825ns route)
+                                       (44.2% logic, 55.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.737ns (frequency: 365.364MHz)
+  Total number of paths / destination ports: 351 / 26
+-------------------------------------------------------------------------
+Delay:               2.737ns (Levels of Logic = 27)
+  Source:            a0/counter_0 (FF)
+  Destination:       a0/counter_25 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: a0/counter_0 to a0/counter_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.478   0.399  a0/counter_0 (a0/counter_0)
+     INV:I->O              1   0.146   0.000  a0/Mcount_counter_lut<0>_INV_0 (a0/Mcount_counter_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  a0/Mcount_counter_cy<0> (a0/Mcount_counter_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<1> (a0/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<2> (a0/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<3> (a0/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<4> (a0/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<5> (a0/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<6> (a0/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<7> (a0/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<8> (a0/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<9> (a0/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<10> (a0/Mcount_counter_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<11> (a0/Mcount_counter_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<12> (a0/Mcount_counter_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<13> (a0/Mcount_counter_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<14> (a0/Mcount_counter_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<15> (a0/Mcount_counter_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<16> (a0/Mcount_counter_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<17> (a0/Mcount_counter_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<18> (a0/Mcount_counter_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<19> (a0/Mcount_counter_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<20> (a0/Mcount_counter_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<21> (a0/Mcount_counter_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<22> (a0/Mcount_counter_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<23> (a0/Mcount_counter_cy<23>)
+     MUXCY:CI->O           0   0.029   0.000  a0/Mcount_counter_cy<24> (a0/Mcount_counter_cy<24>)
+     XORCY:CI->O           1   0.510   0.000  a0/Mcount_counter_xor<25> (Result<25>)
+     FDC:D                     0.030          a0/counter_25
+    ----------------------------------------
+    Total                      2.737ns (2.338ns logic, 0.399ns route)
+                                       (85.4% logic, 14.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'a0/counter_25'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              0.914ns (Levels of Logic = 1)
+Offset:              1.046ns (Levels of Logic = 1)
   Source:            rst (PAD)
   Destination:       d1/out_3 (FF)
-  Destination Clock: clk rising
+  Destination Clock: a0/counter_25 rising
 
   Data Path: rst to d1/out_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.001   0.419  rst_IBUF (rst_IBUF)
+     IBUF:I->O            30   0.001   0.551  rst_IBUF (rst_IBUF)
      FDC:CLR                   0.494          d1/out_0
     ----------------------------------------
-    Total                      0.914ns (0.495ns logic, 0.419ns route)
-                                       (54.2% logic, 45.8% route)
+    Total                      1.046ns (0.495ns logic, 0.551ns route)
+                                       (47.3% logic, 52.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 5 / 5
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 26 / 26
 -------------------------------------------------------------------------
-Offset:              0.910ns (Levels of Logic = 1)
-  Source:            a0/clock_out (FF)
-  Destination:       clk_out (PAD)
-  Source Clock:      clk rising
+Offset:              1.046ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       a0/counter_0 (FF)
+  Destination Clock: clk rising
 
-  Data Path: a0/clock_out to clk_out
+  Data Path: rst to a0/counter_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               6   0.478   0.432  a0/clock_out (a0/clock_out)
-     OBUF:I->O                 0.000          clk_out_OBUF (clk_out)
+     IBUF:I->O            30   0.001   0.551  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.494          a0/counter_0
     ----------------------------------------
-    Total                      0.910ns (0.478ns logic, 0.432ns route)
-                                       (52.5% logic, 47.5% route)
+    Total                      1.046ns (0.495ns logic, 0.551ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'a0/counter_25'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              0.904ns (Levels of Logic = 1)
+  Source:            d1/out_0 (FF)
+  Destination:       out<0> (PAD)
+  Source Clock:      a0/counter_25 rising
+
+  Data Path: d1/out_0 to out<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.478   0.426  d1/out_0 (d1/out_0)
+     OBUF:I->O                 0.000          out_0_OBUF (out<0>)
+    ----------------------------------------
+    Total                      0.904ns (0.478ns logic, 0.426ns route)
+                                       (52.9% logic, 47.1% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock a0/counter_25
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+a0/counter_25  |    1.479|         |         |         |
+---------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.896|         |         |         |
+clk            |    2.737|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.79 secs
+Total CPU time to Xst completion: 7.94 secs
  
 --> 
 
-Total memory usage is 4689404 kilobytes
+Total memory usage is 4616252 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   29 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

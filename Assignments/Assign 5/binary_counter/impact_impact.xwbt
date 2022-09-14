@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\binary_counter\impact.xsl
+OUTFILE=D:\binary_counter\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\binary_counter
+LICENSE=iMPACT
+USER_INFO=iMPACT

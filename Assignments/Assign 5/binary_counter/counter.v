@@ -27,12 +27,12 @@ module counter (input clk,      // Declare input port for the clock to allow cou
   // Once inside this block, it checks if the reset is 0, then change out to zero   
   // If reset is 1, then the design should be allowed to count up, so increment the counter    
 
-  clock_divider a0(clk,clk_out);  
+  clock_divider a0(clk,rst,clk_out);  
   always @ (posedge clk_out or posedge rst) begin 
 	 if (rst)  
-		out <= 0;  
+		out <= 4'b0;  
 	 else
-		out <= out + 1;  
+		out <= out + 4'b1;  
   end
   	  
 endmodule
