@@ -1,0 +1,10 @@
+Command line:
+   counter_structural_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49798
+
+Wed Sep 14 13:24:37 2022
+
+
+ Elaboration Time: 0.015625 sec

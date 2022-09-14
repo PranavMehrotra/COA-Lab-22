@@ -1,0 +1,4 @@
+verilog work "Optimised_CLA_4_bit.v"
+verilog work "dff.v"
+verilog work "clock_divider.v"
+verilog work "counter_structural.v"
