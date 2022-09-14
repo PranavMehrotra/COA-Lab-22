@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.67 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.68 secs
  
 --> Reading design: counter.prj
 
@@ -105,9 +105,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\saransh\binary_counter\clock_divider.v" into library work
+Analyzing Verilog file "C:\Users\Saransh Sharma\OneDrive\Documents\GitHub\COA-Lab-22\Assignments\Assign 5\binary_counter\clock_divider.v" into library work
 Parsing module <clock_divider>.
-Analyzing Verilog file "D:\saransh\binary_counter\counter.v" into library work
+Analyzing Verilog file "C:\Users\Saransh Sharma\OneDrive\Documents\GitHub\COA-Lab-22\Assignments\Assign 5\binary_counter\counter.v" into library work
 Parsing module <counter>.
 
 =========================================================================
@@ -117,23 +117,23 @@ Parsing module <counter>.
 Elaborating module <counter>.
 
 Elaborating module <clock_divider>.
-WARNING:HDLCompiler:413 - "D:\saransh\binary_counter\counter.v" Line 35: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Saransh Sharma\OneDrive\Documents\GitHub\COA-Lab-22\Assignments\Assign 5\binary_counter\counter.v" Line 35: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <counter>.
-    Related source file is "D:\saransh\binary_counter\counter.v".
+    Related source file is "C:\Users\Saransh Sharma\OneDrive\Documents\GitHub\COA-Lab-22\Assignments\Assign 5\binary_counter\counter.v".
     Found 4-bit register for signal <out>.
-    Found 4-bit adder for signal <out[3]_GND_1_o_add_1_OUT> created at line 35.
+    Found 4-bit adder for signal <out[3]_GND_1_o_add_0_OUT> created at line 35.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   4 D-type flip-flop(s).
 Unit <counter> synthesized.
 
 Synthesizing Unit <clock_divider>.
-    Related source file is "D:\saransh\binary_counter\clock_divider.v".
+    Related source file is "C:\Users\Saransh Sharma\OneDrive\Documents\GitHub\COA-Lab-22\Assignments\Assign 5\binary_counter\clock_divider.v".
         DIVISOR = 8'b00000101
     Found 1-bit register for signal <clock_out>.
     Found 8-bit register for signal <counter>.
@@ -229,9 +229,9 @@ Top Level Output File Name         : counter.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 34
+# BELS                             : 33
 #      GND                         : 1
-#      INV                         : 3
+#      INV                         : 2
 #      LUT1                        : 7
 #      LUT2                        : 3
 #      LUT3                        : 1
@@ -242,7 +242,8 @@ Primitive and Black Box Usage:
 #      XORCY                       : 8
 # FlipFlops/Latches                : 13
 #      FD                          : 2
-#      FDR                         : 11
+#      FDC                         : 4
+#      FDR                         : 7
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 5
@@ -257,14 +258,14 @@ Selected Device : 7a100tcsg324-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:              13  out of  126800     0%  
- Number of Slice LUTs:                   17  out of  63400     0%  
-    Number used as Logic:                17  out of  63400     0%  
+ Number of Slice LUTs:                   16  out of  63400     0%  
+    Number used as Logic:                16  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     17
-   Number with an unused Flip Flop:       4  out of     17    23%  
-   Number with an unused LUT:             0  out of     17     0%  
-   Number of fully used LUT-FF pairs:    13  out of     17    76%  
+ Number of LUT Flip Flop pairs used:     16
+   Number with an unused Flip Flop:       3  out of     16    18%  
+   Number with an unused LUT:             0  out of     16     0%  
+   Number of fully used LUT-FF pairs:    13  out of     16    81%  
    Number of unique control sets:         3
 
 IO Utilization: 
@@ -309,7 +310,7 @@ Timing Summary:
 Speed Grade: -1
 
    Minimum period: 2.494ns (Maximum Frequency: 400.962MHz)
-   Minimum input arrival time before clock: 1.459ns
+   Minimum input arrival time before clock: 0.914ns
    Maximum output required time after clock: 0.904ns
    Maximum combinational path delay: No path found
 
@@ -354,9 +355,9 @@ Delay:               1.479ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              5   0.478   0.426  out_0 (out_0)
+     FDC:C->Q              5   0.478   0.426  out_0 (out_0)
      INV:I->O              1   0.146   0.399  Mcount_out_xor<0>11_INV_0 (Result<0>)
-     FDR:D                     0.030          out_0
+     FDC:D                     0.030          out_0
     ----------------------------------------
     Total                      1.479ns (0.654ns logic, 0.825ns route)
                                        (44.2% logic, 55.8% route)
@@ -365,7 +366,7 @@ Delay:               1.479ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'a0/clock_out'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              1.459ns (Levels of Logic = 2)
+Offset:              0.914ns (Levels of Logic = 1)
   Source:            rst (PAD)
   Destination:       out_0 (FF)
   Destination Clock: a0/clock_out rising
@@ -374,12 +375,11 @@ Offset:              1.459ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.001   0.399  rst_IBUF (rst_IBUF)
-     INV:I->O              4   0.146   0.419  rst_inv1_INV_0 (rst_inv)
-     FDR:R                     0.494          out_0
+     IBUF:I->O             4   0.001   0.419  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.494          out_0
     ----------------------------------------
-    Total                      1.459ns (0.641ns logic, 0.818ns route)
-                                       (43.9% logic, 56.1% route)
+    Total                      0.914ns (0.495ns logic, 0.419ns route)
+                                       (54.2% logic, 45.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'a0/clock_out'
@@ -394,7 +394,7 @@ Offset:              0.904ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              5   0.478   0.426  out_0 (out_0)
+     FDC:C->Q              5   0.478   0.426  out_0 (out_0)
      OBUF:I->O                 0.000          out_0_OBUF (out<0>)
     ----------------------------------------
     Total                      0.904ns (0.478ns logic, 0.426ns route)
@@ -424,12 +424,12 @@ clk            |    2.494|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.93 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.68 secs
  
 --> 
 
-Total memory usage is 4616980 kilobytes
+Total memory usage is 4618028 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

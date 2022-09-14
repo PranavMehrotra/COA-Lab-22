@@ -22,7 +22,7 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "clk = %d, rst = %d, out = %d ";
-static const char *ng1 = "D:/saransh/binary_counter/countertest.v";
+static const char *ng1 = "C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 5/binary_counter/countertest.v";
 static int ng2[] = {0, 0};
 static int ng3[] = {1, 0};
 
@@ -178,7 +178,7 @@ LAB4:    xsi_set_current_line(45, ng1);
 
 LAB1:    return;
 LAB5:    xsi_set_current_line(50, ng1);
-    t3 = ((char*)((ng3)));
+    t3 = ((char*)((ng2)));
     t4 = (t0 + 1608);
     xsi_vlogvar_wait_assign_value(t4, t3, 0, 0, 1, 0LL);
     xsi_set_current_line(51, ng1);
@@ -188,7 +188,7 @@ LAB5:    xsi_set_current_line(50, ng1);
     goto LAB1;
 
 LAB6:    xsi_set_current_line(51, ng1);
-    t3 = ((char*)((ng2)));
+    t3 = ((char*)((ng3)));
     t4 = (t0 + 1608);
     xsi_vlogvar_wait_assign_value(t4, t3, 0, 0, 1, 0LL);
     xsi_set_current_line(52, ng1);
@@ -198,7 +198,7 @@ LAB6:    xsi_set_current_line(51, ng1);
     goto LAB1;
 
 LAB7:    xsi_set_current_line(52, ng1);
-    t3 = ((char*)((ng3)));
+    t3 = ((char*)((ng2)));
     t4 = (t0 + 1608);
     xsi_vlogvar_wait_assign_value(t4, t3, 0, 0, 1, 0LL);
     goto LAB1;

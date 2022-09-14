@@ -2,14 +2,14 @@ Command line:
    countertest_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50307
+     -socket  53031
 
-Wed Sep 14 11:15:18 2022
+Wed Sep 14 11:35:34 2022
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.078125 sec
 
- Current Memory Usage: 5150.15 Meg
+ Current Memory Usage: 5150.78 Meg
 
  Total Signals          : 18
  Total Nets             : 20
@@ -21,9 +21,9 @@ Wed Sep 14 11:15:18 2022
  Total Scalar Nets and Variables : 123
 Total Line Count : 31
 
- Total Simulation Time: 0.34375 sec
+ Total Simulation Time: 0.296875 sec
 
- Current Memory Usage: 4678.3 Meg
+ Current Memory Usage: 5465.35 Meg
 
-Wed Sep 14 11:17:37 2022
+Wed Sep 14 11:36:10 2022
 

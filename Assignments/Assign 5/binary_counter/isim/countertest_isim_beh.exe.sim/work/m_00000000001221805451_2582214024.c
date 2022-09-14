@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/saransh/binary_counter/counter.v";
+static const char *ng0 = "C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 5/binary_counter/counter.v";
 static int ng1[] = {0, 0};
 static int ng2[] = {1, 0};
 
@@ -29,26 +29,19 @@ static int ng2[] = {1, 0};
 
 static void Always_31_0(char *t0)
 {
-    char t4[8];
+    char t13[8];
     char *t1;
     char *t2;
     char *t3;
+    char *t4;
     char *t5;
-    char *t6;
+    unsigned int t6;
     unsigned int t7;
     unsigned int t8;
     unsigned int t9;
     unsigned int t10;
-    unsigned int t11;
+    char *t11;
     char *t12;
-    char *t13;
-    unsigned int t14;
-    unsigned int t15;
-    unsigned int t16;
-    unsigned int t17;
-    unsigned int t18;
-    char *t19;
-    char *t20;
 
 LAB0:    t1 = (t0 + 2688U);
     t2 = *((char **)t1);
@@ -68,54 +61,34 @@ LAB1:    return;
 LAB4:    xsi_set_current_line(31, ng0);
 
 LAB5:    xsi_set_current_line(32, ng0);
-    t5 = (t0 + 1208U);
-    t6 = *((char **)t5);
-    memset(t4, 0, 8);
-    t5 = (t6 + 4);
-    t7 = *((unsigned int *)t5);
-    t8 = (~(t7));
-    t9 = *((unsigned int *)t6);
-    t10 = (t9 & t8);
-    t11 = (t10 & 1U);
-    if (t11 != 0)
-        goto LAB9;
-
-LAB7:    if (*((unsigned int *)t5) == 0)
+    t4 = (t0 + 1208U);
+    t5 = *((char **)t4);
+    t4 = (t5 + 4);
+    t6 = *((unsigned int *)t4);
+    t7 = (~(t6));
+    t8 = *((unsigned int *)t5);
+    t9 = (t8 & t7);
+    t10 = (t9 != 0);
+    if (t10 > 0)
         goto LAB6;
 
-LAB8:    t12 = (t4 + 4);
-    *((unsigned int *)t4) = 1;
-    *((unsigned int *)t12) = 1;
-
-LAB9:    t13 = (t4 + 4);
-    t14 = *((unsigned int *)t13);
-    t15 = (~(t14));
-    t16 = *((unsigned int *)t4);
-    t17 = (t16 & t15);
-    t18 = (t17 != 0);
-    if (t18 > 0)
-        goto LAB10;
-
-LAB11:    xsi_set_current_line(35, ng0);
+LAB7:    xsi_set_current_line(35, ng0);
     t2 = (t0 + 1768);
     t3 = (t2 + 56U);
-    t5 = *((char **)t3);
-    t6 = ((char*)((ng2)));
-    memset(t4, 0, 8);
-    xsi_vlog_unsigned_add(t4, 32, t5, 4, t6, 32);
+    t4 = *((char **)t3);
+    t5 = ((char*)((ng2)));
+    memset(t13, 0, 8);
+    xsi_vlog_unsigned_add(t13, 32, t4, 4, t5, 32);
+    t11 = (t0 + 1768);
+    xsi_vlogvar_wait_assign_value(t11, t13, 0, 0, 4, 0LL);
+
+LAB8:    goto LAB2;
+
+LAB6:    xsi_set_current_line(33, ng0);
+    t11 = ((char*)((ng1)));
     t12 = (t0 + 1768);
-    xsi_vlogvar_wait_assign_value(t12, t4, 0, 0, 4, 0LL);
-
-LAB12:    goto LAB2;
-
-LAB6:    *((unsigned int *)t4) = 1;
-    goto LAB9;
-
-LAB10:    xsi_set_current_line(33, ng0);
-    t19 = ((char*)((ng1)));
-    t20 = (t0 + 1768);
-    xsi_vlogvar_wait_assign_value(t20, t19, 0, 0, 4, 0LL);
-    goto LAB12;
+    xsi_vlogvar_wait_assign_value(t12, t11, 0, 0, 4, 0LL);
+    goto LAB8;
 
 }
 

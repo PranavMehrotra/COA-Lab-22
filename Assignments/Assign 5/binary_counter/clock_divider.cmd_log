@@ -10,3 +10,4 @@ xst -intstyle ise -ifn "D:/saransh/binary_counter/clock_divider.xst" -ofn "D:/sa
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-1 clock_divider.ngc clock_divider.ngd  
 map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o clock_divider_map.ncd clock_divider.ngd clock_divider.pcf 
 xst -intstyle ise -ifn "D:/saransh/binary_counter/clock_divider.xst" -ofn "D:/saransh/binary_counter/clock_divider.syr" 
+xst -intstyle ise -ifn "C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 5/binary_counter/clock_divider.xst" -ofn "C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 5/binary_counter/clock_divider.syr" 

@@ -47,9 +47,9 @@ module countertest;
 		
 		// Wait 100 ns for global reset to finish
 		$monitor("clk = %d, rst = %d, out = %d ", clk,rst,out);
-		#20   rst <= 1;  
-		#150   rst <= 0;  
-		#50   rst <= 1; 
+		#20   rst <= 0;  
+		#150   rst <= 1;  
+		#50   rst <= 0; 
 		
         
 		// Add stimulus here

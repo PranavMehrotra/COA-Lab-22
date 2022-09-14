@@ -226,6 +226,6 @@ LAB29:    memcpy(t8, t25, 8);
 extern void work_m_00000000001619272654_4217414517_init()
 {
 	static char *pe[] = {(void *)Always_69_0};
-	xsi_register_didat("work_m_00000000001619272654_4217414517", "isim/countertest_isim_beh.exe.sim/work/m_00000000001619272654_4217414517.didat");
+	xsi_register_didat("work_m_00000000001619272654_4217414517", "isim/clocktest_isim_beh.exe.sim/work/m_00000000001619272654_4217414517.didat");
 	xsi_register_executes(pe);
 }
