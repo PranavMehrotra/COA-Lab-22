@@ -1,0 +1,38 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o H:/Siddhartha/TA/gcd_ise/simul_isim_beh.exe -prj H:/Siddhartha/TA/gcd_ise/simul_beh.prj work.simul work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "H:/Siddhartha/TA/gcd_ise/up_down_counter.v" into library work
+Analyzing Verilog file "H:/Siddhartha/TA/gcd_ise/substractor.v" into library work
+Analyzing Verilog file "H:/Siddhartha/TA/gcd_ise/rShift.v" into library work
+Analyzing Verilog file "H:/Siddhartha/TA/gcd_ise/register.v" into library work
+Analyzing Verilog file "H:/Siddhartha/TA/gcd_ise/Mux.v" into library work
+Analyzing Verilog file "H:/Siddhartha/TA/gcd_ise/lShift.v" into library work
+Analyzing Verilog file "H:/Siddhartha/TA/gcd_ise/input_Mux.v" into library work
+Analyzing Verilog file "H:/Siddhartha/TA/gcd_ise/controlPath.v" into library work
+Analyzing Verilog file "H:/Siddhartha/TA/gcd_ise/complementer.v" into library work
+Analyzing Verilog file "H:/Siddhartha/TA/gcd_ise/gcd.v" into library work
+Analyzing Verilog file "H:/Siddhartha/TA/gcd_ise/simul.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "H:/Siddhartha/TA/gcd_ise/gcd.v" Line 132: Port count is not connected to this instance
+Completed static elaboration
+Compiling module input_Mux(WIDTH=32)
+Compiling module register(WIDTH=32)
+Compiling module substractor(WIDTH=32)
+Compiling module complementer(WIDTH=32)
+Compiling module Mux(WIDTH=32)
+Compiling module rShift(WIDTH=32)
+Compiling module lShift(WIDTH=32)
+Compiling module up_down_counter(WIDTH=32)
+Compiling module controlPath
+Compiling module gcd(WIDTH=32)
+Compiling module simul
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 12 Verilog Units
+Built simulation executable H:/Siddhartha/TA/gcd_ise/simul_isim_beh.exe
+Fuse Memory Usage: 28624 KB
+Fuse CPU Usage: 515 ms
