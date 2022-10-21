@@ -1,0 +1,33 @@
+Running: D:\Softwares\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU_tb_isim_beh.exe -prj D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU_tb_beh.prj work.ALU_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/Look_Ahead_Carry_Unit.v" into library work
+Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/CLA_4_bit_augmented.v" into library work
+Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/CLA_16_bit_LCU.v" into library work
+Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/shiftunit.v" into library work
+Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/mux_32_3X1.v" into library work
+Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/diffunit.v" into library work
+Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/adderunit.v" into library work
+Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU.v" into library work
+Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU_tb.v" into library work
+Analyzing Verilog file "D:/Softwares/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU.v" Line 37: Size mismatch in connection of port <cin>. Formal port size is 1-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module mux_32_3X1
+Compiling module Look_Ahead_Carry_Unit
+Compiling module CLA_4_bit_augmented
+Compiling module CLA_16_bit_LCU
+Compiling module adderunit
+Compiling module shiftunit
+Compiling module diffunit
+Compiling module ALU
+Compiling module ALU_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 10 Verilog Units
+Built simulation executable D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU_tb_isim_beh.exe
+Fuse Memory Usage: 29452 KB
+Fuse CPU Usage: 468 ms

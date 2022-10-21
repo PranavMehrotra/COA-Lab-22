@@ -25,18 +25,14 @@ module shiftunit(
     output reg [31:0] result
 );
 	always @(*) begin
-		if (select = 2'b00){
-			result = 
-		
-		}
-
-
-
+		if (select == 2'b00) begin
+			result = in << shamt;
+		end
+		else if (select == 2'b01) begin
+			result = in >> shamt;
+		end
+		else if (select == 2'b10) begin
+			result = in >>> shamt;
+		end
 	end
-
-	
-
-
-
-
 endmodule

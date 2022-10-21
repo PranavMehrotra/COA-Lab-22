@@ -201,6 +201,7 @@
     <transform xil_pn:end_ts="1661936126" xil_pn:in_ck="1116936465569457503" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1661936126">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="CLA_16_bit_LCU.v"/>
       <outfile xil_pn:name="CLA_16_bit_LCU_tb.v"/>
@@ -216,6 +217,7 @@
     <transform xil_pn:end_ts="1661936129" xil_pn:in_ck="1116936465569457503" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5501679423391994285" xil_pn:start_ts="1661936126">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -300,6 +302,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <outfile xil_pn:name="Wrapper_CLA_16_bit_ripple.pcf"/>
       <outfile xil_pn:name="Wrapper_CLA_16_bit_ripple_map.map"/>
       <outfile xil_pn:name="Wrapper_CLA_16_bit_ripple_map.mrp"/>
@@ -313,6 +316,8 @@
     <transform xil_pn:end_ts="1661941296" xil_pn:in_ck="4043041127320266643" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1661941264">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Wrapper_CLA_16_bit_ripple.ncd"/>
       <outfile xil_pn:name="Wrapper_CLA_16_bit_ripple.pad"/>
       <outfile xil_pn:name="Wrapper_CLA_16_bit_ripple.par"/>
@@ -327,6 +332,7 @@
     <transform xil_pn:end_ts="1661941296" xil_pn:in_ck="118602116286258358" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1661941283">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Wrapper_CLA_16_bit_ripple.twr"/>
       <outfile xil_pn:name="Wrapper_CLA_16_bit_ripple.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

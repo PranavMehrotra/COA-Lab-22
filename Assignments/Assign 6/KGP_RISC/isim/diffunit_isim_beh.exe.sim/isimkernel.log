@@ -1,0 +1,30 @@
+Command line:
+   diffunit_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55645
+
+Fri Oct 21 16:15:12 2022
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5150.09 Meg
+
+ Total Signals          : 19
+ Total Nets             : 205
+ Total Signal Drivers   : 10
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 13
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 291
+In process diffunit.vCont_23_0 
+ FATAL ERROR:ISim: This application has discovered an exceptional condition from which it cannot recover. Process will terminate. To search for possible resolutions to this issue, refer to the Xilinx answer database by going to http://www.xilinx.com/support/answers/index.htm and search with keywords 'ISim' and 'FATAL ERROR'. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+
+ Total Simulation Time: 0.3125 sec
+
+ Current Memory Usage: 5186.03 Meg
+
+Fri Oct 21 16:15:20 2022
+

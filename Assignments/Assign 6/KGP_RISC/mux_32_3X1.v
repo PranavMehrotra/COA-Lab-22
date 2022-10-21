@@ -27,7 +27,7 @@ module mux_32_3X1(
 	 );
 	 
 	always @(*) begin
-        case (sel)
+        case (select)
             2'b00 : out = a0;
             2'b01 : out = a1;
             2'b10 : out = a2;
