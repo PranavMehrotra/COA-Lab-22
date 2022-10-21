@@ -27,7 +27,8 @@ Compiling module ALU
 Compiling module ALU_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 10 Verilog Units
 Built simulation executable D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU_tb_isim_beh.exe
-Fuse Memory Usage: 29452 KB
-Fuse CPU Usage: 468 ms
+Fuse Memory Usage: 29492 KB
+Fuse CPU Usage: 421 ms
