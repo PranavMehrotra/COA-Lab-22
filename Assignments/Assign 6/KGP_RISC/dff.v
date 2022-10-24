@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    13:08:09 10/21/2022 
+// Create Date:    18:31:27 10/22/2022 
 // Design Name: 
-// Module Name:    mux_32_3X1 
+// Module Name:    dff 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,21 +18,17 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module mux_32_3X1(
-    input [31:0] a0, 
-    input [31:0] a1, 
-    input [31:0] a2, 
-    input [1:0] select, 
-    output reg [31:0] out
-	 );
-	 
-	always @(*) begin
-        case (select)
-            2'b00 : out = a0;
-            2'b01 : out = a1;
-            2'b10 : out = a2;
-            default : out = 32'd0;
-        endcase
+module dff(
+	input clk,
+	input rst,
+	input in,
+	output reg out
+);
+	always @(posedge clk or posedge rst) begin
+        if (rst)
+            q <= 1'b0;
+        else
+            q <= d;
     end
 
 endmodule
