@@ -51,7 +51,7 @@ module data_path(
 	.instruction(instruction),
 	.opcode(opcode),
 	.funccode(funccode),
-	.pda(.pdain),
+	.pda(pdain),
 	.rs(rs),
 	.rt(rt),
 	.shamt(shmatin),
@@ -65,7 +65,7 @@ module data_path(
 	.offsetOut(offset),
 	.pdaOut(pda)
 	);
-	register_file reg(
+	register_file reg_store(
 	.rs(rs),
 	.rt(rt),
 	.reg_dest(reg_dest),
@@ -74,7 +74,7 @@ module data_path(
 	.clk(clk),
 	.rst(rst),
 	.rs_out(rsOut),
-	.rt_out(rtOut),
+	.rt_out(rtOut)
 	);
 	ALU alu(
 	.a(rsOut),	
@@ -88,7 +88,12 @@ module data_path(
 	.sign(sign),
 	.result(result)	
 	);
-
+	dff DFF (
+        .clk(clk),
+        .rst(rst),
+        .in(carry),
+        .out(prevCarry)
+    );
 	
 	
 	

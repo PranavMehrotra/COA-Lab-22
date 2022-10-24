@@ -21,13 +21,13 @@
 module control_unit(
 	input [5:0] opcode,
 	input [5:0] funccode,
-    output [1:0] reg_dest,
-    output reg_write,
-    output [2:0] ALUop,
-    output [1:0] ALUsource,
-    output mem_write,
-    output [1:0] mem_to_reg,
-    output [2:0] branch
+    output reg [1:0] reg_dest,
+    output reg reg_write,
+    output reg [2:0] ALUop,
+    output reg [1:0] ALUsource,
+    output reg mem_write,
+    output reg [1:0] mem_to_reg,
+    output reg [2:0] branch
 );
     always @(opcode or funccode) begin
         if(opcode[5]==1)begin

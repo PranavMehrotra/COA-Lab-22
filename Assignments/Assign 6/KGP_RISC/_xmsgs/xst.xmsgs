@@ -5,13 +5,67 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\ALU.v" Line 37: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">cin</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 57: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">shamt</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\ALU.v" Line 34: Net &lt;<arg fmt="%s" index="1">diffOut[31]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 57: Assignment to <arg fmt="%s" index="1">shmatin</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">diffOut</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 66: Assignment to <arg fmt="%s" index="1">pda</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\register_file.v" Line 34: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">a0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\ALU.v" Line 37: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">cin</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 87: Assignment to <arg fmt="%s" index="1">zero</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 88: Assignment to <arg fmt="%s" index="1">sign</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 95: Assignment to <arg fmt="%s" index="1">prevCarry</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 37: Net &lt;<arg fmt="%s" index="1">memRead[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 41: Net &lt;<arg fmt="%s" index="1">shamtin[4]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v</arg>&quot; line <arg fmt="%d" index="2">91</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">DFF</arg>&gt; of block &lt;<arg fmt="%s" index="4">dff</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">data_path</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">branch</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">mem_write</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v</arg>&quot; line <arg fmt="%s" index="2">50</arg>: Output port &lt;<arg fmt="%s" index="3">shamt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">decoder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">pdaOut</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">extender</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v</arg>&quot; line <arg fmt="%s" index="2">79</arg>: Output port &lt;<arg fmt="%s" index="3">zero</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">alu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v</arg>&quot; line <arg fmt="%s" index="2">79</arg>: Output port &lt;<arg fmt="%s" index="3">sign</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">alu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v</arg>&quot; line <arg fmt="%s" index="2">91</arg>: Output port &lt;<arg fmt="%s" index="3">out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DFF</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">memRead</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">nextPC</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">shamtin</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">carry</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -113,7 +167,7 @@
 <msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">result&lt;31&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Data/alu/carry</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
 </messages>
