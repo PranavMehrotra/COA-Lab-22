@@ -54,7 +54,7 @@ module data_path(
 	.pda(pdain),
 	.rs(rs),
 	.rt(rt),
-	.shamt(shmatin),
+	.shamt(shamtin),
 	.imm(offsetin)
 	);
 	bit_extend_unit extender(

@@ -39,20 +39,32 @@ module KGP_RISC_tb;
 		.instruction(instruction), 
 		.result(result)
 	);
-	always #20 clk = ~clk;
+	always #10 clk = ~clk;
 	initial begin
 		// Initialize Inputs
 		clk = 0;
 		rst = 1;
 		instruction = 32'd0;
-		#60
+		#40
 		rst=0;
-		instruction = 32'b00001000001000110000000000000111;
-		#10
+		// Add immediate 5*4 to reg:1
+		instruction = 32'b00001000001000110000000000000101;
+		#20
+		instruction = 32'd0;
+		#20
+		instruction = 32'b00001000001000110000000000000100;
+		#20
+		// SLL , Reg: 1 and 3 times left shift
+		instruction = 32'b00000100001000000000000011100000;
+		#20
+		instruction = 32'b00000000001000010000000000001000;// edwd
+		#20
+		instruction = 32'b00000100001000000000000011110000;
+		#20
 		instruction = 32'd0;
 		// Wait 100 ns for global reset to finish
-		#150;
-      instruction = 32'b00001000011000110000000000000100;
+		//#150;
+      //instruction = 32'b00001000011000110000000000000100;
 		// Add stimulus here
 
 	end

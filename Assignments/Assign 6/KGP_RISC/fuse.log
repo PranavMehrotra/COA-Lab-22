@@ -21,7 +21,6 @@ Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/As
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb.v" into library work
 Analyzing Verilog file "D:/Softwares/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:189 - "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v" Line 57: Size mismatch in connection of port <shamt>. Formal port size is 5-bit while actual signal size is 1-bit.
 WARNING:HDLCompiler:189 - "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/register_file.v" Line 34: Size mismatch in connection of port <a0>. Formal port size is 32-bit while actual signal size is 5-bit.
 WARNING:HDLCompiler:189 - "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU.v" Line 37: Size mismatch in connection of port <cin>. Formal port size is 1-bit while actual signal size is 32-bit.
 Completed static elaboration
@@ -46,5 +45,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 2 sub-compilation(s) to finish...
 Compiled 17 Verilog Units
 Built simulation executable D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb_isim_beh.exe
-Fuse Memory Usage: 29832 KB
-Fuse CPU Usage: 499 ms
+Fuse Memory Usage: 29720 KB
+Fuse CPU Usage: 593 ms

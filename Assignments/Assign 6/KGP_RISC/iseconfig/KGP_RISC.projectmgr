@@ -30,13 +30,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -88,14 +88,15 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/ALU_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|ALU_tb.v</ClosedNode>
          <ClosedNode>/ALU_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|ALU_tb.v/uut - ALU/add - adderunit</ClosedNode>
-         <ClosedNode>/KGP_RISC_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC_tb.v</ClosedNode>
+         <ClosedNode>/KGP_RISC_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/Data - data_path/alu - ALU</ClosedNode>
+         <ClosedNode>/KGP_RISC_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/Data - data_path/reg_store - register_file</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>KGP_RISC_tb (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000110000000020000000000000000000000000200000064ffffffff000000810000000300000002000001100000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000019c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000019c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>KGP_RISC_tb (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb.v)</CurrentItem>
    </ItemView>
@@ -105,13 +106,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
