@@ -31,6 +31,7 @@ module control_unit(
 );
     always @(opcode or funccode) begin
         if(opcode[5]==1)begin
+				// Branch and Link
             if(opcode[4]==1)begin
                 ALUop = 3'b000;
                 ALUsource = 2'b00;
@@ -40,6 +41,7 @@ module control_unit(
                 mem_write = 1'b0;
                 branch = opcode[2:0];
             end
+				// Other Branches
             else begin
                 ALUop = 3'b000;
                 ALUsource = 2'b00;
@@ -50,6 +52,7 @@ module control_unit(
                 branch = opcode[2:0];
             end
         end
+		  // Add Immediate
         else if(opcode == 6'b000010) begin
             ALUop = 3'b000;
             ALUsource = 2'b10;
@@ -59,6 +62,7 @@ module control_unit(
             mem_write = 1'b0;
             branch = 3'b000;
         end
+		  // Complement Immediate
         else if(opcode == 6'b000011) begin
             ALUop = 3'b001;
             ALUsource = 2'b10;
@@ -68,6 +72,7 @@ module control_unit(
             mem_write = 1'b0;
             branch = 3'b000;
         end
+		  // Load word
         else if(opcode == 6'b000110) begin
             ALUop = 3'b000;
             ALUsource = 2'b10;
@@ -77,6 +82,7 @@ module control_unit(
             mem_write = 1'b0;
             branch = 3'b000;
         end
+		  // Store Word
         else if(opcode == 6'b010110) begin
             ALUop = 3'b000;
             ALUsource = 2'b10;
@@ -86,6 +92,7 @@ module control_unit(
             mem_write = 1'b1;
             branch = 3'b000;
         end
+		  // All others
         else begin
             ALUop = funccode[5:3];
             ALUsource = opcode[1:0];

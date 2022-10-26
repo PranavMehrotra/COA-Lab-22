@@ -46,12 +46,14 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="KGP_RISC.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="KGP_RISC_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="KGP_RISC_summary.html"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="KGP_RISC_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="KGP_RISC_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="KGP_RISC_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="KGP_RISC_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="bit_extend_unit_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="branch_mechanism_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="branch_mechanism_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="branch_mechanism_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="branch_mechanism_tb_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="diffunit_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
@@ -63,11 +65,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1666610622" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1666610622">
+    <transform xil_pn:end_ts="1666813869" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1666813869">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1666776544" xil_pn:in_ck="7136150596589234670" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1666776544">
+    <transform xil_pn:end_ts="1666814023" xil_pn:in_ck="-5135489448915627563" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1666814023">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.v"/>
@@ -80,6 +82,9 @@
       <outfile xil_pn:name="Look_Ahead_Carry_Unit.v"/>
       <outfile xil_pn:name="adderunit.v"/>
       <outfile xil_pn:name="bit_extend_unit.v"/>
+      <outfile xil_pn:name="branch_checker.v"/>
+      <outfile xil_pn:name="branch_mechanism.v"/>
+      <outfile xil_pn:name="branch_mechanism_tb.v"/>
       <outfile xil_pn:name="control_unit.v"/>
       <outfile xil_pn:name="data_path.v"/>
       <outfile xil_pn:name="dff.v"/>
@@ -89,19 +94,19 @@
       <outfile xil_pn:name="register_file.v"/>
       <outfile xil_pn:name="shiftunit.v"/>
     </transform>
-    <transform xil_pn:end_ts="1666774167" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7587782751275897598" xil_pn:start_ts="1666774167">
+    <transform xil_pn:end_ts="1666813869" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="988191738978950446" xil_pn:start_ts="1666813869">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1666774167" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7245682979980757532" xil_pn:start_ts="1666774167">
+    <transform xil_pn:end_ts="1666813869" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7418950248108155828" xil_pn:start_ts="1666813869">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1666610622" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-324980920783936083" xil_pn:start_ts="1666610622">
+    <transform xil_pn:end_ts="1666813869" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-324980920783936083" xil_pn:start_ts="1666813869">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1666776544" xil_pn:in_ck="7136150596589234670" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1666776544">
+    <transform xil_pn:end_ts="1666814023" xil_pn:in_ck="-5135489448915627563" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1666814023">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.v"/>
@@ -114,6 +119,9 @@
       <outfile xil_pn:name="Look_Ahead_Carry_Unit.v"/>
       <outfile xil_pn:name="adderunit.v"/>
       <outfile xil_pn:name="bit_extend_unit.v"/>
+      <outfile xil_pn:name="branch_checker.v"/>
+      <outfile xil_pn:name="branch_mechanism.v"/>
+      <outfile xil_pn:name="branch_mechanism_tb.v"/>
       <outfile xil_pn:name="control_unit.v"/>
       <outfile xil_pn:name="data_path.v"/>
       <outfile xil_pn:name="dff.v"/>
@@ -123,20 +131,20 @@
       <outfile xil_pn:name="register_file.v"/>
       <outfile xil_pn:name="shiftunit.v"/>
     </transform>
-    <transform xil_pn:end_ts="1666776547" xil_pn:in_ck="7136150596589234670" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2045702748551405941" xil_pn:start_ts="1666776544">
+    <transform xil_pn:end_ts="1666814026" xil_pn:in_ck="-5135489448915627563" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6808015662256731627" xil_pn:start_ts="1666814023">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="KGP_RISC_tb_beh.prj"/>
-      <outfile xil_pn:name="KGP_RISC_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="branch_mechanism_tb_beh.prj"/>
+      <outfile xil_pn:name="branch_mechanism_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1666776547" xil_pn:in_ck="-2425877339569717570" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1072059744812509554" xil_pn:start_ts="1666776547">
+    <transform xil_pn:end_ts="1666814026" xil_pn:in_ck="-1220949856226724732" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2520737636244490990" xil_pn:start_ts="1666814026">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="KGP_RISC_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="branch_mechanism_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -173,6 +181,7 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="ALU.ngr"/>
       <outfile xil_pn:name="KGP_RISC.lso"/>

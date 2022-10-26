@@ -34,7 +34,7 @@ module data_path(
 	output signed [31:0] result
     );
 	
-	wire [31:0] offset,shamt,pda,rsOut,rtOut,memRead,nextPC,mem_reg_out;
+	wire [31:0] offset,shamt,pda,rsOut,rtOut,memRead,nextPC,mem_reg_out,nextInstr,instr,instr4,instruction;
 	wire [25:0] pdain;
 	wire [15:0] offsetin;
 	wire carry, zero, sign, prevCarry;
@@ -94,6 +94,24 @@ module data_path(
         .in(carry),
         .out(prevCarry)
     );
+	 program_counter PC(
+	 .next_addr(nextInstr),
+	 .clk(clk),
+	 .rst(rst),
+	 .addr(instr),
+	 .addr2(instr4)
+	 );
+	 branch_mechanism bm(
+	 .rsOut(rsOut),
+	 .carry(prevCarry),
+	 .zero(zero),
+	 .sign(sign),
+	 .pda(pda),
+	 .offset(offset),
+	 .instr4(instr4),
+	 .branch(branch),
+	 .nextInstr(nextInstr)
+	 );
 	
 	
 	
