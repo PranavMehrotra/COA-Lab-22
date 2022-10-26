@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Siddhartha/TA/BRAM_demo/test_isim_beh.exe" -prj "C:/Siddhartha/TA/BRAM_demo/test_beh.prj" "work.test" "work.glbl" 
