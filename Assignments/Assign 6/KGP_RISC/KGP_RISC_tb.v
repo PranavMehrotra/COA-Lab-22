@@ -47,8 +47,22 @@ module KGP_RISC_tb;
 		instruction = 32'd0;
 		#40
 		rst=0;
-		// Add immediate 5*4 to reg:1
 		instruction = 32'b00001000001000110000000000000101;
+		#20
+		instruction = 32'b00001000010000110000000000000100;
+		#20
+		instruction = 32'b00000000001000100000000000100000;
+		#20
+		rst=1;
+		instruction = 32'd0;
+		#40
+		rst=0;
+		// Add immediate 5*4 to reg:1
+		instruction = 32'b00001000001000110000000000110101;
+		#20
+		instruction = 32'b00001000010000110000000000100101;
+		#20
+		instruction = 32'b00000000001000100000000000111000;
 		#20
 		instruction = 32'd0;
 		#20

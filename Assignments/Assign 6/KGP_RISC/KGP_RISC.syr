@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: KGP_RISC.prj
 
@@ -149,8 +149,6 @@ Elaborating module <data_path>.
 Elaborating module <mux_32_3X1>.
 
 Elaborating module <Instruction_decoder>.
-WARNING:HDLCompiler:189 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 57: Size mismatch in connection of port <shamt>. Formal port size is 5-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 57: Assignment to shmatin ignored, since the identifier is never used
 
 Elaborating module <bit_extend_unit>.
 WARNING:HDLCompiler:1127 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 66: Assignment to pda ignored, since the identifier is never used
@@ -178,7 +176,6 @@ WARNING:HDLCompiler:1127 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignment
 Elaborating module <dff>.
 WARNING:HDLCompiler:1127 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 95: Assignment to prevCarry ignored, since the identifier is never used
 WARNING:HDLCompiler:634 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 37: Net <memRead[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 41: Net <shamtin[4]> does not have a driver.
 WARNING:Xst:2972 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" line 91. All outputs of instance <DFF> of block <dff> are unconnected in block <data_path>. Underlying logic will be removed.
 
 =========================================================================
@@ -201,14 +198,12 @@ Synthesizing Unit <data_path>.
     Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v".
 WARNING:Xst:647 - Input <branch> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <mem_write> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" line 50: Output port <shamt> of the instance <decoder> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" line 60: Output port <pdaOut> of the instance <extender> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" line 79: Output port <zero> of the instance <alu> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" line 79: Output port <sign> of the instance <alu> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" line 91: Output port <out> of the instance <DFF> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <memRead> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <nextPC> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <shamtin> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <data_path> synthesized.
@@ -437,7 +432,7 @@ WARNING:Xst:2677 - Node <Data/alu/carry> of sequential type is unconnected in bl
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block KGP_RISC, actual ratio is 4.
+Found area constraint ratio of 100 (+ 5) on block KGP_RISC, actual ratio is 5.
 
 Final Macro Processing ...
 
@@ -469,17 +464,17 @@ Top Level Output File Name         : KGP_RISC.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2320
+# BELS                             : 2586
 #      GND                         : 1
 #      INV                         : 31
 #      LUT1                        : 1
-#      LUT2                        : 14
-#      LUT3                        : 5
-#      LUT4                        : 20
-#      LUT5                        : 1041
-#      LUT6                        : 1004
+#      LUT2                        : 10
+#      LUT3                        : 40
+#      LUT4                        : 18
+#      LUT5                        : 1220
+#      LUT6                        : 1049
 #      MUXCY                       : 62
-#      MUXF7                       : 76
+#      MUXF7                       : 89
 #      VCC                         : 1
 #      XORCY                       : 64
 # FlipFlops/Latches                : 1056
@@ -500,14 +495,14 @@ Selected Device : 7a100tcsg324-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:            1056  out of  126800     0%  
- Number of Slice LUTs:                 2116  out of  63400     3%  
-    Number used as Logic:              2116  out of  63400     3%  
+ Number of Slice LUTs:                 2369  out of  63400     3%  
+    Number used as Logic:              2369  out of  63400     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2116
-   Number with an unused Flip Flop:    1060  out of   2116    50%  
-   Number with an unused LUT:             0  out of   2116     0%  
-   Number of fully used LUT-FF pairs:  1056  out of   2116    49%  
+ Number of LUT Flip Flop pairs used:   2369
+   Number with an unused Flip Flop:    1313  out of   2369    55%  
+   Number with an unused LUT:             0  out of   2369     0%  
+   Number of fully used LUT-FF pairs:  1056  out of   2369    44%  
    Number of unique control sets:         2
 
 IO Utilization: 
@@ -553,10 +548,10 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 7.659ns (Maximum Frequency: 130.570MHz)
-   Minimum input arrival time before clock: 7.533ns
-   Maximum output required time after clock: 7.483ns
-   Maximum combinational path delay: 7.357ns
+   Minimum period: 7.653ns (Maximum Frequency: 130.672MHz)
+   Minimum input arrival time before clock: 7.988ns
+   Maximum output required time after clock: 7.477ns
+   Maximum combinational path delay: 7.812ns
 
 Timing Details:
 ---------------
@@ -564,162 +559,167 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 7.659ns (frequency: 130.570MHz)
-  Total number of paths / destination ports: 6083584 / 1024
+  Clock period: 7.653ns (frequency: 130.672MHz)
+  Total number of paths / destination ports: 6358016 / 1024
 -------------------------------------------------------------------------
-Delay:               7.659ns (Levels of Logic = 10)
-  Source:            Data/reg_store/registers_0_855 (FF)
-  Destination:       Data/reg_store/registers_0_1023 (FF)
+Delay:               7.653ns (Levels of Logic = 10)
+  Source:            Data/reg_store/registers_0_833 (FF)
+  Destination:       Data/reg_store/registers_0_1015 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: Data/reg_store/registers_0_855 to Data/reg_store/registers_0_1023
+  Data Path: Data/reg_store/registers_0_833 to Data/reg_store/registers_0_1015
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             3   0.478   0.790  Data/reg_store/registers_0_855 (Data/reg_store/registers_0_855)
-     LUT6:I2->O            1   0.124   0.776  Data/reg_store/Mmux_rt_out_846 (Data/reg_store/Mmux_rt_out_846)
-     LUT6:I2->O            1   0.124   0.000  Data/reg_store/Mmux_rt_out_315 (Data/reg_store/Mmux_rt_out_315)
-     MUXF7:I1->O           7   0.368   0.576  Data/reg_store/Mmux_rt_out_2_f7_14 (Data/rtOut<23>)
-     LUT5:I3->O            1   0.124   0.919  Data/alu/add/c2/l1/carry<1><1>1 (Data/alu/add/c2/l1/carry<1><1>)
-     LUT6:I1->O            3   0.124   0.435  Data/alu/add/c2/a1/c<2><1>3_SW0 (N42)
-     LUT6:I5->O            2   0.124   0.427  Data/alu/add/c2/l1/carry<1><1>3_SW0 (N55)
-     LUT6:I5->O            1   0.124   0.716  Data/alu/add/c2/l1/carry<0>3_SW6 (N148)
-     LUT6:I3->O            6   0.124   0.454  Data/alu/add/c2/a2/c<2><1>3 (Data/alu/add/c2/a2/c<2>)
-     LUT6:I5->O           33   0.124   0.574  Data/alu/Mmux_result197 (result_26_OBUF)
-     LUT5:I4->O            1   0.124   0.000  Data/reg_store/Mmux_registers[0][31]_writeData[31]_mux_32_OUT191 (Data/reg_store/registers[0][31]_writeData[31]_mux_32_OUT<26>)
-     FDCE:D                    0.030          Data/reg_store/registers_0_26
+     FDCE:C->Q             3   0.478   0.790  Data/reg_store/registers_0_833 (Data/reg_store/registers_0_833)
+     LUT6:I2->O            1   0.124   0.776  Data/reg_store/Mmux_rt_out_834 (Data/reg_store/Mmux_rt_out_834)
+     LUT6:I2->O            2   0.124   0.542  Data/reg_store/Mmux_rt_out_311 (Data/reg_store/Mmux_rt_out_311)
+     LUT5:I3->O            5   0.124   0.563  Data/alu/mux/Mmux_out121 (Data/alu/muxOut<1>)
+     LUT4:I2->O            2   0.124   0.427  Data/alu/add/c1/a0/G<3>11 (Data/alu/add/c1/a0/G<3>1)
+     LUT6:I5->O            3   0.124   0.435  Data/alu/add/c1/a0/G<3>1 (Data/alu/add/c1/c<0>)
+     LUT6:I5->O           15   0.124   0.808  Data/alu/add/c1/a1/c<2><1> (Data/alu/add/c1/a1/c<2>)
+     LUT6:I3->O            6   0.124   0.454  Data/alu/add/c1/a3/c<2><1> (Data/alu/add/c1/a3/c<2>)
+     LUT6:I5->O            1   0.124   0.536  Data/alu/add/c2/a1/c<2><1>3_SW3 (N233)
+     LUT6:I4->O           33   0.124   0.574  Data/alu/Mmux_result157 (result_22_OBUF)
+     LUT5:I4->O            1   0.124   0.000  Data/reg_store/Mmux_registers[0][31]_writeData[31]_mux_32_OUT151 (Data/reg_store/registers[0][31]_writeData[31]_mux_32_OUT<22>)
+     FDCE:D                    0.030          Data/reg_store/registers_0_22
     ----------------------------------------
-    Total                      7.659ns (1.992ns logic, 5.667ns route)
-                                       (26.0% logic, 74.0% route)
+    Total                      7.653ns (1.748ns logic, 5.905ns route)
+                                       (22.8% logic, 77.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 4899232 / 3072
+  Total number of paths / destination ports: 5173248 / 3072
 -------------------------------------------------------------------------
-Offset:              7.533ns (Levels of Logic = 11)
-  Source:            instruction<17> (PAD)
-  Destination:       Data/reg_store/registers_0_1023 (FF)
+Offset:              7.988ns (Levels of Logic = 11)
+  Source:            instruction<31> (PAD)
+  Destination:       Data/reg_store/registers_0_1015 (FF)
   Destination Clock: clk rising
 
-  Data Path: instruction<17> to Data/reg_store/registers_0_1023
+  Data Path: instruction<31> to Data/reg_store/registers_0_1015
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           257   0.001   1.141  instruction_17_IBUF (instruction_17_IBUF)
-     LUT6:I0->O            1   0.124   0.776  Data/reg_store/Mmux_rt_out_846 (Data/reg_store/Mmux_rt_out_846)
-     LUT6:I2->O            1   0.124   0.000  Data/reg_store/Mmux_rt_out_315 (Data/reg_store/Mmux_rt_out_315)
-     MUXF7:I1->O           7   0.368   0.576  Data/reg_store/Mmux_rt_out_2_f7_14 (Data/rtOut<23>)
-     LUT5:I3->O            1   0.124   0.919  Data/alu/add/c2/l1/carry<1><1>1 (Data/alu/add/c2/l1/carry<1><1>)
-     LUT6:I1->O            3   0.124   0.435  Data/alu/add/c2/a1/c<2><1>3_SW0 (N42)
-     LUT6:I5->O            2   0.124   0.427  Data/alu/add/c2/l1/carry<1><1>3_SW0 (N55)
-     LUT6:I5->O            1   0.124   0.716  Data/alu/add/c2/l1/carry<0>3_SW6 (N148)
-     LUT6:I3->O            6   0.124   0.454  Data/alu/add/c2/a2/c<2><1>3 (Data/alu/add/c2/a2/c<2>)
-     LUT6:I5->O           33   0.124   0.574  Data/alu/Mmux_result197 (result_26_OBUF)
-     LUT5:I4->O            1   0.124   0.000  Data/reg_store/Mmux_registers[0][31]_writeData[31]_mux_32_OUT191 (Data/reg_store/registers[0][31]_writeData[31]_mux_32_OUT<26>)
-     FDCE:D                    0.030          Data/reg_store/registers_0_26
+     IBUF:I->O           163   0.001   1.100  instruction_31_IBUF (instruction_31_IBUF)
+     LUT6:I1->O          155   0.124   0.895  Control/Mmux_ALUsource11 (ALUsource<0>)
+     LUT5:I2->O            2   0.124   0.925  Data/reg_store/Mmux_rt_out_2_f7_10_SW0 (N54)
+     LUT5:I0->O            5   0.124   0.563  Data/alu/mux/Mmux_out121 (Data/alu/muxOut<1>)
+     LUT4:I2->O            2   0.124   0.427  Data/alu/add/c1/a0/G<3>11 (Data/alu/add/c1/a0/G<3>1)
+     LUT6:I5->O            3   0.124   0.435  Data/alu/add/c1/a0/G<3>1 (Data/alu/add/c1/c<0>)
+     LUT6:I5->O           15   0.124   0.808  Data/alu/add/c1/a1/c<2><1> (Data/alu/add/c1/a1/c<2>)
+     LUT6:I3->O            6   0.124   0.454  Data/alu/add/c1/a3/c<2><1> (Data/alu/add/c1/a3/c<2>)
+     LUT6:I5->O            1   0.124   0.536  Data/alu/add/c2/a1/c<2><1>3_SW3 (N233)
+     LUT6:I4->O           33   0.124   0.574  Data/alu/Mmux_result157 (result_22_OBUF)
+     LUT5:I4->O            1   0.124   0.000  Data/reg_store/Mmux_registers[0][31]_writeData[31]_mux_32_OUT151 (Data/reg_store/registers[0][31]_writeData[31]_mux_32_OUT<22>)
+     FDCE:D                    0.030          Data/reg_store/registers_0_22
     ----------------------------------------
-    Total                      7.533ns (1.515ns logic, 6.018ns route)
-                                       (20.1% logic, 79.9% route)
+    Total                      7.988ns (1.271ns logic, 6.717ns route)
+                                       (15.9% logic, 84.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Data/alu/shift/select[1]_select[1]_OR_110_o'
-  Total number of paths / destination ports: 672 / 32
+  Total number of paths / destination ports: 29155 / 32
 -------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 4)
+Offset:              6.604ns (Levels of Logic = 9)
   Source:            instruction<22> (PAD)
-  Destination:       Data/alu/shift/result_0 (LATCH)
+  Destination:       Data/alu/shift/result_28 (LATCH)
   Destination Clock: Data/alu/shift/select[1]_select[1]_OR_110_o falling
 
-  Data Path: instruction<22> to Data/alu/shift/result_0
+  Data Path: instruction<22> to Data/alu/shift/result_28
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O           257   0.001   1.141  instruction_22_IBUF (instruction_22_IBUF)
-     LUT6:I0->O            1   0.124   0.776  Data/reg_store/Mmux_rs_out_81 (Data/reg_store/Mmux_rs_out_81)
-     LUT6:I2->O            1   0.124   0.000  Data/reg_store/Mmux_rs_out_3 (Data/reg_store/Mmux_rs_out_3)
-     MUXF7:I1->O           7   0.368   0.000  Data/reg_store/Mmux_rs_out_2_f7 (Data/rsOut<0>)
-     LD:D                      0.011          Data/alu/shift/result_0
+     LUT6:I0->O            1   0.124   0.776  Data/reg_store/Mmux_rs_out_876 (Data/reg_store/Mmux_rs_out_876)
+     LUT6:I2->O            1   0.124   0.000  Data/reg_store/Mmux_rs_out_325 (Data/reg_store/Mmux_rs_out_325)
+     MUXF7:I1->O          12   0.368   0.848  Data/reg_store/Mmux_rs_out_2_f7_24 (Data/rsOut<3>)
+     LUT6:I2->O            3   0.124   0.790  Data/alu/shift/Sh1001 (Data/alu/shift/Sh100)
+     LUT5:I1->O            3   0.124   0.435  Data/alu/shift/Sh14011 (Data/alu/shift/Sh1401)
+     LUT5:I4->O            2   0.124   0.427  Data/alu/shift/Sh1401 (Data/alu/shift/Sh140)
+     LUT5:I4->O            1   0.124   0.939  Data/alu/shift/Mmux_result[31]_in[31]_MUX_1491_o135 (Data/alu/shift/Mmux_result[31]_in[31]_MUX_1491_o136)
+     LUT6:I0->O            1   0.124   0.000  Data/alu/shift/Mmux_result[31]_in[31]_MUX_1491_o136 (Data/alu/shift/result[31]_in[31]_MUX_1500_o)
+     LD:D                      0.011          Data/alu/shift/result_28
     ----------------------------------------
-    Total                      2.545ns (0.628ns logic, 1.917ns route)
-                                       (24.7% logic, 75.3% route)
+    Total                      6.604ns (1.248ns logic, 5.356ns route)
+                                       (18.9% logic, 81.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 190080 / 32
+  Total number of paths / destination ports: 198656 / 32
 -------------------------------------------------------------------------
-Offset:              7.483ns (Levels of Logic = 10)
-  Source:            Data/reg_store/registers_0_855 (FF)
-  Destination:       result<31> (PAD)
+Offset:              7.477ns (Levels of Logic = 10)
+  Source:            Data/reg_store/registers_0_833 (FF)
+  Destination:       result<23> (PAD)
   Source Clock:      clk rising
 
-  Data Path: Data/reg_store/registers_0_855 to result<31>
+  Data Path: Data/reg_store/registers_0_833 to result<23>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             3   0.478   0.790  Data/reg_store/registers_0_855 (Data/reg_store/registers_0_855)
-     LUT6:I2->O            1   0.124   0.776  Data/reg_store/Mmux_rt_out_846 (Data/reg_store/Mmux_rt_out_846)
-     LUT6:I2->O            1   0.124   0.000  Data/reg_store/Mmux_rt_out_315 (Data/reg_store/Mmux_rt_out_315)
-     MUXF7:I1->O           7   0.368   0.576  Data/reg_store/Mmux_rt_out_2_f7_14 (Data/rtOut<23>)
-     LUT5:I3->O            1   0.124   0.919  Data/alu/add/c2/l1/carry<1><1>1 (Data/alu/add/c2/l1/carry<1><1>)
-     LUT6:I1->O            3   0.124   0.435  Data/alu/add/c2/a1/c<2><1>3_SW0 (N42)
-     LUT6:I5->O            2   0.124   0.427  Data/alu/add/c2/l1/carry<1><1>3_SW0 (N55)
-     LUT6:I5->O            1   0.124   0.716  Data/alu/add/c2/l1/carry<0>3_SW6 (N148)
-     LUT6:I3->O            6   0.124   0.454  Data/alu/add/c2/a2/c<2><1>3 (Data/alu/add/c2/a2/c<2>)
-     LUT6:I5->O           33   0.124   0.552  Data/alu/Mmux_result197 (result_26_OBUF)
-     OBUF:I->O                 0.000          result_26_OBUF (result<26>)
+     FDCE:C->Q             3   0.478   0.790  Data/reg_store/registers_0_833 (Data/reg_store/registers_0_833)
+     LUT6:I2->O            1   0.124   0.776  Data/reg_store/Mmux_rt_out_834 (Data/reg_store/Mmux_rt_out_834)
+     LUT6:I2->O            2   0.124   0.542  Data/reg_store/Mmux_rt_out_311 (Data/reg_store/Mmux_rt_out_311)
+     LUT5:I3->O            5   0.124   0.563  Data/alu/mux/Mmux_out121 (Data/alu/muxOut<1>)
+     LUT4:I2->O            2   0.124   0.427  Data/alu/add/c1/a0/G<3>11 (Data/alu/add/c1/a0/G<3>1)
+     LUT6:I5->O            3   0.124   0.435  Data/alu/add/c1/a0/G<3>1 (Data/alu/add/c1/c<0>)
+     LUT6:I5->O           15   0.124   0.808  Data/alu/add/c1/a1/c<2><1> (Data/alu/add/c1/a1/c<2>)
+     LUT6:I3->O            6   0.124   0.454  Data/alu/add/c1/a3/c<2><1> (Data/alu/add/c1/a3/c<2>)
+     LUT6:I5->O            1   0.124   0.536  Data/alu/add/c2/a1/c<2><1>3_SW3 (N233)
+     LUT6:I4->O           33   0.124   0.552  Data/alu/Mmux_result157 (result_22_OBUF)
+     OBUF:I->O                 0.000          result_22_OBUF (result<22>)
     ----------------------------------------
-    Total                      7.483ns (1.838ns logic, 5.645ns route)
-                                       (24.6% logic, 75.4% route)
+    Total                      7.477ns (1.594ns logic, 5.883ns route)
+                                       (21.3% logic, 78.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Data/alu/shift/select[1]_select[1]_OR_110_o'
-  Total number of paths / destination ports: 41 / 32
+  Total number of paths / destination ports: 38 / 32
 -------------------------------------------------------------------------
 Offset:              3.980ns (Levels of Logic = 4)
-  Source:            Data/alu/shift/result_25 (LATCH)
-  Destination:       result<25> (PAD)
+  Source:            Data/alu/shift/result_31 (LATCH)
+  Destination:       result<31> (PAD)
   Source Clock:      Data/alu/shift/select[1]_select[1]_OR_110_o falling
 
-  Data Path: Data/alu/shift/result_25 to result<25>
+  Data Path: Data/alu/shift/result_31 to result<31>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               1   0.625   0.716  Data/alu/shift/result_25 (Data/alu/shift/result_25)
-     LUT6:I3->O            1   0.124   0.939  Data/alu/Mmux_result181 (Data/alu/Mmux_result18)
-     LUT6:I0->O            1   0.124   0.776  Data/alu/Mmux_result184 (Data/alu/Mmux_result183)
-     LUT6:I2->O           33   0.124   0.552  Data/alu/Mmux_result187 (result_25_OBUF)
-     OBUF:I->O                 0.000          result_25_OBUF (result<25>)
+     LD:G->Q               1   0.625   0.716  Data/alu/shift/result_31 (Data/alu/shift/result_31)
+     LUT6:I3->O            1   0.124   0.939  Data/alu/Mmux_result251 (Data/alu/Mmux_result25)
+     LUT6:I0->O            1   0.124   0.776  Data/alu/Mmux_result254 (Data/alu/Mmux_result253)
+     LUT6:I2->O           33   0.124   0.552  Data/alu/Mmux_result257 (result_31_OBUF)
+     OBUF:I->O                 0.000          result_31_OBUF (result<31>)
     ----------------------------------------
     Total                      3.980ns (0.997ns logic, 2.983ns route)
                                        (25.1% logic, 74.9% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 150989 / 32
+  Total number of paths / destination ports: 159552 / 32
 -------------------------------------------------------------------------
-Delay:               7.357ns (Levels of Logic = 11)
-  Source:            instruction<17> (PAD)
-  Destination:       result<31> (PAD)
+Delay:               7.812ns (Levels of Logic = 11)
+  Source:            instruction<31> (PAD)
+  Destination:       result<23> (PAD)
 
-  Data Path: instruction<17> to result<31>
+  Data Path: instruction<31> to result<23>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           257   0.001   1.141  instruction_17_IBUF (instruction_17_IBUF)
-     LUT6:I0->O            1   0.124   0.776  Data/reg_store/Mmux_rt_out_846 (Data/reg_store/Mmux_rt_out_846)
-     LUT6:I2->O            1   0.124   0.000  Data/reg_store/Mmux_rt_out_315 (Data/reg_store/Mmux_rt_out_315)
-     MUXF7:I1->O           7   0.368   0.576  Data/reg_store/Mmux_rt_out_2_f7_14 (Data/rtOut<23>)
-     LUT5:I3->O            1   0.124   0.919  Data/alu/add/c2/l1/carry<1><1>1 (Data/alu/add/c2/l1/carry<1><1>)
-     LUT6:I1->O            3   0.124   0.435  Data/alu/add/c2/a1/c<2><1>3_SW0 (N42)
-     LUT6:I5->O            2   0.124   0.427  Data/alu/add/c2/l1/carry<1><1>3_SW0 (N55)
-     LUT6:I5->O            1   0.124   0.716  Data/alu/add/c2/l1/carry<0>3_SW6 (N148)
-     LUT6:I3->O            6   0.124   0.454  Data/alu/add/c2/a2/c<2><1>3 (Data/alu/add/c2/a2/c<2>)
-     LUT6:I5->O           33   0.124   0.552  Data/alu/Mmux_result197 (result_26_OBUF)
-     OBUF:I->O                 0.000          result_26_OBUF (result<26>)
+     IBUF:I->O           163   0.001   1.100  instruction_31_IBUF (instruction_31_IBUF)
+     LUT6:I1->O          155   0.124   0.895  Control/Mmux_ALUsource11 (ALUsource<0>)
+     LUT5:I2->O            2   0.124   0.925  Data/reg_store/Mmux_rt_out_2_f7_10_SW0 (N54)
+     LUT5:I0->O            5   0.124   0.563  Data/alu/mux/Mmux_out121 (Data/alu/muxOut<1>)
+     LUT4:I2->O            2   0.124   0.427  Data/alu/add/c1/a0/G<3>11 (Data/alu/add/c1/a0/G<3>1)
+     LUT6:I5->O            3   0.124   0.435  Data/alu/add/c1/a0/G<3>1 (Data/alu/add/c1/c<0>)
+     LUT6:I5->O           15   0.124   0.808  Data/alu/add/c1/a1/c<2><1> (Data/alu/add/c1/a1/c<2>)
+     LUT6:I3->O            6   0.124   0.454  Data/alu/add/c1/a3/c<2><1> (Data/alu/add/c1/a3/c<2>)
+     LUT6:I5->O            1   0.124   0.536  Data/alu/add/c2/a1/c<2><1>3_SW3 (N233)
+     LUT6:I4->O           33   0.124   0.552  Data/alu/Mmux_result157 (result_22_OBUF)
+     OBUF:I->O                 0.000          result_22_OBUF (result<22>)
     ----------------------------------------
-    Total                      7.357ns (1.361ns logic, 5.996ns route)
-                                       (18.5% logic, 81.5% route)
+    Total                      7.812ns (1.117ns logic, 6.695ns route)
+                                       (14.3% logic, 85.7% route)
 
 =========================================================================
 
@@ -731,7 +731,7 @@ Clock to Setup on destination clock Data/alu/shift/select[1]_select[1]_OR_110_o
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    2.671|         |
+clk            |         |         |    6.730|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -740,20 +740,20 @@ Clock to Setup on destination clock clk
 Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------------------------+---------+---------+---------+---------+
 Data/alu/shift/select[1]_select[1]_OR_110_o|         |    4.156|         |         |
-clk                                        |    7.659|         |         |         |
+clk                                        |    7.653|         |         |         |
 -------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 19.77 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.82 secs
  
 --> 
 
-Total memory usage is 4700540 kilobytes
+Total memory usage is 4700668 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   50 (   0 filtered)
-Number of infos    :    5 (   0 filtered)
+Number of warnings :   46 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
 

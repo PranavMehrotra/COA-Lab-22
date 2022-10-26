@@ -31,7 +31,7 @@ module bit_extend_unit(
 	shamtOut = {{27{1'b0}}, shamt};
 	t1 = {{16{offset[15]}}, offset};
 	t2 = {{6{pda[25]}}, pda};
-	offsetOut = t1 << 2;
+	offsetOut = t1;
 	pdaOut = t2 << 2;
     end
 

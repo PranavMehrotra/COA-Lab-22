@@ -16,13 +16,13 @@
          <ClosedNode>/register_file D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|register_file.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>decoder - Instruction_decoder (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/Instruction_decoder.v)</SelectedItem>
+         <SelectedItem>Data - data_path (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000188000000020000000000000000000000000200000064ffffffff000000810000000300000002000001880000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>decoder - Instruction_decoder (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/Instruction_decoder.v)</CurrentItem>
+      <CurrentItem>Data - data_path (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -47,7 +47,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000011f000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d00000001000000000000002100000001000000000000005d0000000100000000000000640000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002e3000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d00000001000000000000002100000001000000000000005d0000000100000000000002280000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>data_path.v</CurrentItem>
    </ItemView>
@@ -88,6 +88,7 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/ALU_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|ALU_tb.v</ClosedNode>
          <ClosedNode>/ALU_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|ALU_tb.v/uut - ALU/add - adderunit</ClosedNode>
+         <ClosedNode>/KGP_RISC_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/Data - data_path</ClosedNode>
          <ClosedNode>/KGP_RISC_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/Data - data_path/alu - ALU</ClosedNode>
          <ClosedNode>/KGP_RISC_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/Data - data_path/reg_store - register_file</ClosedNode>
       </ClosedNodes>
@@ -96,7 +97,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000019c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000019c0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000133000000020000000000000000000000000200000064ffffffff000000810000000300000002000001330000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>KGP_RISC_tb (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb.v)</CurrentItem>
    </ItemView>
