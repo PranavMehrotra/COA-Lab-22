@@ -12,17 +12,18 @@
          <ClosedNode>/ALU D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|ALU.v/add - adderunit/c1 - CLA_16_bit_LCU</ClosedNode>
          <ClosedNode>/ALU D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|ALU.v/add - adderunit/c2 - CLA_16_bit_LCU</ClosedNode>
          <ClosedNode>/KGP_RISC D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC.v/Data - data_path/alu - ALU</ClosedNode>
+         <ClosedNode>/KGP_RISC D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC.v/Data - data_path/bm - branch_mechanism</ClosedNode>
          <ClosedNode>/KGP_RISC D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC.v/Data - data_path/reg_store - register_file</ClosedNode>
          <ClosedNode>/register_file D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|register_file.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Data - data_path (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v)</SelectedItem>
+         <SelectedItem>instr_mem - instr_memory_bram (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ipcore_dir/instr_memory_bram.xco)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000188000000020000000000000000000000000200000064ffffffff000000810000000300000002000001880000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a4000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a40000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Data - data_path (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v)</CurrentItem>
+      <CurrentItem>instr_mem - instr_memory_bram (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ipcore_dir/instr_memory_bram.xco)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -30,13 +31,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -47,7 +48,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002e3000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d00000001000000000000002100000001000000000000005d0000000100000000000002280000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002d2000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d00000001000000000000002100000001000000000000005d0000000100000000000002170000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>data_path.v</CurrentItem>
    </ItemView>
@@ -82,7 +83,7 @@
       <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
@@ -97,7 +98,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000133000000020000000000000000000000000200000064ffffffff000000810000000300000002000001330000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000159000000020000000000000000000000000200000064ffffffff000000810000000300000002000001590000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>KGP_RISC_tb (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb.v)</CurrentItem>
    </ItemView>
@@ -127,5 +128,18 @@
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>View HDL Instantiation Template</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>View HDL Instantiation Template</CurrentItem>
    </ItemView>
 </Project>

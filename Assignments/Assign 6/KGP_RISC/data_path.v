@@ -112,7 +112,19 @@ module data_path(
 	 .branch(branch),
 	 .nextInstr(nextInstr)
 	 );
-	
+	data_memory_bram data_mem(
+   .clka(clk), // input clka
+   .ena(clk), // input ena
+   .wea({3{mem_write}}), // input [3 : 0] wea
+   .addra(result), // input [31 : 0] addra
+   .dina(rtOut), // input [31 : 0] dina
+   .douta(memRead) // output [31 : 0] douta
+	);
+	instr_memory_bram instr_mem(
+	.clka(clk), // input clka
+	.addra(instr), // input [31 : 0] addra
+	.douta(instruction) // output [31 : 0] douta
+	);
 	
 	
 	
