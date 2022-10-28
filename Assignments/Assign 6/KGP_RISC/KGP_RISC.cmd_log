@@ -8,3 +8,20 @@ xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/As
 xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.syr" 
 xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.syr" 
 xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.syr" 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.syr" 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 "KGP_RISC.ngc" KGP_RISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGP_RISC_map.ncd KGP_RISC.ngd KGP_RISC.pcf 
+par -w -intstyle ise -ol high -mt off KGP_RISC_map.ncd KGP_RISC.ncd KGP_RISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGP_RISC.twx KGP_RISC.ncd -o KGP_RISC.twr KGP_RISC.pcf 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc timing.ucf -p xc7a100t-csg324-1 "KGP_RISC.ngc" KGP_RISC.ngd  
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc timing.ucf -p xc7a100t-csg324-1 "KGP_RISC.ngc" KGP_RISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGP_RISC_map.ncd KGP_RISC.ngd KGP_RISC.pcf 
+xst -intstyle ise -ifn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.xst" -ofn "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc timing.ucf -p xc7a100t-csg324-1 "KGP_RISC.ngc" KGP_RISC.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o KGP_RISC_map.ncd KGP_RISC.ngd KGP_RISC.pcf 
+par -w -intstyle ise -ol high -mt off KGP_RISC_map.ncd KGP_RISC.ncd KGP_RISC.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml KGP_RISC.twx KGP_RISC.ncd -o KGP_RISC.twr KGP_RISC.pcf -ucf timing.ucf 
+bitgen -intstyle ise -f KGP_RISC.ut KGP_RISC.ncd 

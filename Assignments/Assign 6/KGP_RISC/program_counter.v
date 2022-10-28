@@ -28,10 +28,10 @@ module program_counter(
 	always @(posedge clk or posedge rst) begin
         if (rst) begin
             addr <= 32'd0;
-				addr2 <= 32'd0;
+				addr2 <= 32'd1;
         end else begin
             addr <= next_addr;
-				addr2 <= next_addr + 4;
+				addr2 <= next_addr + 1;  // Might need to change it to 4
         end
     end
 

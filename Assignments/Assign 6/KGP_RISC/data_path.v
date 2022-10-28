@@ -30,7 +30,6 @@ module data_path(
    input [2:0] branch,
 	input clk,
 	input rst,
-	input [31:0] instruction,
 	output signed [31:0] result
     );
 	
@@ -112,6 +111,7 @@ module data_path(
 	 .branch(branch),
 	 .nextInstr(nextInstr)
 	 );
+	 /*
 	data_memory_bram data_mem(
    .clka(clk), // input clka
    .ena(clk), // input ena
@@ -119,12 +119,13 @@ module data_path(
    .addra(result), // input [31 : 0] addra
    .dina(rtOut), // input [31 : 0] dina
    .douta(memRead) // output [31 : 0] douta
-	);
+	);*/
+	///*
 	instr_memory_bram instr_mem(
 	.clka(clk), // input clka
 	.addra(instr), // input [31 : 0] addra
 	.douta(instruction) // output [31 : 0] douta
-	);
+	); // */
 	
 	
 	

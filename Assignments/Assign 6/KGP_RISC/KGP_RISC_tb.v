@@ -27,7 +27,6 @@ module KGP_RISC_tb;
 	// Inputs
 	reg clk;
 	reg rst;
-	reg [31:0] instruction;
 
 	// Outputs
 	wire [31:0] result;
@@ -36,7 +35,6 @@ module KGP_RISC_tb;
 	KGP_RISC uut (
 		.clk(clk), 
 		.rst(rst), 
-		.instruction(instruction), 
 		.result(result)
 	);
 	always #10 clk = ~clk;
@@ -44,9 +42,10 @@ module KGP_RISC_tb;
 		// Initialize Inputs
 		clk = 0;
 		rst = 1;
-		instruction = 32'd0;
-		#40
+		//instruction = 32'd0;
+		#5
 		rst=0;
+		/*
 		instruction = 32'b00001000001000110000000000000101;
 		#20
 		instruction = 32'b00001000010000110000000000000100;
@@ -80,7 +79,7 @@ module KGP_RISC_tb;
 		//#150;
       //instruction = 32'b00001000011000110000000000000100;
 		// Add stimulus here
-
+		*/
 	end
       
 endmodule

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Reading design: KGP_RISC.prj
 
@@ -128,8 +128,8 @@ Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\As
 Parsing module <register_file>.
 Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\program_counter.v" into library work
 Parsing module <program_counter>.
-Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\ipcore_dir\data_memory_bram.v" into library work
-Parsing module <data_memory_bram>.
+Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\ipcore_dir\instr_memory_bram.v" into library work
+Parsing module <instr_memory_bram>.
 Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\Instruction_decoder.v" into library work
 Parsing module <Instruction_decoder>.
 Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\dff.v" into library work
@@ -142,9 +142,10 @@ Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\As
 Parsing module <ALU>.
 Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" into library work
 Parsing module <data_path>.
-WARNING:HDLCompiler:751 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 37: Redeclaration of ansi port instruction is not allowed
 Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\control_unit.v" into library work
 Parsing module <control_unit>.
+Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\clock_divider.v" into library work
+Parsing module <clock_divider>.
 Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\KGP_RISC.v" into library work
 Parsing module <KGP_RISC>.
 
@@ -153,6 +154,8 @@ Parsing module <KGP_RISC>.
 =========================================================================
 
 Elaborating module <KGP_RISC>.
+
+Elaborating module <clock_divider>.
 
 Elaborating module <control_unit>.
 
@@ -185,19 +188,15 @@ Elaborating module <diffunit>.
 Elaborating module <dff>.
 
 Elaborating module <program_counter>.
-WARNING:HDLCompiler:1127 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 101: Assignment to instr ignored, since the identifier is never used
 
 Elaborating module <branch_mechanism>.
 
 Elaborating module <branch_checker>.
 
-Elaborating module <data_memory_bram>.
-WARNING:HDLCompiler:1499 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\ipcore_dir\data_memory_bram.v" Line 39: Empty module <data_memory_bram> remains a black box.
-WARNING:HDLCompiler:189 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 118: Size mismatch in connection of port <wea>. Formal port size is 4-bit while actual signal size is 3-bit.
-WARNING:HDLCompiler:634 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 37: Net <nextPC[31]> does not have a driver.
-WARNING:Xst:2972 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" line 91. All outputs of instance <DFF> of block <dff> are unconnected in block <data_path>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" line 97. All outputs of instance <PC> of block <program_counter> are unconnected in block <data_path>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" line 104. All outputs of instance <bm> of block <branch_mechanism> are unconnected in block <data_path>. Underlying logic will be removed.
+Elaborating module <instr_memory_bram>.
+WARNING:HDLCompiler:1499 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\ipcore_dir\instr_memory_bram.v" Line 39: Empty module <instr_memory_bram> remains a black box.
+WARNING:HDLCompiler:634 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 36: Net <memRead[31]> does not have a driver.
+WARNING:HDLCompiler:413 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\KGP_RISC.v" Line 64: Result of 32-bit expression is truncated to fit in 14-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -209,6 +208,15 @@ Synthesizing Unit <KGP_RISC>.
 	no macro.
 Unit <KGP_RISC> synthesized.
 
+Synthesizing Unit <clock_divider>.
+    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\clock_divider.v".
+    Found 26-bit register for signal <counter>.
+    Found 26-bit adder for signal <counter[25]_GND_2_o_add_0_OUT> created at line 28.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+Unit <clock_divider> synthesized.
+
 Synthesizing Unit <control_unit>.
     Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\control_unit.v".
     Summary:
@@ -217,7 +225,8 @@ Unit <control_unit> synthesized.
 
 Synthesizing Unit <data_path>.
     Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v".
-INFO:Xst:3210 - "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" line 97: Output port <addr> of the instance <PC> is unconnected or connected to loadless signal.
+WARNING:Xst:647 - Input <mem_write> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <memRead> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <nextPC> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
@@ -255,7 +264,7 @@ Unit <register_file> synthesized.
 
 Synthesizing Unit <ALU>.
     Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\ALU.v".
-    Found 32-bit adder for signal <a[31]_GND_8_o_add_3_OUT> created at line 45.
+    Found 32-bit adder for signal <a[31]_GND_9_o_add_3_OUT> created at line 45.
     Found 32-bit 7-to-1 multiplexer for signal <result> created at line 31.
 WARNING:Xst:737 - Found 1-bit latch for signal <carry>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
@@ -369,31 +378,65 @@ Synthesizing Unit <diffunit>.
 	inferred   1 Adder/Subtractor(s).
 Unit <diffunit> synthesized.
 
+Synthesizing Unit <dff>.
+    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\dff.v".
+    Found 1-bit register for signal <out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dff> synthesized.
+
+Synthesizing Unit <program_counter>.
+    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\program_counter.v".
+    Found 32-bit register for signal <addr>.
+    Found 32-bit register for signal <addr2>.
+    Found 32-bit adder for signal <next_addr[31]_GND_52_o_add_0_OUT> created at line 34.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
+Unit <program_counter> synthesized.
+
+Synthesizing Unit <branch_mechanism>.
+    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\branch_mechanism.v".
+WARNING:Xst:647 - Input <pda<31:28>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <offset<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit adder for signal <instr4[31]_offset[29]_add_2_OUT> created at line 45.
+    Found 32-bit 4-to-1 multiplexer for signal <_n0020> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <branch_mechanism> synthesized.
+
 Synthesizing Unit <branch_checker>.
     Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\branch_checker.v".
+    Found 1-bit 8-to-1 multiplexer for signal <jump> created at line 26.
     Summary:
-	no macro.
+	inferred   1 Multiplexer(s).
 Unit <branch_checker> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
- 32-bit adder                                          : 1
+# Adders/Subtractors                                   : 5
+ 26-bit adder                                          : 1
+ 32-bit adder                                          : 3
  32-bit subtractor                                     : 1
-# Registers                                            : 1
+# Registers                                            : 5
+ 1-bit register                                        : 1
  1024-bit register                                     : 1
+ 26-bit register                                       : 1
+ 32-bit register                                       : 2
 # Latches                                              : 33
  1-bit latch                                           : 33
-# Multiplexers                                         : 106
+# Multiplexers                                         : 109
  1-bit 2-to-1 multiplexer                              : 8
  1-bit 3-to-1 multiplexer                              : 32
+ 1-bit 8-to-1 multiplexer                              : 1
  2-bit 2-to-1 multiplexer                              : 15
  3-bit 2-to-1 multiplexer                              : 10
- 32-bit 2-to-1 multiplexer                             : 35
+ 32-bit 2-to-1 multiplexer                             : 36
  32-bit 32-to-1 multiplexer                            : 2
- 32-bit 4-to-1 multiplexer                             : 3
+ 32-bit 4-to-1 multiplexer                             : 4
  32-bit 7-to-1 multiplexer                             : 1
 # Logic shifters                                       : 3
  32-bit shifter arithmetic right                       : 1
@@ -409,26 +452,33 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-Reading core <ipcore_dir/data_memory_bram.ngc>.
-Loading core <data_memory_bram> for timing and area information for instance <data_mem>.
+Reading core <ipcore_dir/instr_memory_bram.ngc>.
+Loading core <instr_memory_bram> for timing and area information for instance <instr_mem>.
+
+Synthesizing (advanced) Unit <clock_divider>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <clock_divider> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
- 32-bit adder                                          : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
  32-bit subtractor                                     : 1
-# Registers                                            : 1024
- Flip-Flops                                            : 1024
-# Multiplexers                                         : 106
- 1-bit 2-to-1 multiplexer                              : 8
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 1089
+ Flip-Flops                                            : 1089
+# Multiplexers                                         : 140
+ 1-bit 2-to-1 multiplexer                              : 40
  1-bit 3-to-1 multiplexer                              : 32
+ 1-bit 8-to-1 multiplexer                              : 1
  2-bit 2-to-1 multiplexer                              : 15
  3-bit 2-to-1 multiplexer                              : 10
  32-bit 2-to-1 multiplexer                             : 35
  32-bit 32-to-1 multiplexer                            : 2
- 32-bit 4-to-1 multiplexer                             : 3
+ 32-bit 4-to-1 multiplexer                             : 4
  32-bit 7-to-1 multiplexer                             : 1
 # Logic shifters                                       : 3
  32-bit shifter arithmetic right                       : 1
@@ -446,12 +496,13 @@ Macro Statistics
 
 Optimizing unit <KGP_RISC> ...
 
+Optimizing unit <data_path> ...
+
 Optimizing unit <register_file> ...
 
 Optimizing unit <ALU> ...
 
 Optimizing unit <shiftunit> ...
-WARNING:Xst:2677 - Node <Data/alu/carry> of sequential type is unconnected in block <KGP_RISC>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -463,8 +514,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1024
- Flip-Flops                                            : 1024
+# Registers                                            : 1115
+ Flip-Flops                                            : 1115
 
 =========================================================================
 
@@ -487,29 +538,34 @@ Top Level Output File Name         : KGP_RISC.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2674
+# BELS                             : 3127
 #      GND                         : 2
-#      INV                         : 31
-#      LUT1                        : 1
-#      LUT2                        : 7
-#      LUT3                        : 47
-#      LUT4                        : 25
-#      LUT5                        : 156
-#      LUT6                        : 2161
-#      MUXCY                       : 62
-#      MUXF7                       : 116
+#      INV                         : 33
+#      LUT1                        : 26
+#      LUT2                        : 78
+#      LUT3                        : 109
+#      LUT4                        : 66
+#      LUT5                        : 1255
+#      LUT6                        : 1183
+#      MUXCY                       : 147
+#      MUXF7                       : 74
 #      VCC                         : 2
-#      XORCY                       : 64
-# FlipFlops/Latches                : 1056
+#      XORCY                       : 152
+# FlipFlops/Latches                : 1149
+#      FDC                         : 90
 #      FDCE                        : 1024
-#      LD                          : 32
-# RAMS                             : 2
-#      RAMB36E1                    : 2
-# Clock Buffers                    : 2
+#      FDE                         : 1
+#      FDP                         : 1
+#      LD                          : 33
+# RAMS                             : 8
+#      RAMB18E1                    : 1
+#      RAMB36E1                    : 7
+# Clock Buffers                    : 3
 #      BUFG                        : 2
-# IO Buffers                       : 66
-#      IBUF                        : 34
-#      OBUF                        : 32
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 1
+#      OBUF                        : 14
 
 Device utilization summary:
 ---------------------------
@@ -518,25 +574,25 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1056  out of  126800     0%  
- Number of Slice LUTs:                 2428  out of  63400     3%  
-    Number used as Logic:              2428  out of  63400     3%  
+ Number of Slice Registers:            1149  out of  126800     0%  
+ Number of Slice LUTs:                 2750  out of  63400     4%  
+    Number used as Logic:              2750  out of  63400     4%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2428
-   Number with an unused Flip Flop:    1372  out of   2428    56%  
-   Number with an unused LUT:             0  out of   2428     0%  
-   Number of fully used LUT-FF pairs:  1056  out of   2428    43%  
-   Number of unique control sets:         2
+ Number of LUT Flip Flop pairs used:   3134
+   Number with an unused Flip Flop:    1985  out of   3134    63%  
+   Number with an unused LUT:           384  out of   3134    12%  
+   Number of fully used LUT-FF pairs:   765  out of   3134    24%  
+   Number of unique control sets:         6
 
 IO Utilization: 
- Number of IOs:                          66
- Number of bonded IOBs:                  66  out of    210    31%  
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of    210     7%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                2  out of    135     1%  
-    Number using Block RAM only:          2
- Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+ Number of Block RAM/FIFO:                8  out of    135     5%  
+    Number using Block RAM only:          8
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
 
 ---------------------------
 Partition Resource Summary:
@@ -559,29 +615,32 @@ Clock Information:
 -------------------------------------------------------------------------------------------+---------------------------------+-------+
 Clock Signal                                                                               | Clock buffer(FF name)           | Load  |
 -------------------------------------------------------------------------------------------+---------------------------------+-------+
-clk                                                                                        | IBUF+BUFG                       | 1026  |
+clk                                                                                        | BUFGP                           | 26    |
+a0/counter_25                                                                              | BUFG                            | 1098  |
+Data/alu/Mmux_result111(Data/alu/Mmux_result1111:O)                                        | NONE(*)(Data/alu/carry)         | 1     |
 Data/alu/shift/select[1]_select[1]_OR_110_o(Data/alu/shift/select[1]_select[1]_OR_110_o1:O)| BUFG(*)(Data/alu/shift/result_0)| 32    |
 -------------------------------------------------------------------------------------------+---------------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
+(*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-Control Signal                           | Buffer(FF name)                                                                                                                                                       | Load  |
------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-Data/data_mem/N1(Data/data_mem/XST_GND:G)| NONE(Data/data_mem/U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/WITH_BMM_INFO.SP.SIMPLE_PRIM36.ram)| 4     |
------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                             | Buffer(FF name)                                                                                                                                                        | Load  |
+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Data/instr_mem/N1(Data/instr_mem/XST_GND:G)| NONE(Data/instr_mem/U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/WITH_BMM_INFO.SP.SIMPLE_PRIM36.ram)| 14    |
+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 8.063ns (Maximum Frequency: 124.027MHz)
-   Minimum input arrival time before clock: 9.284ns
-   Maximum output required time after clock: 7.887ns
-   Maximum combinational path delay: 7.761ns
+   Minimum period: 11.487ns (Maximum Frequency: 87.057MHz)
+   Minimum input arrival time before clock: 1.176ns
+   Maximum output required time after clock: 7.697ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
@@ -589,204 +648,276 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 8.063ns (frequency: 124.027MHz)
-  Total number of paths / destination ports: 7036928 / 1056
+  Clock period: 2.737ns (frequency: 365.364MHz)
+  Total number of paths / destination ports: 351 / 26
 -------------------------------------------------------------------------
-Delay:               8.063ns (Levels of Logic = 10)
-  Source:            Data/reg_store/registers_0_849 (FF)
-  Destination:       Data/reg_store/registers_0_1015 (FF)
+Delay:               2.737ns (Levels of Logic = 27)
+  Source:            a0/counter_0 (FF)
+  Destination:       a0/counter_25 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: Data/reg_store/registers_0_849 to Data/reg_store/registers_0_1015
+  Data Path: a0/counter_0 to a0/counter_25
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             3   0.478   0.790  Data/reg_store/registers_0_849 (Data/reg_store/registers_0_849)
-     LUT6:I2->O            1   0.124   0.776  Data/reg_store/Mmux_rs_out_825 (Data/reg_store/Mmux_rs_out_825)
-     LUT6:I2->O            1   0.124   0.000  Data/reg_store/Mmux_rs_out_38 (Data/reg_store/Mmux_rs_out_38)
-     MUXF7:I1->O          16   0.368   0.814  Data/reg_store/Mmux_rs_out_2_f7_7 (Data/rsOut<17>)
-     LUT5:I2->O            1   0.124   0.716  Data/alu/add/c1/l1/carry_out<3>_SW1_SW1 (N244)
-     LUT6:I3->O            5   0.124   0.448  Data/alu/add/c1/l1/carry_out<3>_SW1 (N69)
-     LUT6:I5->O            9   0.124   0.452  Data/alu/add/c2/a0/c<2><1>_SW1 (N84)
-     MUXF7:S->O            1   0.465   0.919  Data/alu/add/c2/a1/c<2><1>_SW9 (N206)
-     LUT6:I1->O            1   0.124   0.000  Data/alu/Mmux_result164_F (N482)
-     MUXF7:I0->O          33   0.365   0.574  Data/alu/Mmux_result164 (result_23_OBUF)
-     LUT6:I5->O            1   0.124   0.000  Data/reg_store/Mmux_registers[0][31]_writeData[31]_mux_32_OUT161 (Data/reg_store/registers[0][31]_writeData[31]_mux_32_OUT<23>)
-     FDCE:D                    0.030          Data/reg_store/registers_0_23
+     FDC:C->Q              1   0.478   0.399  a0/counter_0 (a0/counter_0)
+     INV:I->O              1   0.146   0.000  a0/Mcount_counter_lut<0>_INV_0 (a0/Mcount_counter_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  a0/Mcount_counter_cy<0> (a0/Mcount_counter_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<1> (a0/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<2> (a0/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<3> (a0/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<4> (a0/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<5> (a0/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<6> (a0/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<7> (a0/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<8> (a0/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<9> (a0/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<10> (a0/Mcount_counter_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<11> (a0/Mcount_counter_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<12> (a0/Mcount_counter_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<13> (a0/Mcount_counter_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<14> (a0/Mcount_counter_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<15> (a0/Mcount_counter_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<16> (a0/Mcount_counter_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<17> (a0/Mcount_counter_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<18> (a0/Mcount_counter_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<19> (a0/Mcount_counter_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<20> (a0/Mcount_counter_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<21> (a0/Mcount_counter_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<22> (a0/Mcount_counter_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  a0/Mcount_counter_cy<23> (a0/Mcount_counter_cy<23>)
+     MUXCY:CI->O           0   0.029   0.000  a0/Mcount_counter_cy<24> (a0/Mcount_counter_cy<24>)
+     XORCY:CI->O           1   0.510   0.000  a0/Mcount_counter_xor<25> (Result<25>)
+     FDC:D                     0.030          a0/counter_25
     ----------------------------------------
-    Total                      8.063ns (2.574ns logic, 5.489ns route)
-                                       (31.9% logic, 68.1% route)
+    Total                      2.737ns (2.338ns logic, 0.399ns route)
+                                       (85.4% logic, 14.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'a0/counter_25'
+  Clock period: 11.487ns (frequency: 87.057MHz)
+  Total number of paths / destination ports: 174950301 / 2126
+-------------------------------------------------------------------------
+Delay:               11.487ns (Levels of Logic = 57)
+  Source:            Data/instr_mem/U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_0 (FF)
+  Destination:       Data/PC/addr2_31 (FF)
+  Source Clock:      a0/counter_25 rising
+  Destination Clock: a0/counter_25 rising
+
+  Data Path: Data/instr_mem/U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_0 to Data/PC/addr2_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             18   0.478   0.828  U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_0 (U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_0)
+     LUT3:I0->O          259   0.124   0.738  U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux81 (douta<16>)
+     end scope: 'Data/instr_mem:douta<16>'
+     LUT6:I4->O            1   0.124   0.776  Data/reg_store/Mmux_rt_out_81 (Data/reg_store/Mmux_rt_out_81)
+     LUT6:I2->O            1   0.124   0.000  Data/reg_store/Mmux_rt_out_3 (Data/reg_store/Mmux_rt_out_3)
+     MUXF7:I1->O           3   0.368   0.550  Data/reg_store/Mmux_rt_out_2_f7 (Data/rtOut<0>)
+     LUT6:I4->O            1   0.124   0.000  Data/alu/add/c1/a0/p<0>1 (Data/alu/add/c1/a0/p<0>)
+     MUXCY:S->O            1   0.472   0.000  Data/alu/diff/Msub_tem2_cy<0> (Data/alu/diff/Msub_tem2_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<1> (Data/alu/diff/Msub_tem2_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<2> (Data/alu/diff/Msub_tem2_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<3> (Data/alu/diff/Msub_tem2_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<4> (Data/alu/diff/Msub_tem2_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<5> (Data/alu/diff/Msub_tem2_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<6> (Data/alu/diff/Msub_tem2_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<7> (Data/alu/diff/Msub_tem2_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<8> (Data/alu/diff/Msub_tem2_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<9> (Data/alu/diff/Msub_tem2_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<10> (Data/alu/diff/Msub_tem2_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<11> (Data/alu/diff/Msub_tem2_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<12> (Data/alu/diff/Msub_tem2_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<13> (Data/alu/diff/Msub_tem2_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<14> (Data/alu/diff/Msub_tem2_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<15> (Data/alu/diff/Msub_tem2_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<16> (Data/alu/diff/Msub_tem2_cy<16>)
+     XORCY:CI->O           1   0.510   0.421  Data/alu/diff/Msub_tem2_xor<17> (Data/alu/diff/tem2<17>)
+     LUT6:I5->O            2   0.124   0.782  Data/alu/Mmux_result91 (Data/alu/Mmux_result9)
+     LUT6:I2->O            1   0.124   0.919  Data/alu/Mmux_result94_1 (Data/alu/Mmux_result94)
+     LUT6:I1->O           11   0.124   0.782  Data/alu/zero4_SW0 (N176)
+     LUT6:I3->O           14   0.124   0.506  Data/alu/zero7 (Data/zero)
+     LUT6:I5->O            1   0.124   0.000  Data/bm/nextInstr<4>31 (Data/bm/nextInstr<4>3)
+     MUXCY:S->O            1   0.472   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<4> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<5> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<6> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<7> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<8> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<9> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<10> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<11> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<12> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<13> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<14> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<15> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<16> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<17> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<18> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<19> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<20> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<21> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<22> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<23> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<24> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<25> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<26> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<27> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<28> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<29> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<30> (Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_cy<30>)
+     XORCY:CI->O           1   0.510   0.000  Data/PC/Madd_next_addr[31]_GND_52_o_add_0_OUT_xor<31> (Data/PC/next_addr[31]_GND_52_o_add_0_OUT<31>)
+     FDC:D                     0.030          Data/PC/addr2_31
+    ----------------------------------------
+    Total                     11.487ns (5.185ns logic, 6.302ns route)
+                                       (45.1% logic, 54.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 5574304 / 3104
+  Total number of paths / destination ports: 26 / 26
 -------------------------------------------------------------------------
-Offset:              7.937ns (Levels of Logic = 11)
-  Source:            instruction<22> (PAD)
-  Destination:       Data/reg_store/registers_0_1015 (FF)
+Offset:              1.176ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       a0/counter_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: instruction<22> to Data/reg_store/registers_0_1015
+  Data Path: rst to a0/counter_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           257   0.001   1.141  instruction_22_IBUF (instruction_22_IBUF)
-     LUT6:I0->O            1   0.124   0.776  Data/reg_store/Mmux_rs_out_825 (Data/reg_store/Mmux_rs_out_825)
-     LUT6:I2->O            1   0.124   0.000  Data/reg_store/Mmux_rs_out_38 (Data/reg_store/Mmux_rs_out_38)
-     MUXF7:I1->O          16   0.368   0.814  Data/reg_store/Mmux_rs_out_2_f7_7 (Data/rsOut<17>)
-     LUT5:I2->O            1   0.124   0.716  Data/alu/add/c1/l1/carry_out<3>_SW1_SW1 (N244)
-     LUT6:I3->O            5   0.124   0.448  Data/alu/add/c1/l1/carry_out<3>_SW1 (N69)
-     LUT6:I5->O            9   0.124   0.452  Data/alu/add/c2/a0/c<2><1>_SW1 (N84)
-     MUXF7:S->O            1   0.465   0.919  Data/alu/add/c2/a1/c<2><1>_SW9 (N206)
-     LUT6:I1->O            1   0.124   0.000  Data/alu/Mmux_result164_F (N482)
-     MUXF7:I0->O          33   0.365   0.574  Data/alu/Mmux_result164 (result_23_OBUF)
-     LUT6:I5->O            1   0.124   0.000  Data/reg_store/Mmux_registers[0][31]_writeData[31]_mux_32_OUT161 (Data/reg_store/registers[0][31]_writeData[31]_mux_32_OUT<23>)
-     FDCE:D                    0.030          Data/reg_store/registers_0_23
+     IBUF:I->O          1115   0.001   0.681  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.494          a0/counter_0
     ----------------------------------------
-    Total                      7.937ns (2.097ns logic, 5.840ns route)
-                                       (26.4% logic, 73.6% route)
+    Total                      1.176ns (0.495ns logic, 0.681ns route)
+                                       (42.1% logic, 57.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Data/alu/shift/select[1]_select[1]_OR_110_o'
-  Total number of paths / destination ports: 160317 / 32
+Timing constraint: Default OFFSET IN BEFORE for Clock 'a0/counter_25'
+  Total number of paths / destination ports: 1089 / 1089
 -------------------------------------------------------------------------
-Offset:              9.284ns (Levels of Logic = 12)
-  Source:            instruction<17> (PAD)
-  Destination:       Data/alu/shift/result_21 (LATCH)
-  Destination Clock: Data/alu/shift/select[1]_select[1]_OR_110_o falling
+Offset:              1.176ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       Data/DFF/out (FF)
+  Destination Clock: a0/counter_25 rising
 
-  Data Path: instruction<17> to Data/alu/shift/result_21
+  Data Path: rst to Data/DFF/out
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           257   0.001   1.141  instruction_17_IBUF (instruction_17_IBUF)
-     LUT6:I0->O            1   0.124   0.776  Data/reg_store/Mmux_rt_out_840 (Data/reg_store/Mmux_rt_out_840)
-     LUT6:I2->O            1   0.124   0.000  Data/reg_store/Mmux_rt_out_313 (Data/reg_store/Mmux_rt_out_313)
-     MUXF7:I1->O           6   0.368   0.809  Data/reg_store/Mmux_rt_out_2_f7_12 (Data/rtOut<21>)
-     LUT5:I1->O            1   0.124   0.716  Data/alu/mux/Mmux_out141 (Data/alu/muxOut<21>)
-     LUT4:I1->O            1   0.124   0.421  Data/alu/shift/out1_SW0 (N476)
-     LUT6:I5->O            1   0.124   0.939  Data/alu/shift/out1 (Data/alu/shift/out)
-     LUT6:I0->O           38   0.124   0.930  Data/alu/shift/out6 (Data/alu/shift/_n0144)
-     LUT5:I1->O           27   0.124   1.090  Data/alu/shift/Mmux_result[31]_in[31]_MUX_1491_o11121 (Data/alu/shift/Mmux_result[31]_in[31]_MUX_1491_o1112)
-     LUT6:I0->O            1   0.124   0.421  Data/alu/shift/Mmux_result[31]_in[31]_MUX_1491_o191 (Data/alu/shift/Mmux_result[31]_in[31]_MUX_1491_o19)
-     LUT6:I5->O            1   0.124   0.421  Data/alu/shift/Mmux_result[31]_in[31]_MUX_1491_o192 (Data/alu/shift/Mmux_result[31]_in[31]_MUX_1491_o191)
-     LUT5:I4->O            1   0.124   0.000  Data/alu/shift/Mmux_result[31]_in[31]_MUX_1491_o195 (Data/alu/shift/result[31]_in[31]_MUX_1518_o)
-     LD:D                      0.011          Data/alu/shift/result_22
+     IBUF:I->O          1115   0.001   0.681  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.494          Data/PC/addr_0
     ----------------------------------------
-    Total                      9.284ns (1.620ns logic, 7.664ns route)
-                                       (17.4% logic, 82.6% route)
+    Total                      1.176ns (0.495ns logic, 0.681ns route)
+                                       (42.1% logic, 57.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 219840 / 32
+Timing constraint: Default OFFSET OUT AFTER for Clock 'a0/counter_25'
+  Total number of paths / destination ports: 53049 / 14
 -------------------------------------------------------------------------
-Offset:              7.887ns (Levels of Logic = 10)
-  Source:            Data/reg_store/registers_0_849 (FF)
-  Destination:       result<23> (PAD)
-  Source Clock:      clk rising
+Offset:              7.697ns (Levels of Logic = 18)
+  Source:            Data/instr_mem/U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_0 (FF)
+  Destination:       result<8> (PAD)
+  Source Clock:      a0/counter_25 rising
 
-  Data Path: Data/reg_store/registers_0_849 to result<23>
+  Data Path: Data/instr_mem/U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_0 to result<8>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             3   0.478   0.790  Data/reg_store/registers_0_849 (Data/reg_store/registers_0_849)
-     LUT6:I2->O            1   0.124   0.776  Data/reg_store/Mmux_rs_out_825 (Data/reg_store/Mmux_rs_out_825)
-     LUT6:I2->O            1   0.124   0.000  Data/reg_store/Mmux_rs_out_38 (Data/reg_store/Mmux_rs_out_38)
-     MUXF7:I1->O          16   0.368   0.814  Data/reg_store/Mmux_rs_out_2_f7_7 (Data/rsOut<17>)
-     LUT5:I2->O            1   0.124   0.716  Data/alu/add/c1/l1/carry_out<3>_SW1_SW1 (N244)
-     LUT6:I3->O            5   0.124   0.448  Data/alu/add/c1/l1/carry_out<3>_SW1 (N69)
-     LUT6:I5->O            9   0.124   0.452  Data/alu/add/c2/a0/c<2><1>_SW1 (N84)
-     MUXF7:S->O            1   0.465   0.919  Data/alu/add/c2/a1/c<2><1>_SW9 (N206)
-     LUT6:I1->O            1   0.124   0.000  Data/alu/Mmux_result164_F (N482)
-     MUXF7:I0->O          33   0.365   0.552  Data/alu/Mmux_result164 (result_23_OBUF)
-     OBUF:I->O                 0.000          result_23_OBUF (result<23>)
+     FDE:C->Q             18   0.478   0.828  U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_0 (U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_0)
+     LUT3:I0->O          259   0.124   0.738  U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux81 (douta<16>)
+     end scope: 'Data/instr_mem:douta<16>'
+     LUT6:I4->O            1   0.124   0.776  Data/reg_store/Mmux_rt_out_81 (Data/reg_store/Mmux_rt_out_81)
+     LUT6:I2->O            1   0.124   0.000  Data/reg_store/Mmux_rt_out_3 (Data/reg_store/Mmux_rt_out_3)
+     MUXF7:I1->O           3   0.368   0.550  Data/reg_store/Mmux_rt_out_2_f7 (Data/rtOut<0>)
+     LUT6:I4->O            1   0.124   0.000  Data/alu/add/c1/a0/p<0>1 (Data/alu/add/c1/a0/p<0>)
+     MUXCY:S->O            1   0.472   0.000  Data/alu/diff/Msub_tem2_cy<0> (Data/alu/diff/Msub_tem2_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<1> (Data/alu/diff/Msub_tem2_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<2> (Data/alu/diff/Msub_tem2_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<3> (Data/alu/diff/Msub_tem2_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<4> (Data/alu/diff/Msub_tem2_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<5> (Data/alu/diff/Msub_tem2_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<6> (Data/alu/diff/Msub_tem2_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  Data/alu/diff/Msub_tem2_cy<7> (Data/alu/diff/Msub_tem2_cy<7>)
+     XORCY:CI->O           3   0.510   0.413  Data/alu/diff/Msub_tem2_xor<8> (Data/alu/diff/tem2<8>)
+     MUXF7:S->O            2   0.465   0.722  Data/alu/Mmux_result313_SW0 (N342)
+     LUT5:I2->O           33   0.124   0.552  Data/alu/Mmux_result314 (result_8_OBUF)
+     OBUF:I->O                 0.000          result_8_OBUF (result<8>)
     ----------------------------------------
-    Total                      7.887ns (2.420ns logic, 5.467ns route)
-                                       (30.7% logic, 69.3% route)
+    Total                      7.697ns (3.118ns logic, 4.579ns route)
+                                       (40.5% logic, 59.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Data/alu/shift/select[1]_select[1]_OR_110_o'
-  Total number of paths / destination ports: 35 / 32
+  Total number of paths / destination ports: 19 / 14
 -------------------------------------------------------------------------
-Offset:              3.643ns (Levels of Logic = 4)
-  Source:            Data/alu/shift/result_17 (LATCH)
-  Destination:       result<17> (PAD)
+Offset:              3.487ns (Levels of Logic = 4)
+  Source:            Data/alu/shift/result_8 (LATCH)
+  Destination:       result<8> (PAD)
   Source Clock:      Data/alu/shift/select[1]_select[1]_OR_110_o falling
 
-  Data Path: Data/alu/shift/result_17 to result<17>
+  Data Path: Data/alu/shift/result_8 to result<8>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               1   0.625   0.776  Data/alu/shift/result_17 (Data/alu/shift/result_17)
-     LUT6:I2->O            2   0.124   0.782  Data/alu/Mmux_result91 (Data/alu/Mmux_result9)
-     LUT6:I2->O            1   0.124   0.536  Data/alu/Mmux_result94_SW1 (N325)
-     LUT6:I4->O           33   0.124   0.552  Data/alu/Mmux_result94 (result_17_OBUF)
-     OBUF:I->O                 0.000          result_17_OBUF (result<17>)
+     LD:G->Q               6   0.625   0.972  Data/alu/shift/result_8 (Data/alu/shift/result_8)
+     LUT6:I0->O            1   0.124   0.000  Data/alu/Mmux_result313_SW0_G (N671)
+     MUXF7:I1->O           2   0.368   0.722  Data/alu/Mmux_result313_SW0 (N342)
+     LUT5:I2->O           33   0.124   0.552  Data/alu/Mmux_result314 (result_8_OBUF)
+     OBUF:I->O                 0.000          result_8_OBUF (result<8>)
     ----------------------------------------
-    Total                      3.643ns (0.997ns logic, 2.646ns route)
-                                       (27.4% logic, 72.6% route)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 172064 / 32
--------------------------------------------------------------------------
-Delay:               7.761ns (Levels of Logic = 11)
-  Source:            instruction<22> (PAD)
-  Destination:       result<23> (PAD)
-
-  Data Path: instruction<22> to result<23>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O           257   0.001   1.141  instruction_22_IBUF (instruction_22_IBUF)
-     LUT6:I0->O            1   0.124   0.776  Data/reg_store/Mmux_rs_out_825 (Data/reg_store/Mmux_rs_out_825)
-     LUT6:I2->O            1   0.124   0.000  Data/reg_store/Mmux_rs_out_38 (Data/reg_store/Mmux_rs_out_38)
-     MUXF7:I1->O          16   0.368   0.814  Data/reg_store/Mmux_rs_out_2_f7_7 (Data/rsOut<17>)
-     LUT5:I2->O            1   0.124   0.716  Data/alu/add/c1/l1/carry_out<3>_SW1_SW1 (N244)
-     LUT6:I3->O            5   0.124   0.448  Data/alu/add/c1/l1/carry_out<3>_SW1 (N69)
-     LUT6:I5->O            9   0.124   0.452  Data/alu/add/c2/a0/c<2><1>_SW1 (N84)
-     MUXF7:S->O            1   0.465   0.919  Data/alu/add/c2/a1/c<2><1>_SW9 (N206)
-     LUT6:I1->O            1   0.124   0.000  Data/alu/Mmux_result164_F (N482)
-     MUXF7:I0->O          33   0.365   0.552  Data/alu/Mmux_result164 (result_23_OBUF)
-     OBUF:I->O                 0.000          result_23_OBUF (result<23>)
-    ----------------------------------------
-    Total                      7.761ns (1.943ns logic, 5.818ns route)
-                                       (25.0% logic, 75.0% route)
+    Total                      3.487ns (1.241ns logic, 2.246ns route)
+                                       (35.6% logic, 64.4% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock Data/alu/Mmux_result111
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+a0/counter_25  |         |         |    7.406|         |
+---------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock Data/alu/shift/select[1]_select[1]_OR_110_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    9.410|         |
+a0/counter_25  |         |         |   10.993|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock clk
+Clock to Setup on destination clock a0/counter_25
 -------------------------------------------+---------+---------+---------+---------+
                                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------------------------+---------+---------+---------+---------+
-Data/alu/shift/select[1]_select[1]_OR_110_o|         |    3.819|         |         |
-clk                                        |    8.063|         |         |         |
+Data/alu/Mmux_result111                    |         |    1.054|         |         |
+Data/alu/shift/select[1]_select[1]_OR_110_o|         |    7.408|         |         |
+a0/counter_25                              |   11.487|         |         |         |
 -------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.737|         |         |         |
+---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 22.39 secs
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 19.62 secs
  
 --> 
 
-Total memory usage is 4702712 kilobytes
+Total memory usage is 4702840 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   45 (   0 filtered)
+Number of warnings :   43 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 
