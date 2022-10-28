@@ -34,7 +34,7 @@ module ALU(
 	wire [31:0] adderOut, shiftOut, diffOut, muxOut;
 	wire temp_carry;
 	mux_32_3X1 mux(.a0(b),.a1(shamt),.a2(offset),.select(ALUsource),.out(muxOut));
-    adderunit add(.a(a),.b(muxOut),.cin(0),.out(adderOut),.cout(temp_carry));
+    adderunit add(.a(a),.b(muxOut),.cin(1'b0),.out(adderOut),.cout(temp_carry));
 	shiftunit shift(.in(a),.shamt(muxOut),.select(ALUop[1:0]),.result(shiftOut));
 	diffunit diff(.a(a),.b(muxOut),.result(diffOut));
 	always @(*) begin

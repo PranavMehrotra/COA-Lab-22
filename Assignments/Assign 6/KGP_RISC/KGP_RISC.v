@@ -21,7 +21,7 @@
 module KGP_RISC(
 	input clk,
 	input rst,
-    output [13:0] result
+    output [31:0] result
 );
 	wire [5:0] opcode;
     wire [5:0] funccode;
@@ -59,8 +59,8 @@ module KGP_RISC(
 	 .clk(clk_out),
 	 .rst(rst),
 	 //.instruction(instruction),
-     .result(res)
+     .result(result)
 	);
-	assign result = res;
+	//assign result = res;
 
 endmodule
