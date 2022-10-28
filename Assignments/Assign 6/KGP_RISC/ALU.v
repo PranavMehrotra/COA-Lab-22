@@ -42,7 +42,7 @@ module ALU(
 			carry = temp_carry;
             result = adderOut;
         end else if (ALUop == 3'b001) begin
-    	    result = (~a) + 1;
+    	    result = (~muxOut) + 1;
         end else if (ALUop == 3'b010) begin
             result = a & muxOut;
         end else if (ALUop == 3'b011) begin

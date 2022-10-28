@@ -50,8 +50,8 @@
 data_memory_bram your_instance_name (
   .clka(clka), // input clka
   .ena(ena), // input ena
-  .wea(wea), // input [3 : 0] wea
-  .addra(addra), // input [31 : 0] addra
+  .wea(wea), // input [0 : 0] wea
+  .addra(addra), // input [10 : 0] addra
   .dina(dina), // input [31 : 0] dina
   .douta(douta) // output [31 : 0] douta
 );

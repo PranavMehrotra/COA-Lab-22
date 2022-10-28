@@ -23,9 +23,9 @@
 #endif
 static const char *ng0 = "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/instr_memory_tb.v";
 static int ng1[] = {0, 0};
-static unsigned int ng2[] = {1U, 0U};
-static unsigned int ng3[] = {7U, 0U};
-static unsigned int ng4[] = {3U, 0U};
+static unsigned int ng2[] = {3U, 0U};
+static unsigned int ng3[] = {4U, 0U};
+static unsigned int ng4[] = {6U, 0U};
 
 
 

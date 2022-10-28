@@ -1,4 +1,5 @@
 # Output products list for <data_memory_bram>
+_xmsgs\pn_parser.xmsgs
 data_memory_bram.asy
 data_memory_bram.gise
 data_memory_bram.mif

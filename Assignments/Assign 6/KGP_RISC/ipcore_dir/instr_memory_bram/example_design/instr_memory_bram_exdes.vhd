@@ -89,7 +89,7 @@ USE UNISIM.VCOMPONENTS.ALL;
 ENTITY instr_memory_bram_exdes IS
   PORT (
       --Inputs - Port A
-    ADDRA          : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    ADDRA          : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
   
     DOUTA          : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     CLKA       : IN STD_LOGIC
@@ -112,7 +112,7 @@ ARCHITECTURE xilinx OF instr_memory_bram_exdes IS
   COMPONENT instr_memory_bram IS
   PORT (
       --Port A
-    ADDRA      : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    ADDRA      : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
   
     DOUTA      : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 

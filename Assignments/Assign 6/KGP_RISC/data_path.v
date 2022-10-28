@@ -33,7 +33,8 @@ module data_path(
 	output signed [31:0] result
     );
 	
-	wire [31:0] offset,shamt,pda,rsOut,rtOut,memRead,nextPC,mem_reg_out,nextInstr,instr,instr4,instruction;
+	wire [31:0] offset,shamt,pda,rsOut,rtOut,memRead,nextPC,mem_reg_out,instruction;
+	wire [12:0] nextInstr,instr,instr4;
 	wire [25:0] pdain;
 	wire [15:0] offsetin;
 	wire carry, zero, sign, prevCarry;
@@ -111,19 +112,18 @@ module data_path(
 	 .branch(branch),
 	 .nextInstr(nextInstr)
 	 );
-	 /*
 	data_memory_bram data_mem(
    .clka(clk), // input clka
    .ena(clk), // input ena
-   .wea({3{mem_write}}), // input [3 : 0] wea
-   .addra(result), // input [31 : 0] addra
+   .wea(mem_write), // input [0 : 0] wea
+   .addra(result), // input [10 : 0] addra
    .dina(rtOut), // input [31 : 0] dina
    .douta(memRead) // output [31 : 0] douta
-	);*/
+	);
 	///*
 	instr_memory_bram instr_mem(
 	.clka(clk), // input clka
-	.addra(instr), // input [31 : 0] addra
+	.addra(instr), // input [12 : 0] addra
 	.douta(instruction) // output [31 : 0] douta
 	); // */
 	

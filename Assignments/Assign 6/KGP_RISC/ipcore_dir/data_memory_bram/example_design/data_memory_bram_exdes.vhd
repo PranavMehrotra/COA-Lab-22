@@ -91,8 +91,8 @@ ENTITY data_memory_bram_exdes IS
       --Inputs - Port A
     ENA            : IN STD_LOGIC;  --opt port
   
-    WEA            : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-    ADDRA          : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    WEA            : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    ADDRA          : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
   
     DINA           : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
   
@@ -119,8 +119,8 @@ ARCHITECTURE xilinx OF data_memory_bram_exdes IS
       --Port A
     ENA        : IN STD_LOGIC;  --opt port
   
-    WEA        : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-    ADDRA      : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    WEA        : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    ADDRA      : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
   
     DINA       : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
   

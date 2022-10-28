@@ -19,16 +19,16 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module program_counter(
-	input [31:0] next_addr,
+	input [12:0] next_addr,
 	input clk,
 	input rst,
-	output reg [31:0] addr,
-	output reg [31:0] addr2
+	output reg [12:0] addr,
+	output reg [12:0] addr2
 );
 	always @(posedge clk or posedge rst) begin
         if (rst) begin
-            addr <= 32'd0;
-				addr2 <= 32'd1;
+            addr <= 13'd0;
+				addr2 <= 13'd1;
         end else begin
             addr <= next_addr;
 				addr2 <= next_addr + 1;  // Might need to change it to 4

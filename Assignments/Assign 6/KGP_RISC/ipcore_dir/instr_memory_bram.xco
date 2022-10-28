@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Thu Oct 27 17:05:34 2022
+# Date: Fri Oct 28 10:39:52 2022
 #
 ##############################################################
 #
@@ -45,7 +45,7 @@ CSET assume_synchronous_clk=false
 CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
-CSET byte_size=8
+CSET byte_size=9
 CSET coe_file="D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\COE Files\instr_file.coe"
 CSET collision_warnings=ALL
 CSET component_name=instr_memory_bram
@@ -53,7 +53,7 @@ CSET disable_collision_warnings=false
 CSET disable_out_of_range_warnings=false
 CSET ecc=false
 CSET ecctype=No_ECC
-CSET enable_32bit_address=true
+CSET enable_32bit_address=false
 CSET enable_a=Always_Enabled
 CSET enable_b=Always_Enabled
 CSET error_injection_type=Single_Bit_Error_Injection
@@ -105,4 +105,4 @@ CSET write_width_b=32
 MISC pkg_timestamp=2012-11-19T16:22:25Z
 # END Extra information
 GENERATE
-# CRC: 5c9e2614
+# CRC: 25e5872f

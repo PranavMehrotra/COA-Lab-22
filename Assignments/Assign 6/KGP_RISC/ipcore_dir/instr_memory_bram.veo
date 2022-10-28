@@ -49,7 +49,7 @@
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 instr_memory_bram your_instance_name (
   .clka(clka), // input clka
-  .addra(addra), // input [31 : 0] addra
+  .addra(addra), // input [12 : 0] addra
   .douta(douta) // output [31 : 0] douta
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------

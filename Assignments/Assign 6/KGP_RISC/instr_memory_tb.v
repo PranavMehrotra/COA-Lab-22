@@ -42,11 +42,11 @@ module instr_memory_tb;
 		// Initialize Inputs
 		clka = 0;
 		// Wait 100 ns for global reset to finish
-		addra = 32'd1;
-		#20
-		addra = 32'd7;
-		#20
 		addra = 32'd3;
+		#20
+		addra = 32'd4;
+		#20
+		addra = 32'd6;
         
 		// Add stimulus here
 
