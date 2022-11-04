@@ -2,14 +2,14 @@ Command line:
    KGP_RISC_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  57021
+     -socket  50331
 
-Fri Nov 04 11:23:46 2022
+Fri Nov 04 14:41:11 2022
 
 
- Elaboration Time: 0.09375 sec
+ Elaboration Time: 0.046875 sec
 
- Current Memory Usage: 5154.45 Meg
+ Current Memory Usage: 5154.51 Meg
 
  Total Signals          : 531
  Total Nets             : 2359
@@ -21,9 +21,9 @@ Fri Nov 04 11:23:46 2022
  Total Scalar Nets and Variables : 408963
 Total Line Count : 1155
 
- Total Simulation Time: 0.140625 sec
+ Total Simulation Time: 0.109375 sec
 
- Current Memory Usage: 5469.02 Meg
+ Current Memory Usage: 4839.94 Meg
 
-Fri Nov 04 11:24:42 2022
+Fri Nov 04 14:56:56 2022
 

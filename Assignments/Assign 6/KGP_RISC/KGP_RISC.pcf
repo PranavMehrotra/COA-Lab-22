@@ -1,23 +1,14 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Oct 28 12:21:40 2022
+// Written by: Map P.20131013 on Fri Nov 04 15:09:02 2022
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "result<10>" LOCATE = SITE "V1" LEVEL 1;
-COMP "result<13>" LOCATE = SITE "U1" LEVEL 1;
-COMP "result<11>" LOCATE = SITE "R1" LEVEL 1;
-COMP "result<12>" LOCATE = SITE "P5" LEVEL 1;
 COMP "rst" LOCATE = SITE "J15" LEVEL 1;
 COMP "clk" LOCATE = SITE "E3" LEVEL 1;
-COMP "result<9>" LOCATE = SITE "U3" LEVEL 1;
-COMP "result<5>" LOCATE = SITE "T4" LEVEL 1;
-COMP "result<6>" LOCATE = SITE "U7" LEVEL 1;
-COMP "result<7>" LOCATE = SITE "U6" LEVEL 1;
-COMP "result<8>" LOCATE = SITE "V4" LEVEL 1;
 COMP "result<1>" LOCATE = SITE "K15" LEVEL 1;
 COMP "result<2>" LOCATE = SITE "J13" LEVEL 1;
 COMP "result<3>" LOCATE = SITE "N14" LEVEL 1;
-COMP "result<4>" LOCATE = SITE "T5" LEVEL 1;
+COMP "result<4>" LOCATE = SITE "R18" LEVEL 1;
 COMP "result<0>" LOCATE = SITE "H17" LEVEL 1;
 TIMEGRP sys_clk_pin = BEL "a0/counter_0" BEL "a0/counter_1" BEL "a0/counter_2"
         BEL "a0/counter_3" BEL "a0/counter_4" BEL "a0/counter_5" BEL
