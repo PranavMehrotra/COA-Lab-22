@@ -2,8 +2,8 @@
 Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 1
--n 3 -fastpaths -xml counter_structural.twx counter_structural.ncd -o
+D:\Softwares\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s
+1 -n 3 -fastpaths -xml counter_structural.twx counter_structural.ncd -o
 counter_structural.twr counter_structural.pcf -ucf pin.ucf
 
 Design file:              counter_structural.ncd
@@ -818,14 +818,14 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Wed Sep 14 16:18:24 2022 
+Analysis completed Wed Nov 02 11:53:31 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 5004 MB
+Peak Memory Usage: 4952 MB
 
 
 

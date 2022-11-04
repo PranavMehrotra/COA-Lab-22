@@ -1,0 +1,29 @@
+Command line:
+   Wrapper_CLA_16_bit_ripple_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49867
+
+Wed Nov 02 10:36:08 2022
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 5150.73 Meg
+
+ Total Signals          : 58
+ Total Nets             : 166
+ Total Signal Drivers   : 42
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 44
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 296
+Total Line Count : 61
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 5150.73 Meg
+
+Wed Nov 02 10:36:17 2022
+

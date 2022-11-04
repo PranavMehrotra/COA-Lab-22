@@ -11,19 +11,20 @@
          <ClosedNode>/ALU D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|ALU.v/add - adderunit</ClosedNode>
          <ClosedNode>/ALU D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|ALU.v/add - adderunit/c1 - CLA_16_bit_LCU</ClosedNode>
          <ClosedNode>/ALU D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|ALU.v/add - adderunit/c2 - CLA_16_bit_LCU</ClosedNode>
+         <ClosedNode>/KGP_RISC D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC.v/Data - data_path</ClosedNode>
          <ClosedNode>/KGP_RISC D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC.v/Data - data_path/alu - ALU</ClosedNode>
          <ClosedNode>/KGP_RISC D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC.v/Data - data_path/bm - branch_mechanism</ClosedNode>
          <ClosedNode>/KGP_RISC D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC.v/Data - data_path/reg_store - register_file</ClosedNode>
          <ClosedNode>/register_file D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|register_file.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>alu - ALU (C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU.v)</SelectedItem>
+         <SelectedItem>timing.ucf (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/timing.ucf)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >8</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ca000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ca0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000011f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000011f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>alu - ALU (C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU.v)</CurrentItem>
+      <CurrentItem>timing.ucf (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/timing.ucf)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -74,13 +75,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Design Summary/Reports</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000150000000010000000100000000000000000000000064ffffffff000000810000000000000001000001500000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Design Summary/Reports</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
    <CurrentView>Behavioral Simulation</CurrentView>
@@ -93,6 +94,7 @@
          <ClosedNode>/KGP_RISC_tb C:|Users|Saransh Sharma|OneDrive|Documents|GitHub|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/Data - data_path/alu - ALU</ClosedNode>
          <ClosedNode>/KGP_RISC_tb C:|Users|Saransh Sharma|OneDrive|Documents|GitHub|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/Data - data_path/bm - branch_mechanism</ClosedNode>
          <ClosedNode>/KGP_RISC_tb C:|Users|Saransh Sharma|OneDrive|Documents|GitHub|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/Data - data_path/reg_store - register_file</ClosedNode>
+         <ClosedNode>/KGP_RISC_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC</ClosedNode>
          <ClosedNode>/KGP_RISC_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/Data - data_path/alu - ALU</ClosedNode>
          <ClosedNode>/KGP_RISC_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/Data - data_path/bm - branch_mechanism</ClosedNode>
          <ClosedNode>/KGP_RISC_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/Data - data_path/reg_store - register_file</ClosedNode>
@@ -100,13 +102,13 @@
          <ClosedNode>/branch_mechanism_tb D:|KGP Semesters|SEM 5|COA LAB|COA-Lab-22|Assignments|Assign 6|KGP_RISC|branch_mechanism_tb.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ALU_tb (C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU_tb.v)</SelectedItem>
+         <SelectedItem>diff_tb (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/diff_tb.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001b8000000020000000000000000000000000200000064ffffffff000000810000000300000002000001b80000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000016a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000016a0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>ALU_tb (C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU_tb.v)</CurrentItem>
+      <CurrentItem>diff_tb (D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/diff_tb.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -114,13 +116,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000150000000010000000100000000000000000000000064ffffffff000000810000000000000001000001500000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -131,7 +133,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000150000000010000000100000000000000000000000064ffffffff000000810000000000000001000001500000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -154,13 +156,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000150000000010000000100000000000000000000000064ffffffff000000810000000000000001000001500000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>

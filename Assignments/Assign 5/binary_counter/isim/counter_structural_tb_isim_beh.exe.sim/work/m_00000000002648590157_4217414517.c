@@ -21,9 +21,9 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/binary_counter/clock_divider.v";
-static int ng1[] = {0, 0};
-static int ng2[] = {1, 0};
+static const char *ng0 = "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/clock_divider.v";
+static unsigned int ng1[] = {0U, 0U};
+static unsigned int ng2[] = {1U, 0U};
 
 
 
@@ -80,9 +80,9 @@ LAB10:    xsi_set_current_line(28, ng0);
     t4 = *((char **)t3);
     t5 = ((char*)((ng2)));
     memset(t13, 0, 8);
-    xsi_vlog_unsigned_add(t13, 32, t4, 25, t5, 32);
+    xsi_vlog_unsigned_add(t13, 26, t4, 26, t5, 26);
     t11 = (t0 + 1768);
-    xsi_vlogvar_wait_assign_value(t11, t13, 0, 0, 25, 0LL);
+    xsi_vlogvar_wait_assign_value(t11, t13, 0, 0, 26, 0LL);
 
 LAB8:    goto LAB2;
 
@@ -91,7 +91,7 @@ LAB6:    xsi_set_current_line(24, ng0);
 LAB9:    xsi_set_current_line(25, ng0);
     t11 = ((char*)((ng1)));
     t12 = (t0 + 1768);
-    xsi_vlogvar_wait_assign_value(t12, t11, 0, 0, 25, 0LL);
+    xsi_vlogvar_wait_assign_value(t12, t11, 0, 0, 26, 0LL);
     goto LAB8;
 
 }

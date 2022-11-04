@@ -31,7 +31,7 @@ module program_counter(
 				addr2 <= 13'd1;
         end else begin
             addr <= next_addr;
-				addr2 <= next_addr + 1;  // Might need to change it to 4
+				addr2 <= next_addr + 1;
         end
     end
 

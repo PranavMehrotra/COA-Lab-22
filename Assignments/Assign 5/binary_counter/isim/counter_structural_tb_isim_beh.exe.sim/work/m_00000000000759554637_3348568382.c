@@ -22,7 +22,7 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "clk = %d, rst = %d, out = %d";
-static const char *ng1 = "D:/binary_counter/counter_structural_tb.v";
+static const char *ng1 = "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 5/binary_counter/counter_structural_tb.v";
 static int ng2[] = {0, 0};
 static int ng3[] = {1, 0};
 
