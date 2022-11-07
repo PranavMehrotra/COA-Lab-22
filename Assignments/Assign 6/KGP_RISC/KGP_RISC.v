@@ -21,7 +21,7 @@
 module KGP_RISC(
 	input clk,
 	input rst,
-    output [4:0] result
+    output [31:0] result
 );
 	wire [5:0] opcode;
     wire [5:0] funccode;

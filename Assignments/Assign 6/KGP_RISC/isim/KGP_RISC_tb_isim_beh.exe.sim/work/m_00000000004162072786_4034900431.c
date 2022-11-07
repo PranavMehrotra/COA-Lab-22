@@ -25,7 +25,7 @@
 
 
 
-extern void work_m_00000000002530804883_4034900431_init()
+extern void work_m_00000000004162072786_4034900431_init()
 {
-	xsi_register_didat("work_m_00000000002530804883_4034900431", "isim/KGP_RISC_tb_isim_beh.exe.sim/work/m_00000000002530804883_4034900431.didat");
+	xsi_register_didat("work_m_00000000004162072786_4034900431", "isim/KGP_RISC_tb_isim_beh.exe.sim/work/m_00000000004162072786_4034900431.didat");
 }

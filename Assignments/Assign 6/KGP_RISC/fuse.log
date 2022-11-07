@@ -22,6 +22,7 @@ Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/As
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/control_unit.v" into library work
+Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/clock_divider.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb.v" into library work
 Analyzing Verilog file "D:/Softwares/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
@@ -30,6 +31,7 @@ WARNING:HDLCompiler:189 - "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments
 WARNING:HDLCompiler:189 - "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU.v" Line 41: Size mismatch in connection of port <out>. Formal port size is 6-bit while actual signal size is 1-bit.
 WARNING:HDLCompiler:189 - "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v" Line 119: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
 Completed static elaboration
+Compiling module clock_divider
 Compiling module control_unit
 Compiling module mux_32_3X1
 Compiling module Instruction_decoder
@@ -62,8 +64,8 @@ Compiling module KGP_RISC
 Compiling module KGP_RISC_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 16 sub-compilation(s) to finish...
-Compiled 31 Verilog Units
+Waiting for 14 sub-compilation(s) to finish...
+Compiled 32 Verilog Units
 Built simulation executable D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb_isim_beh.exe
-Fuse Memory Usage: 34844 KB
-Fuse CPU Usage: 640 ms
+Fuse Memory Usage: 34336 KB
+Fuse CPU Usage: 796 ms
