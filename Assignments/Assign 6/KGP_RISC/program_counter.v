@@ -25,13 +25,13 @@ module program_counter(
 	output reg [12:0] addr,
 	output reg [12:0] addr2
 );
-	always @(posedge clk or posedge rst) begin
+	always @(negedge clk or posedge rst) begin
         if (rst) begin
-            addr <= 13'd0;
-				addr2 <= 13'd1;
+            addr = 13'd0;
+				addr2 = 13'd1;
         end else begin
-            addr <= next_addr;
-				addr2 <= next_addr + 1;
+            addr = next_addr;
+				//addr2 <= next_addr + 1;
         end
     end
 

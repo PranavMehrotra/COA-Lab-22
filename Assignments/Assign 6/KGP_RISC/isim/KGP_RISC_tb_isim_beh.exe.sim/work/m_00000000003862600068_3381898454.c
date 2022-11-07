@@ -24,13 +24,11 @@
 static const char *ng0 = "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/program_counter.v";
 static unsigned int ng1[] = {0U, 0U};
 static unsigned int ng2[] = {1U, 0U};
-static int ng3[] = {1, 0};
 
 
 
 static void Always_28_0(char *t0)
 {
-    char t13[8];
     char *t1;
     char *t2;
     char *t3;
@@ -79,15 +77,7 @@ LAB10:    xsi_set_current_line(33, ng0);
     t2 = (t0 + 1048U);
     t3 = *((char **)t2);
     t2 = (t0 + 1768);
-    xsi_vlogvar_wait_assign_value(t2, t3, 0, 0, 13, 0LL);
-    xsi_set_current_line(34, ng0);
-    t2 = (t0 + 1048U);
-    t3 = *((char **)t2);
-    t2 = ((char*)((ng3)));
-    memset(t13, 0, 8);
-    xsi_vlog_unsigned_add(t13, 32, t3, 13, t2, 32);
-    t4 = (t0 + 1928);
-    xsi_vlogvar_wait_assign_value(t4, t13, 0, 0, 13, 0LL);
+    xsi_vlogvar_assign_value(t2, t3, 0, 0, 13);
 
 LAB8:    goto LAB2;
 
@@ -96,11 +86,11 @@ LAB6:    xsi_set_current_line(29, ng0);
 LAB9:    xsi_set_current_line(30, ng0);
     t11 = ((char*)((ng1)));
     t12 = (t0 + 1768);
-    xsi_vlogvar_wait_assign_value(t12, t11, 0, 0, 13, 0LL);
+    xsi_vlogvar_assign_value(t12, t11, 0, 0, 13);
     xsi_set_current_line(31, ng0);
     t2 = ((char*)((ng2)));
     t3 = (t0 + 1928);
-    xsi_vlogvar_wait_assign_value(t3, t2, 0, 0, 13, 0LL);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 13);
     goto LAB8;
 
 }
