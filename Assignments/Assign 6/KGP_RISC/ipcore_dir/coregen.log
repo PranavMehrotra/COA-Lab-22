@@ -1,6 +1,12 @@
 INFO:sim:172 - Generating IP...
 Applying current project options...
 Finished applying current project options.
+ERROR:sim - Unable to find D:\KGP Semesters\SEM 5\COA
+ERROR:sim -    LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\COE
+   Files\instr_file.co
+ERROR:sim -    Coregen is looking for D:\KGP Semesters\SEM 5\COA
+ERROR:sim -    LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\COE
+   Files\instr_file.co
 WARNING:sim - A core named 'instr_memory_bram' already exists in the project.
    Output products for this core may be overwritten.
 Resolving generics for 'instr_memory_bram'...

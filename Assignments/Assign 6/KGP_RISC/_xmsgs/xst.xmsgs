@@ -14,16 +14,19 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\ALU.v" Line 41: Assignment to <arg fmt="%s" index="1">diff_zero</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\program_counter.v" Line 34: Result of <arg fmt="%d" index="1">14</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 102: Assignment to <arg fmt="%s" index="1">instr4</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\branch_mechanism.v" Line 39: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\branch_mechanism.v" Line 40: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\branch_mechanism.v" Line 42: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\branch_mechanism.v" Line 43: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\branch_mechanism.v" Line 46: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\branch_mechanism.v" Line 49: Result of <arg fmt="%d" index="1">14</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\ipcore_dir\data_memory_bram.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">data_memory_bram</arg>&gt; remains a black box.
@@ -38,7 +41,7 @@
 <msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 36: Net &lt;<arg fmt="%s" index="1">nextPC[31]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\KGP_RISC.v" Line 62: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">result</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v</arg>&quot; line <arg fmt="%s" index="2">97</arg>: Output port &lt;<arg fmt="%s" index="3">addr2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">PC</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">nextPC</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
