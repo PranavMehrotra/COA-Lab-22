@@ -18,6 +18,7 @@ Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/As
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/Instruction_decoder.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/dff.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/branch_mechanism.v" into library work
+WARNING:HDLCompiler:114 - "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/branch_mechanism.v" Line 70: /* in comment
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/bit_extend_unit.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v" into library work
@@ -62,8 +63,8 @@ Compiling module KGP_RISC
 Compiling module KGP_RISC_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 16 sub-compilation(s) to finish...
+Waiting for 8 sub-compilation(s) to finish...
 Compiled 31 Verilog Units
 Built simulation executable D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb_isim_beh.exe
-Fuse Memory Usage: 34868 KB
-Fuse CPU Usage: 952 ms
+Fuse Memory Usage: 34916 KB
+Fuse CPU Usage: 765 ms
