@@ -7,7 +7,6 @@ xc7a100t-csg324-1 KGP_RISC.ngc KGP_RISC.ngd
 
 Reading NGO file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign
 6/KGP_RISC/KGP_RISC.ngc" ...
-Loading design module "ipcore_dir/data_memory_bram.ngc"...
 Loading design module "ipcore_dir/instr_memory_bram.ngc"...
 Gathering constraint information from source properties...
 Done.
@@ -30,10 +29,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4452824 kilobytes
+Total memory usage is 4452760 kilobytes
 
 Writing NGD file "KGP_RISC.ngd" ...
-Total REAL time to NGDBUILD completion:  8 sec
-Total CPU time to NGDBUILD completion:   8 sec
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   6 sec
 
 Writing NGDBUILD log file "KGP_RISC.bld"...
