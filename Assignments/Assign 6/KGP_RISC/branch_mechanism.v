@@ -46,7 +46,7 @@ module branch_mechanism(
 			nextInstr = offset;
 		end
 		else begin
-			nextInstr = instr4;
+			nextInstr = instr4 + 1;
 		end
 	end
 	

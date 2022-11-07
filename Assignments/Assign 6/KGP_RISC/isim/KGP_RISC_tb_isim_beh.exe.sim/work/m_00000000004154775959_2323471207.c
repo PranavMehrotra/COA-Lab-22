@@ -24,6 +24,7 @@
 static const char *ng0 = "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/branch_mechanism.v";
 static unsigned int ng1[] = {1U, 0U};
 static unsigned int ng2[] = {2U, 0U};
+static int ng3[] = {1, 0};
 
 
 
@@ -165,8 +166,11 @@ LAB23:    xsi_set_current_line(48, ng0);
 LAB26:    xsi_set_current_line(49, ng0);
     t2 = (t0 + 2008U);
     t3 = *((char **)t2);
-    t2 = (t0 + 2728);
-    xsi_vlogvar_assign_value(t2, t3, 0, 0, 13);
+    t2 = ((char*)((ng3)));
+    memset(t6, 0, 8);
+    xsi_vlog_unsigned_add(t6, 32, t3, 13, t2, 32);
+    t4 = (t0 + 2728);
+    xsi_vlogvar_assign_value(t4, t6, 0, 0, 13);
 
 LAB24:
 LAB20:
