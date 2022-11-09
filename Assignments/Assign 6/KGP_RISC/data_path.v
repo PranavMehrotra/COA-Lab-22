@@ -30,23 +30,16 @@ module data_path(
    input [2:0] branch,
 	input clk,
 	input rst,
-	output signed [31:0] result,
-	output signed [31:0] muxOut,
-	output signed [31:0] pda,
-	output signed [12:0] instr,
-	output signed [12:0] instr4,
-	output [1:0] mem_to_Reg,
-	output [31:0] instruction
+	output signed [31:0] result
     );
 	
-	wire [31:0] offset,shamt,rsOut,rtOut,memRead,mem_reg_out;
-	wire [12:0] nextInstr;
+	wire [31:0] offset,shamt,pda,rsOut,rtOut,memRead,mem_reg_out,instruction;
+	wire [12:0] nextInstr,instr,instr4;
 	wire [25:0] pdain;
 	wire [15:0] offsetin;
 	wire carry, zero, sign, prevCarry;
 	wire [4:0] rs,rt,shamtin;
 	wire jump;
-	assign mem_to_Reg = mem_to_reg;
 	mux_32_3X1 mem_reg_mux(
 	.a0(result),
 	.a1(memRead),
@@ -54,7 +47,6 @@ module data_path(
 	.select(mem_to_reg),
 	.out(mem_reg_out)
 	);
-	assign muxOut = mem_reg_out;
 	
 	Instruction_decoder decoder(
 	.instruction(instruction),
