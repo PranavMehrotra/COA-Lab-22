@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: counter_structural.prj
 
@@ -105,13 +105,13 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\binary_counter\Optimised_CLA_4_bit.v" into library work
+Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\Optimised_CLA_4_bit.v" into library work
 Parsing module <Optimised_CLA_4_bit>.
-Analyzing Verilog file "D:\binary_counter\dff.v" into library work
+Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\dff.v" into library work
 Parsing module <dff>.
-Analyzing Verilog file "D:\binary_counter\clock_divider.v" into library work
+Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\clock_divider.v" into library work
 Parsing module <clock_divider>.
-Analyzing Verilog file "D:\binary_counter\counter_structural.v" into library work
+Analyzing Verilog file "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\counter_structural.v" into library work
 Parsing module <counter_structural>.
 
 =========================================================================
@@ -131,13 +131,13 @@ Elaborating module <Optimised_CLA_4_bit>.
 =========================================================================
 
 Synthesizing Unit <counter_structural>.
-    Related source file is "D:\binary_counter\counter_structural.v".
+    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\counter_structural.v".
     Summary:
 	no macro.
 Unit <counter_structural> synthesized.
 
 Synthesizing Unit <clock_divider>.
-    Related source file is "D:\binary_counter\clock_divider.v".
+    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\clock_divider.v".
     Found 26-bit register for signal <counter>.
     Found 26-bit adder for signal <counter[25]_GND_2_o_add_0_OUT> created at line 28.
     Summary:
@@ -146,14 +146,14 @@ Synthesizing Unit <clock_divider>.
 Unit <clock_divider> synthesized.
 
 Synthesizing Unit <dff>.
-    Related source file is "D:\binary_counter\dff.v".
+    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\dff.v".
     Found 4-bit register for signal <out>.
     Summary:
 	inferred   4 D-type flip-flop(s).
 Unit <dff> synthesized.
 
 Synthesizing Unit <Optimised_CLA_4_bit>.
-    Related source file is "D:\binary_counter\Optimised_CLA_4_bit.v".
+    Related source file is "D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 5\binary_counter\Optimised_CLA_4_bit.v".
     Summary:
 Unit <Optimised_CLA_4_bit> synthesized.
 
@@ -470,12 +470,12 @@ clk            |    2.737|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.94 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.44 secs
  
 --> 
 
-Total memory usage is 4616252 kilobytes
+Total memory usage is 4682552 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

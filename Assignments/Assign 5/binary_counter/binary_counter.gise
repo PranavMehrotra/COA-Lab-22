@@ -119,15 +119,20 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1663149737" xil_pn:in_ck="4285579499180871511" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1663149737">
+    <transform xil_pn:end_ts="1667368928" xil_pn:in_ck="3705668064646870673" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1667368928">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="Optimised_CLA_4_bit.v"/>
+      <outfile xil_pn:name="clock_divider.v"/>
+      <outfile xil_pn:name="counter.v"/>
+      <outfile xil_pn:name="counter_structural.v"/>
+      <outfile xil_pn:name="counter_structural_tb.v"/>
+      <outfile xil_pn:name="countertest.v"/>
+      <outfile xil_pn:name="dff.v"/>
     </transform>
     <transform xil_pn:end_ts="1663148988" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2603028890789524292" xil_pn:start_ts="1663148988">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -141,18 +146,23 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1663149737" xil_pn:in_ck="4285579499180871511" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1663149737">
+    <transform xil_pn:end_ts="1667368928" xil_pn:in_ck="3705668064646870673" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1667368928">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="Optimised_CLA_4_bit.v"/>
+      <outfile xil_pn:name="clock_divider.v"/>
+      <outfile xil_pn:name="counter.v"/>
+      <outfile xil_pn:name="counter_structural.v"/>
+      <outfile xil_pn:name="counter_structural_tb.v"/>
+      <outfile xil_pn:name="countertest.v"/>
+      <outfile xil_pn:name="dff.v"/>
     </transform>
-    <transform xil_pn:end_ts="1663149741" xil_pn:in_ck="4285579499180871511" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7996285749685491497" xil_pn:start_ts="1663149737">
+    <transform xil_pn:end_ts="1667368930" xil_pn:in_ck="3705668064646870673" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7996285749685491497" xil_pn:start_ts="1667368928">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -160,20 +170,24 @@
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="counter_structural_tb_beh.prj"/>
+      <outfile xil_pn:name="counter_structural_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1663149741" xil_pn:in_ck="-4366012485009214055" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4731755141515193510" xil_pn:start_ts="1663149741">
+    <transform xil_pn:end_ts="1667368930" xil_pn:in_ck="-4366012485009214055" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4731755141515193510" xil_pn:start_ts="1667368930">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="counter_structural_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1663147061" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1663147061">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -203,12 +217,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1663152443" xil_pn:in_ck="3950469084709092284" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="7931982378425956048" xil_pn:start_ts="1663152432">
+    <transform xil_pn:end_ts="1667370162" xil_pn:in_ck="3950469084709092284" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="7931982378425956048" xil_pn:start_ts="1667370153">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="clock_divider.ngr"/>
@@ -228,20 +240,18 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1663152451" xil_pn:in_ck="-1543001038263064981" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-9054595959743153052" xil_pn:start_ts="1663152443">
+    <transform xil_pn:end_ts="1667370168" xil_pn:in_ck="-1543001038263064981" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-9054595959743153052" xil_pn:start_ts="1667370162">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="counter_structural.bld"/>
       <outfile xil_pn:name="counter_structural.ngd"/>
       <outfile xil_pn:name="counter_structural_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1663152475" xil_pn:in_ck="9142026696448319853" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-7188367874928765557" xil_pn:start_ts="1663152451">
+    <transform xil_pn:end_ts="1667370188" xil_pn:in_ck="9142026696448319853" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-7188367874928765557" xil_pn:start_ts="1667370168">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -254,10 +264,9 @@
       <outfile xil_pn:name="counter_structural_summary.xml"/>
       <outfile xil_pn:name="counter_structural_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1663152506" xil_pn:in_ck="426340736749127071" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1663152475">
+    <transform xil_pn:end_ts="1667370212" xil_pn:in_ck="426340736749127071" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1667370188">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="counter_structural.ncd"/>
       <outfile xil_pn:name="counter_structural.pad"/>
@@ -269,10 +278,9 @@
       <outfile xil_pn:name="counter_structural_pad.txt"/>
       <outfile xil_pn:name="counter_structural_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1663152545" xil_pn:in_ck="1682788482598070782" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="306664139534459597" xil_pn:start_ts="1663152506">
+    <transform xil_pn:end_ts="1667370233" xil_pn:in_ck="1682788482598070782" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="306664139534459597" xil_pn:start_ts="1667370212">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="counter_structural.bgn"/>
       <outfile xil_pn:name="counter_structural.bit"/>
@@ -282,15 +290,13 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1663152552" xil_pn:in_ck="-1231874510445147886" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6383737364629502382" xil_pn:start_ts="1663152551">
+    <transform xil_pn:end_ts="1667370244" xil_pn:in_ck="-1231874510445147886" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6383737364629502382" xil_pn:start_ts="1667370233">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1663152506" xil_pn:in_ck="670915316471444581" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1663152493">
+    <transform xil_pn:end_ts="1667370212" xil_pn:in_ck="670915316471444581" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1667370202">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="counter_structural.twr"/>
       <outfile xil_pn:name="counter_structural.twx"/>

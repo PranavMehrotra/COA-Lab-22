@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Wed Sep 14 16:18:06 2022">
+  <application stringID="par" timeStamp="Wed Nov 02 11:53:16 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\MATLAB\R2020a\runtime\win64;C:\Program Files\MATLAB\R2020a\bin;C:\Program Files\dotnet\;C:\Users\Student\AppData\Local\Microsoft\WindowsApps"/>
+          <item stringID="value" value="D:\Softwares\14.7\ISE_DS\ISE\\lib\nt64;D:\Softwares\14.7\ISE_DS\ISE\\bin\nt64;D:\Softwares\14.7\ISE_DS\ISE\bin\nt64;D:\Softwares\14.7\ISE_DS\ISE\lib\nt64;D:\Softwares\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\Softwares\14.7\ISE_DS\PlanAhead\bin;D:\Softwares\14.7\ISE_DS\EDK\bin\nt64;D:\Softwares\14.7\ISE_DS\EDK\lib\nt64;D:\Softwares\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\Softwares\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\Softwares\14.7\ISE_DS\EDK\gnuwin\bin;D:\Softwares\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\Softwares\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Softwares\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Softwares\14.7\ISE_DS\common\bin\nt64;D:\Softwares\14.7\ISE_DS\common\lib\nt64;C:\Program Files\Eclipse Adoptium\jdk-17.0.1.12-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\prana\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Java\?jdk_version?\bin;C:\Program Files\Git\cmd;C:\Users\prana\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\prana\AppData\Local\Programs\Python\Python39\;C:\Users\prana\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.4\bin;C:\Users\prana\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\Users\prana\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -20,40 +20,36 @@
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\"/>
+          <item stringID="value" value="D:\Softwares\14.7\ISE_DS\ISE\"/>
         </row>
         <row stringID="row" value="3">
           <item stringID="variable" value="XILINXD_LICENSE_FILE"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS"/>
+          <item stringID="value" value="C:\Users\prana\Downloads\Xilinx.lic"/>
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE"/>
+          <item stringID="value" value="D:\Softwares\14.7\ISE_DS\ISE"/>
         </row>
         <row stringID="row" value="5">
           <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\EDK"/>
+          <item stringID="value" value="D:\Softwares\14.7\ISE_DS\EDK"/>
         </row>
         <row stringID="row" value="6">
-          <item stringID="variable" value="XILINX_FOR_ALTIUM_OVERRIDE"/>
-          <item stringID="value" value=" "/>
-        </row>
-        <row stringID="row" value="7">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\PlanAhead"/>
+          <item stringID="value" value="D:\Softwares\14.7\ISE_DS\PlanAhead"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
         <item stringID="User_EnvOsname" value="Microsoft , 64-bit"/>
         <item stringID="User_EnvOsrelease" value="major release  (build 9200)"/>
       </item>
-      <item stringID="User_EnvHost" value="HWLAB65"/>
+      <item stringID="User_EnvHost" value="PranavMehrotra"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz"/>
-          <item stringID="speed" value="3292 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz"/>
+          <item stringID="speed" value="2304 MHz"/>
         </row>
       </table>
     </section>
@@ -67,12 +63,12 @@
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="15 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="15 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="11 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="11 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="15 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="15 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="11 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="11 secs "/>
       </section>
     </task>
     <task stringID="PAR_par">
@@ -2179,14 +2175,14 @@
     </task>
   </application>
 
-  <application stringID="Par" timeStamp="Wed Sep 14 16:18:06 2022">
+  <application stringID="Par" timeStamp="Wed Nov 02 11:53:17 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\MATLAB\R2020a\runtime\win64;C:\Program Files\MATLAB\R2020a\bin;C:\Program Files\dotnet\;C:\Users\Student\AppData\Local\Microsoft\WindowsApps"/>
+          <item stringID="value" value="D:\Softwares\14.7\ISE_DS\ISE\\lib\nt64;D:\Softwares\14.7\ISE_DS\ISE\\bin\nt64;D:\Softwares\14.7\ISE_DS\ISE\bin\nt64;D:\Softwares\14.7\ISE_DS\ISE\lib\nt64;D:\Softwares\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\Softwares\14.7\ISE_DS\PlanAhead\bin;D:\Softwares\14.7\ISE_DS\EDK\bin\nt64;D:\Softwares\14.7\ISE_DS\EDK\lib\nt64;D:\Softwares\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\Softwares\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\Softwares\14.7\ISE_DS\EDK\gnuwin\bin;D:\Softwares\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\Softwares\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Softwares\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Softwares\14.7\ISE_DS\common\bin\nt64;D:\Softwares\14.7\ISE_DS\common\lib\nt64;C:\Program Files\Eclipse Adoptium\jdk-17.0.1.12-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\prana\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Java\?jdk_version?\bin;C:\Program Files\Git\cmd;C:\Users\prana\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\prana\AppData\Local\Programs\Python\Python39\;C:\Users\prana\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.4\bin;C:\Users\prana\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\Users\prana\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -2194,40 +2190,36 @@
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\"/>
+          <item stringID="value" value="D:\Softwares\14.7\ISE_DS\ISE\"/>
         </row>
         <row stringID="row" value="3">
           <item stringID="variable" value="XILINXD_LICENSE_FILE"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS"/>
+          <item stringID="value" value="C:\Users\prana\Downloads\Xilinx.lic"/>
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE"/>
+          <item stringID="value" value="D:\Softwares\14.7\ISE_DS\ISE"/>
         </row>
         <row stringID="row" value="5">
           <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\EDK"/>
+          <item stringID="value" value="D:\Softwares\14.7\ISE_DS\EDK"/>
         </row>
         <row stringID="row" value="6">
-          <item stringID="variable" value="XILINX_FOR_ALTIUM_OVERRIDE"/>
-          <item stringID="value" value=" "/>
-        </row>
-        <row stringID="row" value="7">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\PlanAhead"/>
+          <item stringID="value" value="D:\Softwares\14.7\ISE_DS\PlanAhead"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
         <item stringID="User_EnvOsname" value="Microsoft , 64-bit"/>
         <item stringID="User_EnvOsrelease" value="major release  (build 9200)"/>
       </item>
-      <item stringID="User_EnvHost" value="HWLAB65"/>
+      <item stringID="User_EnvHost" value="PranavMehrotra"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz"/>
-          <item stringID="speed" value="3292 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz"/>
+          <item stringID="speed" value="2304 MHz"/>
         </row>
       </table>
     </section>

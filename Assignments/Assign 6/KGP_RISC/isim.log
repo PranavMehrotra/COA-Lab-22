@@ -9,8 +9,7 @@ WARNING: File "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KG
 WARNING: File "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/register_file.v" Line 23.  For instance reg_store/mux/, width 32 of formal port a1 is not equal to width 5 of actual signal rt.
 WARNING:  For instance reg_store/mux/, width 32 of formal port a2 is not equal to width 5 of actual constant.
 WARNING: File "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/register_file.v" Line 33.  For instance reg_store/mux/, width 32 of formal port out is not equal to width 5 of actual signal muxOut.
-WARNING: File "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v" Line 37.  For instance Data/bm/, width 32 of formal port instr4 is not equal to width 13 of actual signal instr4.
-WARNING: File "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v" Line 37.  For instance Data/bm/, width 32 of formal port nextInstr is not equal to width 13 of actual signal nextInstr.
+WARNING: File "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU.v" Line 41.  For instance alu/diff/, width 6 of formal port out is not equal to width 1 of actual signal diffOut.
 WARNING: File "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v" Line 33.  For instance Data/data_mem/, width 11 of formal port addra is not equal to width 32 of actual signal result.
 Time resolution is 1 ps
 # onerror resume

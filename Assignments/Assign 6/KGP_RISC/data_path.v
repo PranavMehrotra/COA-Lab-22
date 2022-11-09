@@ -108,7 +108,7 @@ module data_path(
 	 .sign(sign),
 	 .pda(pda),
 	 .offset(offset),
-	 .instr4(instr4),
+	 .instr4(instr),
 	 .branch(branch),
 	 .nextInstr(nextInstr)
 	 );

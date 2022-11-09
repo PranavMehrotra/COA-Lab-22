@@ -1,0 +1,4 @@
+verilog work "CLA_4_bit.v"
+verilog work "CLA_16_bit_ripple.v"
+verilog work "Wrapper_CLA_16_bit_ripple.v"
+verilog work "D:/Softwares/14.7/ISE_DS/ISE//verilog/src/glbl.v"
