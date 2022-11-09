@@ -31,22 +31,18 @@ module data_path(
 	input clk,
 	input rst,
 	output signed [31:0] result,
-	output signed [31:0] muxOut,
-	output signed [31:0] pda,
-	output signed [12:0] instr,
-	output signed [12:0] instr4,
-	output [1:0] mem_to_Reg,
-	output [31:0] instruction
+	input [10:0] array,
+	output signed [13:0] out
     );
 	
-	wire [31:0] offset,shamt,rsOut,rtOut,memRead,mem_reg_out;
-	wire [12:0] nextInstr;
+	wire [31:0] offset,shamt,pda,rsOut,rtOut,memRead,mem_reg_out,instruction;
+	wire [12:0] nextInstr,instr,instr4;
 	wire [25:0] pdain;
 	wire [15:0] offsetin;
 	wire carry, zero, sign, prevCarry;
 	wire [4:0] rs,rt,shamtin;
 	wire jump;
-	assign mem_to_Reg = mem_to_reg;
+	wire [5:0] index;
 	mux_32_3X1 mem_reg_mux(
 	.a0(result),
 	.a1(memRead),
@@ -54,7 +50,6 @@ module data_path(
 	.select(mem_to_reg),
 	.out(mem_reg_out)
 	);
-	assign muxOut = mem_reg_out;
 	
 	Instruction_decoder decoder(
 	.instruction(instruction),
@@ -127,10 +122,10 @@ module data_path(
 	 .nextInstr(nextInstr)
 	 );
 	data_memory_bram data_mem(
-   .clka(clk), // input clka
+   .clka(~clk), // input clka
    .ena(1'b1), // input ena
    .wea(mem_write), // input [0 : 0] wea
-   .addra(result), // input [10 : 0] addra
+   .addra(result|index), // input [10 : 0] addra
    .dina(rtOut), // input [31 : 0] dina
    .douta(memRead) // output [31 : 0] douta
 	);
@@ -141,11 +136,11 @@ module data_path(
 	.douta(instruction) // output [31 : 0] douta
 	); // */
 	
-	
-	
-	
-	
-	
-	
+	output_array arr(
+	.array(array),
+	.rst(rst),
+	.index(index)
+	);
 
+	assign out = memRead;
 endmodule
