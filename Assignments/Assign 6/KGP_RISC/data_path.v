@@ -127,7 +127,7 @@ module data_path(
 	 .nextInstr(nextInstr)
 	 );
 	data_memory_bram data_mem(
-   .clka(clk), // input clka
+   .clka(~clk), // input clka
    .ena(1'b1), // input ena
    .wea(mem_write), // input [0 : 0] wea
    .addra(result), // input [10 : 0] addra
