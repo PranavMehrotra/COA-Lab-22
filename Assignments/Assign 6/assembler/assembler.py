@@ -60,8 +60,9 @@ def spit_line(line):
                 # print(line)
                 rs=f"{REGDICT[line[3]]:05b}"
                 rt=f"{REGDICT[line[1]]:05b}"
-                addr=f"{int(line[2]):016b}"
-                print(f"{opcode}{rs}{rt}{addr},", file = OUTPUT_FILE)
+                offset = int(line[2])
+                offset_ext = two_comp(offset,16)
+                print(f"{opcode}{rs}{rt}{offset_ext},", file = OUTPUT_FILE)
         
         # branch type : 6 + 26
         elif opcode=="100001" or opcode=="110001" or opcode=="100110" or opcode=="100111":
@@ -73,8 +74,8 @@ def spit_line(line):
                 addr=f"{int(line[1]):026b}"
                 print(f"{opcode}{addr},", file = OUTPUT_FILE)
 
-                # extra_instr = f"{0:032b}"
-                # print(f"{extra_instr},", file = OUTPUT_FILE)
+                extra_instr = f"{0:032b}"
+                print(f"{extra_instr},", file = OUTPUT_FILE)
         # Immediate type branch
         elif opcode=="100011" or opcode=="100100" or opcode=="100101":
             if len(line)!=3:
@@ -88,8 +89,8 @@ def spit_line(line):
                 addr=f"{int(line[2]):016b}"
                 print(f"{opcode}{rs}{dont_care}{addr},", file = OUTPUT_FILE)
 
-                # extra_instr = f"{0:032b}"
-                # print(f"{extra_instr},", file = OUTPUT_FILE)
+                extra_instr = f"{0:032b}"
+                print(f"{extra_instr},", file = OUTPUT_FILE)
         # Register type branch
         elif opcode=="100010":
             if len(line)!=2:
@@ -101,8 +102,8 @@ def spit_line(line):
                 dont_care=f"{0:021b}"
                 print(f"{opcode}{rs}{dont_care},", file = OUTPUT_FILE)
 
-                # extra_instr = f"{0:032b}"
-                # print(f"{extra_instr},", file = OUTPUT_FILE)
+                extra_instr = f"{0:032b}"
+                print(f"{extra_instr},", file = OUTPUT_FILE)
     except:
         print("sdef")
         print(f"error in line {line}")

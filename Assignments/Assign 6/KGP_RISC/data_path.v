@@ -35,15 +35,17 @@ module data_path(
 	output signed [31:0] pda,
 	output signed [12:0] instr,
 	output signed [12:0] instr4,
-	output [1:0] mem_to_Reg
+	output [1:0] mem_to_Reg,
+	output [31:0] instruction
     );
 	
-	wire [31:0] offset,shamt,rsOut,rtOut,memRead,mem_reg_out,instruction;
+	wire [31:0] offset,shamt,rsOut,rtOut,memRead,mem_reg_out;
 	wire [12:0] nextInstr;
 	wire [25:0] pdain;
 	wire [15:0] offsetin;
 	wire carry, zero, sign, prevCarry;
 	wire [4:0] rs,rt,shamtin;
+	wire jump;
 	assign mem_to_Reg = mem_to_reg;
 	mux_32_3X1 mem_reg_mux(
 	.a0(result),
@@ -111,19 +113,21 @@ module data_path(
 		.instr(instr),
 		.nextinstr(instr4)
 	);
+	branch_checker check(.branch(branch),.carry(prevCarry),.sign(sign),.zero(zero),.jump(jump));
 	 branch_mechanism bm(
 	 .rsOut(rsOut),
 	 .carry(prevCarry),
 	 .zero(zero),
 	 .sign(sign),
 	 .pda(pda),
+	 .jump(jump),
 	 .offset(offset),
 	 .instr4(instr4),
 	 .branch(branch),
 	 .nextInstr(nextInstr)
 	 );
 	data_memory_bram data_mem(
-   .clka(~clk), // input clka
+   .clka(clk), // input clka
    .ena(1'b1), // input ena
    .wea(mem_write), // input [0 : 0] wea
    .addra(result), // input [10 : 0] addra

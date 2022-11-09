@@ -26,10 +26,10 @@ module program_counter(
 );
 	always @(posedge clk or posedge rst) begin
         if (rst) begin
-            addr = 13'd0;
+            addr <= -13'd1;
 				//addr2 = 13'd1;
         end else begin
-            addr = next_addr;
+            addr <= next_addr;
 				//addr2 = next_addr + 1;
         end
     end

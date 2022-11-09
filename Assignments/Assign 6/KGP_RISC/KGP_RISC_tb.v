@@ -29,7 +29,7 @@ module KGP_RISC_tb;
 	reg rst;
 
 	// Outputs
-	wire [31:0] result,muxOut,pda;
+	wire [31:0] result,muxOut,pda, instruction;
 	wire [12:0] instr, instr4;
 	wire [1:0] mem_to_Reg;
 	// Instantiate the Unit Under Test (UUT)
@@ -39,6 +39,7 @@ module KGP_RISC_tb;
 		.result(result),
 		.muxOut(muxOut),
 		.pda(pda),
+		.instruction(instruction),
 		.instr(instr),
 		.instr4(instr4),
 		.mem_to_Reg(mem_to_Reg)

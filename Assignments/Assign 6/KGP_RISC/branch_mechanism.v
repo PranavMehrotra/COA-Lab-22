@@ -23,15 +23,16 @@ module branch_mechanism(
 	input carry,
 	input zero,
 	input sign,
+	input jump,
 	input [31:0] pda,
 	input [31:0] offset,
 	input [12:0] instr4,
 	input [2:0] branch,
 	output reg [12:0] nextInstr
     );
-	wire jump;
+	//wire jump;
 	// wire [12:0] tem;
-	branch_checker check(.branch(branch),.carry(carry),.sign(sign),.zero(zero),.jump(jump));
+	//branch_checker check(.branch(branch),.carry(carry),.sign(sign),.zero(zero),.jump(jump));
 	//mux_12_3X1 mux3X1(.a0(pda),.a1(rsOut),.a2(instr4),.select(branch),.out(tem));
 	//mux_12_2X1 mux2X1(.a0(tem),.a1(offset),.select(jump),.out(nextInstr));
 	always @(*) begin

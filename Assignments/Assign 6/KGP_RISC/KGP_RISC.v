@@ -26,7 +26,8 @@ module KGP_RISC(
 	 output [31:0] pda,
 	 output [12:0] instr,
 	 output [12:0] instr4,
-	 output [1:0] mem_to_Reg
+	 output [1:0] mem_to_Reg,
+	 output [31:0] instruction
 );
 	wire [5:0] opcode;
     wire [5:0] funccode;
@@ -62,7 +63,7 @@ module KGP_RISC(
     .branch(branch),
 	 .clk(clk),
 	 .rst(rst),
-	 //.instruction(instruction),
+	 .instruction(instruction),
      .result(result),
 	  .muxOut(muxOut),
 	  .pda(pda),

@@ -40,11 +40,14 @@ module register_file(
                 registers[i] <= 32'd0;
         end else if (!reg_write) begin
             registers[muxOut] <= writeData;
-        end 
+        end
+		  else begin
+			registers[muxOut] <= registers[muxOut];
+			end
     end
 	always @(*) begin
-        rs_out = registers[rs];
-        rt_out = registers[rt];
+        rs_out <= registers[rs];
+        rt_out <= registers[rt];
    end
 
 endmodule

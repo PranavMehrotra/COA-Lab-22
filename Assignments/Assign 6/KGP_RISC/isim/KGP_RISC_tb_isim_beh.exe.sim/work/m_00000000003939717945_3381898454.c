@@ -22,12 +22,13 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/program_counter.v";
-static unsigned int ng1[] = {0U, 0U};
+static unsigned int ng1[] = {1U, 0U};
 
 
 
 static void Always_27_0(char *t0)
 {
+    char t11[8];
     char *t1;
     char *t2;
     char *t3;
@@ -38,8 +39,8 @@ static void Always_27_0(char *t0)
     unsigned int t8;
     unsigned int t9;
     unsigned int t10;
-    char *t11;
     char *t12;
+    char *t13;
 
 LAB0:    t1 = (t0 + 2688U);
     t2 = *((char **)t1);
@@ -76,16 +77,18 @@ LAB10:    xsi_set_current_line(32, ng0);
     t2 = (t0 + 1048U);
     t3 = *((char **)t2);
     t2 = (t0 + 1768);
-    xsi_vlogvar_assign_value(t2, t3, 0, 0, 13);
+    xsi_vlogvar_wait_assign_value(t2, t3, 0, 0, 13, 0LL);
 
 LAB8:    goto LAB2;
 
 LAB6:    xsi_set_current_line(28, ng0);
 
 LAB9:    xsi_set_current_line(29, ng0);
-    t11 = ((char*)((ng1)));
-    t12 = (t0 + 1768);
-    xsi_vlogvar_assign_value(t12, t11, 0, 0, 13);
+    t12 = ((char*)((ng1)));
+    memset(t11, 0, 8);
+    xsi_vlog_unsigned_unary_minus(t11, 13, t12, 13);
+    t13 = (t0 + 1768);
+    xsi_vlogvar_wait_assign_value(t13, t11, 0, 0, 13, 0LL);
     goto LAB8;
 
 }
