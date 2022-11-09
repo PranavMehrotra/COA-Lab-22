@@ -25,7 +25,6 @@ static const char *ng0 = "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/
 static unsigned int ng1[] = {0U, 0U};
 static int ng2[] = {16, 0};
 static int ng3[] = {6, 0};
-static int ng4[] = {2, 0};
 
 
 
@@ -124,11 +123,8 @@ LAB5:    xsi_set_current_line(31, ng0);
     t2 = (t0 + 2408);
     t3 = (t2 + 56U);
     t5 = *((char **)t3);
-    t6 = ((char*)((ng4)));
-    memset(t4, 0, 8);
-    xsi_vlog_unsigned_lshift(t4, 32, t5, 32, t6, 32);
-    t7 = (t0 + 2088);
-    xsi_vlogvar_assign_value(t7, t4, 0, 0, 32);
+    t6 = (t0 + 2088);
+    xsi_vlogvar_assign_value(t6, t5, 0, 0, 32);
     goto LAB2;
 
 }

@@ -29,13 +29,19 @@ module KGP_RISC_tb;
 	reg rst;
 
 	// Outputs
-	wire [31:0] result;
-
+	wire [31:0] result,muxOut,pda;
+	wire [12:0] instr, instr4;
+	wire [1:0] mem_to_Reg;
 	// Instantiate the Unit Under Test (UUT)
 	KGP_RISC uut (
 		.clk(clk), 
 		.rst(rst), 
-		.result(result)
+		.result(result),
+		.muxOut(muxOut),
+		.pda(pda),
+		.instr(instr),
+		.instr4(instr4),
+		.mem_to_Reg(mem_to_Reg)
 	);
 	always #10 clk = ~clk;
 	initial begin
@@ -45,7 +51,13 @@ module KGP_RISC_tb;
 		//instruction = 32'd0;
 		#5
 		rst=0;
-		
+		end
+		/*
+		always @(*) begin
+         if (uut.Data.reg_store.registers[16] == 1) begin 
+			$finish;
+			end
+      end*/
 		/*
 		instruction = 32'b00001000001000110000000000000101;
 		#20
@@ -81,7 +93,6 @@ module KGP_RISC_tb;
       //instruction = 32'b00001000011000110000000000000100;
 		// Add stimulus here
 		*/
-	end
       
 endmodule
 

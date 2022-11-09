@@ -2,9 +2,9 @@ Command line:
    KGP_RISC_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  59800
+     -socket  50615
 
-Wed Nov 09 10:34:18 2022
+Wed Nov 09 13:02:27 2022
 
 
- Elaboration Time: 0.046875 sec
+ Elaboration Time: 0.03125 sec

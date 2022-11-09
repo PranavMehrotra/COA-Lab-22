@@ -5,6 +5,7 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
+WARNING: File "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v" Line 37.  For instance Data/mem_reg_mux/, width 32 of formal port a2 is not equal to width 13 of actual signal instr4.
 WARNING: File "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/register_file.v" Line 22.  For instance reg_store/mux/, width 32 of formal port a0 is not equal to width 5 of actual signal rs.
 WARNING: File "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/register_file.v" Line 23.  For instance reg_store/mux/, width 32 of formal port a1 is not equal to width 5 of actual signal rt.
 WARNING:  For instance reg_store/mux/, width 32 of formal port a2 is not equal to width 5 of actual constant.
@@ -14,7 +15,7 @@ WARNING: File "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KG
 Time resolution is 1 ps
 # onerror resume
 # wave add /
-# run 40000 ns
+# run 30000 ns
 Simulator is doing circuit initialization process.
  Block Memory Generator CORE Generator module loading initial data...
  Block Memory Generator data initialization complete.

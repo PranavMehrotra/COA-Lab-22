@@ -8,6 +8,18 @@
 <msg type="info" file="sim" num="172" delta="old" >Generating IP...
 </msg>
 
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find D:\KGP Semesters\SEM 5\COA</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   LAB\COA-Lab-22\Assignents\Assign 6\KGP_RISC\COE Files\instr_file.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for D:\KGP Semesters\SEM 5\COA</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   LAB\COA-Lab-22\Assignents\Assign 6\KGP_RISC\COE Files\instr_file.coe</arg>
+</msg>
+
 <msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;instr_memory_bram&apos; already exists in the project. Output products for this core may be overwritten.</arg>
 </msg>
 

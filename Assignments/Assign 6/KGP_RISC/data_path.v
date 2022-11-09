@@ -30,23 +30,30 @@ module data_path(
    input [2:0] branch,
 	input clk,
 	input rst,
-	output signed [31:0] result
+	output signed [31:0] result,
+	output signed [31:0] muxOut,
+	output signed [31:0] pda,
+	output signed [12:0] instr,
+	output signed [12:0] instr4,
+	output [1:0] mem_to_Reg
     );
 	
-	wire [31:0] offset,shamt,pda,rsOut,rtOut,memRead,nextPC,mem_reg_out,instruction;
-	wire [12:0] nextInstr,instr,instr4;
+	wire [31:0] offset,shamt,rsOut,rtOut,memRead,mem_reg_out,instruction;
+	wire [12:0] nextInstr;
 	wire [25:0] pdain;
 	wire [15:0] offsetin;
 	wire carry, zero, sign, prevCarry;
 	wire [4:0] rs,rt,shamtin;
-	
+	assign mem_to_Reg = mem_to_reg;
 	mux_32_3X1 mem_reg_mux(
 	.a0(result),
 	.a1(memRead),
-	.a2(nextPC),
+	.a2(instr4),
 	.select(mem_to_reg),
 	.out(mem_reg_out)
 	);
+	assign muxOut = mem_reg_out;
+	
 	Instruction_decoder decoder(
 	.instruction(instruction),
 	.opcode(opcode),
@@ -98,9 +105,12 @@ module data_path(
 	 .next_addr(nextInstr),
 	 .clk(clk),
 	 .rst(rst),
-	 .addr(instr),
-	 .addr2(instr4)
+	 .addr(instr)
 	 );
+	 PC_increment incr(
+		.instr(instr),
+		.nextinstr(instr4)
+	);
 	 branch_mechanism bm(
 	 .rsOut(rsOut),
 	 .carry(prevCarry),
@@ -108,13 +118,13 @@ module data_path(
 	 .sign(sign),
 	 .pda(pda),
 	 .offset(offset),
-	 .instr4(instr),
+	 .instr4(instr4),
 	 .branch(branch),
 	 .nextInstr(nextInstr)
 	 );
 	data_memory_bram data_mem(
-   .clka(clk), // input clka
-   .ena(clk), // input ena
+   .clka(~clk), // input clka
+   .ena(1'b1), // input ena
    .wea(mem_write), // input [0 : 0] wea
    .addra(result), // input [10 : 0] addra
    .dina(rtOut), // input [31 : 0] dina

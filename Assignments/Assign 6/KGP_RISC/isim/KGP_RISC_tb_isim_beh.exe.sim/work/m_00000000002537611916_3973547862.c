@@ -78,9 +78,10 @@ LAB10:    t2 = ((char*)((ng3)));
 LAB12:
 LAB14:
 LAB13:    xsi_set_current_line(34, ng0);
-    t2 = ((char*)((ng1)));
-    t3 = (t0 + 1928);
-    xsi_vlogvar_assign_value(t3, t2, 0, 0, 32);
+    t2 = (t0 + 1048U);
+    t3 = *((char **)t2);
+    t2 = (t0 + 1928);
+    xsi_vlogvar_assign_value(t2, t3, 0, 0, 32);
 
 LAB15:    goto LAB2;
 

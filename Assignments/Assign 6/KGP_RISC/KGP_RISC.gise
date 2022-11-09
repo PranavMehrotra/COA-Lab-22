@@ -94,6 +94,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="kgp_risc.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="kgp_risc.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="kgp_risc.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux_32_3X1_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="program_counter_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
@@ -104,11 +105,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1667838432" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1667838432">
+    <transform xil_pn:end_ts="1667974458" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1667974458">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1667970252" xil_pn:in_ck="-1713316351430597506" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1667970252">
+    <transform xil_pn:end_ts="1667978420" xil_pn:in_ck="-5280771179954519495" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1667978420">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.v"/>
@@ -119,6 +120,7 @@
       <outfile xil_pn:name="KGP_RISC.v"/>
       <outfile xil_pn:name="KGP_RISC_tb.v"/>
       <outfile xil_pn:name="Look_Ahead_Carry_Unit.v"/>
+      <outfile xil_pn:name="PC_increment.v"/>
       <outfile xil_pn:name="adderunit.v"/>
       <outfile xil_pn:name="bit_extend_unit.v"/>
       <outfile xil_pn:name="branch_checker.v"/>
@@ -136,15 +138,15 @@
       <outfile xil_pn:name="register_file.v"/>
       <outfile xil_pn:name="shiftunit.v"/>
     </transform>
-    <transform xil_pn:end_ts="1667838432" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7587782751275897598" xil_pn:start_ts="1667838432">
+    <transform xil_pn:end_ts="1667978434" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7587782751275897598" xil_pn:start_ts="1667978434">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1667838432" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7245682979980757532" xil_pn:start_ts="1667838432">
+    <transform xil_pn:end_ts="1667978434" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7245682979980757532" xil_pn:start_ts="1667978434">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1667970018" xil_pn:in_ck="1673905974429519850" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-324980920783936083" xil_pn:start_ts="1667970018">
+    <transform xil_pn:end_ts="1667979143" xil_pn:in_ck="1673905974429519850" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-324980920783936083" xil_pn:start_ts="1667979143">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ipcore_dir/data_memory_bram.ngc"/>
@@ -152,7 +154,7 @@
       <outfile xil_pn:name="ipcore_dir/instr_memory_bram.ngc"/>
       <outfile xil_pn:name="ipcore_dir/instr_memory_bram.v"/>
     </transform>
-    <transform xil_pn:end_ts="1667970252" xil_pn:in_ck="-7420462619119630528" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1667970252">
+    <transform xil_pn:end_ts="1667979143" xil_pn:in_ck="-8586257882713834469" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1667979143">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.v"/>
@@ -163,6 +165,7 @@
       <outfile xil_pn:name="KGP_RISC.v"/>
       <outfile xil_pn:name="KGP_RISC_tb.v"/>
       <outfile xil_pn:name="Look_Ahead_Carry_Unit.v"/>
+      <outfile xil_pn:name="PC_increment.v"/>
       <outfile xil_pn:name="adderunit.v"/>
       <outfile xil_pn:name="bit_extend_unit.v"/>
       <outfile xil_pn:name="branch_checker.v"/>
@@ -182,9 +185,10 @@
       <outfile xil_pn:name="register_file.v"/>
       <outfile xil_pn:name="shiftunit.v"/>
     </transform>
-    <transform xil_pn:end_ts="1667970256" xil_pn:in_ck="-7420462619119630528" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2045702748551405941" xil_pn:start_ts="1667970252">
+    <transform xil_pn:end_ts="1667979146" xil_pn:in_ck="-8586257882713834469" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2045702748551405941" xil_pn:start_ts="1667979143">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="KGP_RISC_tb_beh.prj"/>
       <outfile xil_pn:name="KGP_RISC_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -192,9 +196,11 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1667970257" xil_pn:in_ck="-4003960981237277962" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8205949130916886079" xil_pn:start_ts="1667970256">
+    <transform xil_pn:end_ts="1667979146" xil_pn:in_ck="8410437379015551230" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5700877725840740480" xil_pn:start_ts="1667979146">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="KGP_RISC_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>

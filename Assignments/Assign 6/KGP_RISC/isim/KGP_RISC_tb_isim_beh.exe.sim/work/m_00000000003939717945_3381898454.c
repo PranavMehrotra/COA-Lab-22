@@ -23,11 +23,10 @@
 #endif
 static const char *ng0 = "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/program_counter.v";
 static unsigned int ng1[] = {0U, 0U};
-static unsigned int ng2[] = {1U, 0U};
 
 
 
-static void Always_28_0(char *t0)
+static void Always_27_0(char *t0)
 {
     char *t1;
     char *t2;
@@ -42,24 +41,24 @@ static void Always_28_0(char *t0)
     char *t11;
     char *t12;
 
-LAB0:    t1 = (t0 + 2848U);
+LAB0:    t1 = (t0 + 2688U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(28, ng0);
-    t2 = (t0 + 3168);
+LAB2:    xsi_set_current_line(27, ng0);
+    t2 = (t0 + 3008);
     *((int *)t2) = 1;
-    t3 = (t0 + 2880);
+    t3 = (t0 + 2720);
     *((char **)t3) = t2;
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(28, ng0);
+LAB4:    xsi_set_current_line(27, ng0);
 
-LAB5:    xsi_set_current_line(29, ng0);
+LAB5:    xsi_set_current_line(28, ng0);
     t4 = (t0 + 1368U);
     t5 = *((char **)t4);
     t4 = (t5 + 4);
@@ -71,9 +70,9 @@ LAB5:    xsi_set_current_line(29, ng0);
     if (t10 > 0)
         goto LAB6;
 
-LAB7:    xsi_set_current_line(32, ng0);
+LAB7:    xsi_set_current_line(31, ng0);
 
-LAB10:    xsi_set_current_line(33, ng0);
+LAB10:    xsi_set_current_line(32, ng0);
     t2 = (t0 + 1048U);
     t3 = *((char **)t2);
     t2 = (t0 + 1768);
@@ -81,24 +80,20 @@ LAB10:    xsi_set_current_line(33, ng0);
 
 LAB8:    goto LAB2;
 
-LAB6:    xsi_set_current_line(29, ng0);
+LAB6:    xsi_set_current_line(28, ng0);
 
-LAB9:    xsi_set_current_line(30, ng0);
+LAB9:    xsi_set_current_line(29, ng0);
     t11 = ((char*)((ng1)));
     t12 = (t0 + 1768);
     xsi_vlogvar_assign_value(t12, t11, 0, 0, 13);
-    xsi_set_current_line(31, ng0);
-    t2 = ((char*)((ng2)));
-    t3 = (t0 + 1928);
-    xsi_vlogvar_assign_value(t3, t2, 0, 0, 13);
     goto LAB8;
 
 }
 
 
-extern void work_m_00000000003862600068_3381898454_init()
+extern void work_m_00000000003939717945_3381898454_init()
 {
-	static char *pe[] = {(void *)Always_28_0};
-	xsi_register_didat("work_m_00000000003862600068_3381898454", "isim/KGP_RISC_tb_isim_beh.exe.sim/work/m_00000000003862600068_3381898454.didat");
+	static char *pe[] = {(void *)Always_27_0};
+	xsi_register_didat("work_m_00000000003939717945_3381898454", "isim/KGP_RISC_tb_isim_beh.exe.sim/work/m_00000000003939717945_3381898454.didat");
 	xsi_register_executes(pe);
 }

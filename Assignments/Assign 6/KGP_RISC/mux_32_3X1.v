@@ -31,7 +31,7 @@ module mux_32_3X1(
             2'b00 : out = a0;
             2'b01 : out = a1;
             2'b10 : out = a2;
-            default : out = 32'd0;
+            default : out = a0;
         endcase
     end
 
