@@ -21,7 +21,8 @@
 module KGP_RISC(
 	input clk,
 	input rst,
-    output [31:0] result
+	 input [10:0] array,
+	 output [13:0] out
 );
 	wire [5:0] opcode;
     wire [5:0] funccode;
@@ -32,6 +33,7 @@ module KGP_RISC(
     wire [1:0] ALUsource;
     wire [2:0] ALUop;
     wire [2:0] branch;
+	 wire [31:0] result;
 	 //wire clk_out;
 	 //clock_divider a0(clk,rst,clk_out); 
 	control_unit Control(
@@ -57,8 +59,8 @@ module KGP_RISC(
     .branch(branch),
 	 .clk(clk),
 	 .rst(rst),
-     .result(result)
+     .result(result),
+	  .out(out)
 	);
-	//assign result = res;
 
 endmodule
