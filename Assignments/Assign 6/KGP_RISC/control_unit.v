@@ -77,7 +77,7 @@ module control_unit(
             ALUop = 3'b000;
             ALUsource = 2'b10;
             reg_write = 1'b0;
-            reg_dest = 2'b00;
+            reg_dest = 2'b01;
             mem_to_reg = 2'b01;
             mem_write = 1'b0;
             branch = 3'b000;

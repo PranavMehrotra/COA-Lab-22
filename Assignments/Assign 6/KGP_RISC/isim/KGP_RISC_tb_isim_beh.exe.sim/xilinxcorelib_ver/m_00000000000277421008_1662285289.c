@@ -15466,11 +15466,11 @@ LAB1:    return;
 }
 
 
-extern void xilinxcorelib_ver_m_00000000000277421008_1782331251_init()
+extern void xilinxcorelib_ver_m_00000000000277421008_1662285289_init()
 {
 	static char *pe[] = {(void *)Cont_2330_0,(void *)Cont_2331_1,(void *)Cont_2332_2,(void *)Cont_2336_3,(void *)Cont_2337_4,(void *)Cont_2338_5,(void *)Cont_2339_6,(void *)Cont_2340_7,(void *)Cont_2341_8,(void *)Cont_2345_9,(void *)Cont_2349_10,(void *)Initial_2918_11,(void *)Always_3225_12,(void *)Always_3267_13,(void *)NetDecl_3438_14,(void *)NetDecl_3439_15,(void *)NetDecl_3440_16,(void *)NetDecl_3441_17,(void *)NetDecl_3442_18,(void *)NetDecl_3443_19,(void *)Always_3446_20,(void *)Always_3487_21,(void *)implSig1_execute,(void *)implSig2_execute,(void *)implSig3_execute};
 	static char *se[] = {(void *)sp_write_a,(void *)sp_write_b,(void *)sp_read_a,(void *)sp_read_b,(void *)sp_reset_a,(void *)sp_reset_b,(void *)sp_init_memory,(void *)sp_log2roundup,(void *)sp_collision_check};
-	xsi_register_didat("xilinxcorelib_ver_m_00000000000277421008_1782331251", "isim/KGP_RISC_tb_isim_beh.exe.sim/xilinxcorelib_ver/m_00000000000277421008_1782331251.didat");
+	xsi_register_didat("xilinxcorelib_ver_m_00000000000277421008_1662285289", "isim/KGP_RISC_tb_isim_beh.exe.sim/xilinxcorelib_ver/m_00000000000277421008_1662285289.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }

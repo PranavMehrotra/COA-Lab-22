@@ -661,7 +661,7 @@ LAB46:    xsi_set_current_line(77, ng0);
     t3 = (t0 + 1768);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
     xsi_set_current_line(80, ng0);
-    t2 = ((char*)((ng4)));
+    t2 = ((char*)((ng6)));
     t3 = (t0 + 1608);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 2);
     xsi_set_current_line(81, ng0);

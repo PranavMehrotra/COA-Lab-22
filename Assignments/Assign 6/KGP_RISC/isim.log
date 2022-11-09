@@ -14,7 +14,7 @@ WARNING: File "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KG
 Time resolution is 1 ps
 # onerror resume
 # wave add /
-# run 1000 ns
+# run 40000 ns
 Simulator is doing circuit initialization process.
  Block Memory Generator CORE Generator module loading initial data...
  Block Memory Generator data initialization complete.

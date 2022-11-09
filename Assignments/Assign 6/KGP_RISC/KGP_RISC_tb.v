@@ -45,6 +45,7 @@ module KGP_RISC_tb;
 		//instruction = 32'd0;
 		#5
 		rst=0;
+		
 		/*
 		instruction = 32'b00001000001000110000000000000101;
 		#20

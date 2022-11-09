@@ -49,7 +49,7 @@ def spit_line(line):
                 funct=f"{INSTRUCTION_DICT[line[0]][-1]}"
                 rs=f"{REGDICT[line[1]]:05b}"
                 dont_care=f"{0:010b}"
-                shamt = f"{REGDICT[line[2]]:05b}"
+                shamt = f"{int(line[2]):05b}"
                 print(f"{opcode}{rs}{dont_care}{shamt}{funct},", file = OUTPUT_FILE)
         # Load Word and Store Word
         elif opcode=="000110" or opcode=="010110":
@@ -57,9 +57,9 @@ def spit_line(line):
                 print(f"error in line {line}")
                 return
             else:
-                rs=f"{REGDICT[line[1]]:05b}"
-                rt=f"{REGDICT[line[2]]:05b}"
-                addr=f"{int(line[3]):016b}"
+                rs=f"{REGDICT[line[3]]:05b}"
+                rt=f"{REGDICT[line[1]]:05b}"
+                addr=f"{int(line[2]):016b}"
                 print(f"{opcode}{rs}{rt}{addr},", file = OUTPUT_FILE)
         # Complete upside
         
