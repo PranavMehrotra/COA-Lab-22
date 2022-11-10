@@ -28,5 +28,5 @@ module clock_divider(input wire clock_in, input rst, output clock_out);
 			counter <= counter + 26'b1;
 			end
 	end
-	assign clock_out = counter[25];
+	assign clock_out = counter[3];
 endmodule

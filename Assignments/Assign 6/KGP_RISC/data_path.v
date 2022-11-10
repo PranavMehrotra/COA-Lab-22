@@ -31,8 +31,9 @@ module data_path(
 	input clk,
 	input rst,
 	output signed [31:0] result,
-	input [10:0] array,
-	output signed [13:0] out
+	input button,
+	 input [4:0] array,
+	 output signed [12:0] out
     );
 	
 	wire [31:0] offset,shamt,pda,rsOut,rtOut,memRead,mem_reg_out,instruction;
@@ -42,7 +43,7 @@ module data_path(
 	wire carry, zero, sign, prevCarry;
 	wire [4:0] rs,rt,shamtin;
 	wire jump;
-	wire [5:0] index;
+	wire [10:0] mem_addr;
 	mux_32_3X1 mem_reg_mux(
 	.a0(result),
 	.a1(memRead),
@@ -121,11 +122,17 @@ module data_path(
 	 .branch(branch),
 	 .nextInstr(nextInstr)
 	 );
+	 mux_2X1 switcher(
+	.a0(result),
+	.a1(array),
+	.select(button),
+	.out(mem_addr)
+	);
 	data_memory_bram data_mem(
    .clka(~clk), // input clka
    .ena(1'b1), // input ena
    .wea(mem_write), // input [0 : 0] wea
-   .addra(result|index), // input [10 : 0] addra
+   .addra(mem_addr), // input [10 : 0] addra
    .dina(rtOut), // input [31 : 0] dina
    .douta(memRead) // output [31 : 0] douta
 	);
@@ -135,12 +142,7 @@ module data_path(
 	.addra(instr), // input [12 : 0] addra
 	.douta(instruction) // output [31 : 0] douta
 	); // */
-	
-	output_array arr(
-	.array(array),
-	.rst(rst),
-	.index(index)
-	);
-
 	assign out = memRead;
+	
+
 endmodule
