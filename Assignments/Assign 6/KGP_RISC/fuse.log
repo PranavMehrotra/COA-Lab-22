@@ -1,4 +1,4 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb_isim_beh.exe" -prj "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb_beh.prj" "work.KGP_RISC_tb" "work.glbl" 
+Running: D:\Softwares\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb_isim_beh.exe -prj D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb_beh.prj work.KGP_RISC_tb work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -13,7 +13,6 @@ Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/As
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/register_file.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/program_counter.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/PC_increment.v" into library work
-Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/mux_2X1.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ipcore_dir/instr_memory_bram.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ipcore_dir/data_memory_bram.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/Instruction_decoder.v" into library work
@@ -24,17 +23,15 @@ Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/As
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/control_unit.v" into library work
-Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/clock_divider.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.v" into library work
 Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb.v" into library work
 Analyzing Verilog file "D:/Softwares/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:189 - "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v" Line 50: Size mismatch in connection of port <a2>. Formal port size is 32-bit while actual signal size is 13-bit.
+WARNING:HDLCompiler:189 - "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v" Line 46: Size mismatch in connection of port <a2>. Formal port size is 32-bit while actual signal size is 13-bit.
 WARNING:HDLCompiler:189 - "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/register_file.v" Line 34: Size mismatch in connection of port <a0>. Formal port size is 32-bit while actual signal size is 5-bit.
 WARNING:HDLCompiler:189 - "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU.v" Line 41: Size mismatch in connection of port <out>. Formal port size is 6-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v" Line 126: Size mismatch in connection of port <a0>. Formal port size is 11-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v" Line 125: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
 Completed static elaboration
-Compiling module clock_divider
 Compiling module control_unit
 Compiling module mux_32_3X1
 Compiling module Instruction_decoder
@@ -52,7 +49,6 @@ Compiling module program_counter
 Compiling module PC_increment
 Compiling module branch_checker
 Compiling module branch_mechanism
-Compiling module mux_2X1
 Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
 Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
 Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
@@ -69,8 +65,8 @@ Compiling module KGP_RISC
 Compiling module KGP_RISC_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 19 sub-compilation(s) to finish...
-Compiled 34 Verilog Units
+Waiting for 13 sub-compilation(s) to finish...
+Compiled 32 Verilog Units
 Built simulation executable D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC_tb_isim_beh.exe
-Fuse Memory Usage: 34952 KB
-Fuse CPU Usage: 764 ms
+Fuse Memory Usage: 34880 KB
+Fuse CPU Usage: 718 ms

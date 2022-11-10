@@ -30,45 +30,27 @@ module KGP_RISC_tb;
 
 	// Outputs
 	wire [31:0] result;
-	reg button;
-	reg [4:0] array;
-	wire [12:0] out;
 	// Instantiate the Unit Under Test (UUT)
 	KGP_RISC uut (
 		.clk(clk), 
 		.rst(rst), 
-		.result(result),
-		.button(button),
-		.array(array),
-		.out(out)
+		.result(result)
 	);
 	always #10 clk = ~clk;
 	initial begin
 		// Initialize Inputs
 		clk = 0;
 		rst = 1;
-		button = 0;
 		//instruction = 32'd0;
 		#5
 		rst=0;
 		end
-		
+		/*
 		always @(*) begin
          if (uut.Data.reg_store.registers[16] == 1) begin 
-			#200
-			button = 1;
-			array = 5'd3;
-			#200
-			array = 5'd1;
-			#200
-			button = 0;
-			array = 5'd5;
-			#200
-			button = 1;
-			#200
-			button = 0;
+			$finish;
 			end
-      end
+      end*/
 		/*
 		instruction = 32'b00001000001000110000000000000101;
 		#20
