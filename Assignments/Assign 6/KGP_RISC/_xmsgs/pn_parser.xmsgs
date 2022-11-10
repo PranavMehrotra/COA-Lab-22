@@ -8,5 +8,68 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/ALU.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/CLA_16_bit_LCU.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/CLA_4_bit_augmented.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/Instruction_decoder.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/KGP_RISC.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/Look_Ahead_Carry_Unit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/PC_increment.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/adderunit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/bit_extend_unit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/branch_checker.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/branch_mechanism.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/clock_divider.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/control_unit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/data_path.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/dff.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/diffunit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/mux_2X1.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/mux_32_3X1.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/program_counter.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/register_file.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Saransh Sharma/OneDrive/Documents/GitHub/COA-Lab-22/Assignments/Assign 6/KGP_RISC/shiftunit.v&quot; into library work</arg>
+</msg>
+
 </messages>
 
