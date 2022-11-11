@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PRANAVMEHROTRA::  Thu Nov 10 11:48:09 2022
+PRANAVMEHROTRA::  Fri Nov 11 14:21:41 2022
 
 par -w -intstyle ise -ol high -mt off KGP_RISC_map.ncd KGP_RISC.ncd
 KGP_RISC.pcf 
@@ -107,7 +107,7 @@ Finished initial Timing Analysis.  REAL time: 11 secs
 Starting Router
 
 
-Phase  1  : 16916 unrouted;      REAL time: 13 secs 
+Phase  1  : 16916 unrouted;      REAL time: 12 secs 
 
 Phase  2  : 14892 unrouted;      REAL time: 13 secs 
 
@@ -117,13 +117,13 @@ Phase  4  : 7074 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     RE
 
 Updating file: KGP_RISC.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 24 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 23 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 24 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 23 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 24 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 23 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 24 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 23 secs 
 
 Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 24 secs 
 Total REAL time to Router completion: 24 secs 
@@ -192,7 +192,7 @@ Generating Pad Report.
 All signals are completely routed.
 
 Total REAL time to PAR completion: 25 secs 
-Total CPU time to PAR completion: 23 secs 
+Total CPU time to PAR completion: 24 secs 
 
 Peak Memory Usage:  4809 MB
 

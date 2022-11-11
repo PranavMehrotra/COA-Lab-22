@@ -10,7 +10,7 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -1
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Thu Nov 10 11:47:13 2022
+Mapped Date    : Fri Nov 11 14:20:53 2022
 
 Mapping design into LUTs...
 Running directed packing...
@@ -19,31 +19,31 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 35 secs 
-Total CPU  time at the beginning of Placer: 29 secs 
+Total REAL time at the beginning of Placer: 26 secs 
+Total CPU  time at the beginning of Placer: 20 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:d29b426e) REAL time: 38 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:d29b426e) REAL time: 28 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:d29b426e) REAL time: 38 secs 
+Phase 2.7  Design Feasibility Check (Checksum:d29b426e) REAL time: 29 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:d29b426e) REAL time: 38 secs 
+Phase 3.31  Local Placement Optimization (Checksum:d29b426e) REAL time: 29 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:40d6e267) REAL time: 40 secs 
+(Checksum:40d6e267) REAL time: 30 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:40d6e267) REAL time: 40 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:40d6e267) REAL time: 30 secs 
 
 Phase 6.3  Local Placement Optimization
-Phase 6.3  Local Placement Optimization (Checksum:40d6e267) REAL time: 40 secs 
+Phase 6.3  Local Placement Optimization (Checksum:40d6e267) REAL time: 31 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:40d6e267) REAL time: 40 secs 
+Phase 7.5  Local Placement Optimization (Checksum:40d6e267) REAL time: 31 secs 
 
 Phase 8.8  Global Placement
 ........................................
@@ -51,22 +51,22 @@ Phase 8.8  Global Placement
 .....................................
 .............................................................................................
 ......................................................................................................
-Phase 8.8  Global Placement (Checksum:9d239f1b) REAL time: 43 secs 
+Phase 8.8  Global Placement (Checksum:9d239f1b) REAL time: 34 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:9d239f1b) REAL time: 43 secs 
+Phase 9.5  Local Placement Optimization (Checksum:9d239f1b) REAL time: 34 secs 
 
 Phase 10.18  Placement Optimization
-Phase 10.18  Placement Optimization (Checksum:17bc942b) REAL time: 46 secs 
+Phase 10.18  Placement Optimization (Checksum:17bc942b) REAL time: 38 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:17bc942b) REAL time: 46 secs 
+Phase 11.5  Local Placement Optimization (Checksum:17bc942b) REAL time: 38 secs 
 
 Phase 12.34  Placement Validation
-Phase 12.34  Placement Validation (Checksum:17bc942b) REAL time: 46 secs 
+Phase 12.34  Placement Validation (Checksum:17bc942b) REAL time: 38 secs 
 
-Total REAL time to Placer completion: 49 secs 
-Total CPU  time to Placer completion: 42 secs 
+Total REAL time to Placer completion: 41 secs 
+Total CPU  time to Placer completion: 32 secs 
 Running post-placement packing...
 Writing output files...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net Data/alu/Mmux_result111 is
@@ -162,9 +162,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                5.17
 
-Peak Memory Usage:  4973 MB
-Total REAL time to MAP completion:  52 secs 
-Total CPU time to MAP completion:   44 secs 
+Peak Memory Usage:  4972 MB
+Total REAL time to MAP completion:  44 secs 
+Total CPU time to MAP completion:   34 secs 
 
 Mapping completed.
 See MAP report file "KGP_RISC_map.mrp" for details.

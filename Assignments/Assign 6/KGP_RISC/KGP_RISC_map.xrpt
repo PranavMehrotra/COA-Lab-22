@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Thu Nov 10 11:48:06 2022">
+  <application stringID="Map" timeStamp="Fri Nov 11 14:21:38 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -121,9 +121,9 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="2"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="5092572"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="52 secs "/>
-        <item stringID="MAP_TOTAL_CPU_TIME" value="44 secs "/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="5091676"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="44 secs "/>
+        <item stringID="MAP_TOTAL_CPU_TIME" value="34 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
         <item AVAILABLE="126800" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="1077">

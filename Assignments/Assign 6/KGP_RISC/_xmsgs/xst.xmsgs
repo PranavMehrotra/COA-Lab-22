@@ -29,7 +29,7 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\branch_mechanism.v" Line 47: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 126: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">a0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 126: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">a0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\ipcore_dir\data_memory_bram.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">data_memory_bram</arg>&gt; remains a black box.
@@ -41,10 +41,10 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\data_path.v" Line 145: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\KGP_RISC.v" Line 63: Assignment to <arg fmt="%s" index="1">result</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\KGP_RISC.v" Line 63: Assignment to <arg fmt="%s" index="1">result</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\KGP_RISC.v</arg>&quot; line <arg fmt="%s" index="2">51</arg>: Output port &lt;<arg fmt="%s" index="3">result</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Data</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\KGP_RISC.v</arg>&quot; line <arg fmt="%s" index="2">51</arg>: Output port &lt;<arg fmt="%s" index="3">result</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Data</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\KGP Semesters\SEM 5\COA LAB\COA-Lab-22\Assignments\Assign 6\KGP_RISC\ALU.v</arg>&quot; line <arg fmt="%s" index="2">41</arg>: Output port &lt;<arg fmt="%s" index="3">diff_zero</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">diff</arg>&gt; is unconnected or connected to loadless signal.
@@ -194,70 +194,70 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">diff/out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ALU</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">a0/counter_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a0/counter_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">KGP_RISC</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="3001" delta="old" >This design contains one or more registers or latches with an active

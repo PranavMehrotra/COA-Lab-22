@@ -1,5 +1,74 @@
 INFO:sim:172 - Generating IP...
 Applying current project options...
 Finished applying current project options.
-Cancelled executing Tcl generator.
-Wrote CGP file for project 'data_memory_bram'.
+ERROR:sim - Unable to find D:\KGP Semesters\SEM 5\COA
+ERROR:sim -    LAB\COA-Lab-22\Assignents\Assign 6\KGP_RISC\COE
+   Files\instr_file.coe
+ERROR:sim -    Coregen is looking for D:\KGP Semesters\SEM 5\COA
+ERROR:sim -    LAB\COA-Lab-22\Assignents\Assign 6\KGP_RISC\COE
+   Files\instr_file.coe
+WARNING:sim - A core named 'instr_memory_bram' already exists in the project.
+   Output products for this core may be overwritten.
+Resolving generics for 'instr_memory_bram'...
+WARNING:sim - A core named 'instr_memory_bram' already exists in the project.
+   Output products for this core may be overwritten.
+Applying external generics to 'instr_memory_bram'...
+Delivering associated files for 'instr_memory_bram'...
+Delivering EJava files for 'instr_memory_bram'...
+Generating implementation netlist for 'instr_memory_bram'...
+INFO:sim - Pre-processing HDL files for 'instr_memory_bram'...
+Running synthesis for 'instr_memory_bram'
+Running ngcbuild...
+Writing VEO instantiation template for 'instr_memory_bram'...
+Writing Verilog behavioral simulation model for 'instr_memory_bram'...
+WARNING:sim - Overwriting existing file D:/KGP Semesters/SEM 5/COA
+   LAB/COA-Lab-22/Assignments/Assign
+   6/KGP_RISC/ipcore_dir/tmp/_cg/instr_memory_bram/doc/blk_mem_gen_v7_3_vinfo.ht
+   ml with file from view xilinx_documentation
+Delivered 1 file into directory D:/KGP Semesters/SEM 5/COA
+LAB/COA-Lab-22/Assignments/Assign
+6/KGP_RISC/ipcore_dir/tmp/_cg/instr_memory_bram
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'instr_memory_bram'...
+Generating metadata file...
+Regenerating ISE project file for 'instr_memory_bram'...
+Generating ISE project...
+XCO file found: instr_memory_bram.xco
+XMDF file found: instr_memory_bram_xmdf.tcl
+Adding D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign
+6/KGP_RISC/ipcore_dir/tmp/_cg/instr_memory_bram.asy -view all -origin_type
+imported
+Adding D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign
+6/KGP_RISC/ipcore_dir/tmp/_cg/instr_memory_bram.ngc -view all -origin_type
+created
+Checking file "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign
+6/KGP_RISC/ipcore_dir/tmp/_cg/instr_memory_bram.ngc" for project device match
+...
+File "D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign
+6/KGP_RISC/ipcore_dir/tmp/_cg/instr_memory_bram.ngc" device information matches
+project device.
+Adding D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign
+6/KGP_RISC/ipcore_dir/tmp/_cg/instr_memory_bram.sym -view all -origin_type
+imported
+Adding D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign
+6/KGP_RISC/ipcore_dir/tmp/_cg/instr_memory_bram.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file "D:/KGP Semesters/SEM 5/COA
+   LAB/COA-Lab-22/Assignments/Assign
+   6/KGP_RISC/ipcore_dir/tmp/_cg/instr_memory_bram.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding D:/KGP Semesters/SEM 5/COA LAB/COA-Lab-22/Assignments/Assign
+6/KGP_RISC/ipcore_dir/tmp/_cg/instr_memory_bram.veo -view all -origin_type
+imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/instr_memory_bram"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'instr_memory_bram'.
