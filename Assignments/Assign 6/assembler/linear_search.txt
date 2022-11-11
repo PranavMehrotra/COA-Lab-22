@@ -30,4 +30,5 @@
     xor $19, $19
     addi $19, -1        # if key is not found, store -1 in $19
     xor $16, $16
+    sw $19,14($20)
     addi $16, 1         # to indicate completion
